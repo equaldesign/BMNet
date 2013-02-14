@@ -1,0 +1,388 @@
+h1 {
+	font-size: 2.5em;
+}
+/* CSS Document */
+
+.gravatar {
+	float: left;
+	margin-right: 10px;
+	border: 1px solid #999;
+  -webkit-box-shadow:0 0 5px rgba(0,0,0,0.2); 
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,0.2); 
+	box-shadow:0 0 5px rgba(0,0,0,0.2); 
+}
+.gravatarnf {
+	margin: 10px;
+	border: 1px solid #999;
+  -webkit-box-shadow:0 0 5px rgba(0,0,0,0.2); 
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,0.2); 
+	box-shadow:0 0 5px rgba(0,0,0,0.2); 
+}
+.tipBubble {
+  background: rgba(0,0,0,0.9);
+  color:#FFF;
+  width: 300px;
+  /* offset left, top, thickness, color with alpha */
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  /* IE */
+  filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray');
+  /* slightly different syntax for IE8 */
+  -ms-filter:"progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray')";
+
+}
+.tipBubble p {
+  margin-top: 0;
+}
+#logo {
+
+width:508px;
+padding-left: 100px;
+height:69px;
+float:left;
+position:relative;
+padding-top:5px;
+left: 15px;
+top:15px;
+}
+h1, h2 {
+  
+}
+a {
+  text-decoration:none;
+	color: #9C0;
+	font-weight: bold;
+}
+.contactList {
+display:none;
+
+}
+        #cal1Container {
+            position: absolute;
+            display: none;}
+        #cal2Container {
+            position: absolute;
+            display: none;}           
+.cal_not_invited {
+background-color:#E6E3CC;
+  vertical-align:top;
+  text-align:left;
+}
+.cal_attending {
+background-color:#CCF5CB;
+  vertical-align:top;
+  text-align:left;
+}
+.red {
+color:#FF0000;
+}
+.bold {
+font-weight:bold;
+}
+.floatright {
+  float: right;
+}
+.floatleft {
+  float:left;
+}
+
+#dateTime {
+  float:right;
+  color:#003366;
+  padding-right: 20px;
+  font-weight: bold;
+}
+
+.doc1 {background-color:#CAE4FF; text-align:left;}
+.doc2 {background-color:#E1E1E1; text-align:left;}
+#widths {
+  float:right;
+  clear:right;
+  margin-right: 20px;
+  margin-top: 5px;
+  font-size: x-small;
+}
+.shaded {
+background:url(/modules/eunify/includes/images/searchbg.png) no-repeat;
+padding:3px 0px 3px 3px;
+font-family:Tahoma,"Trebuchet MS","Lucida Sans Unicode";
+border: 1px solid #DEDEDE;
+
+}
+#heights {
+  float:right;
+  clear:right;
+  margin-right: 20px; 
+  height: 25px;
+  font-size: x-small; 
+  
+}
+#search {
+  float:right;
+  clear:right;
+  margin-right: 20px; 
+  margin-top: 15px;
+}
+.psa_id {
+  width: 50px;
+}
+.psa_details {
+  height: 100px;
+  width: 200px;
+}
+
+#grey #infobar {
+height: 23px;
+margin: 8px 18px 0 18px;
+background:#CCCCCC url(/modules/eunify/includes/images/users.png) no-repeat;
+padding-left: 35px;
+padding-top: 7px;
+}
+
+.whitetext {
+  color: #FFFFFF;
+}
+
+ 
+
+ 
+#editmode.on {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/cross-circle-frame.png") top right no-repeat;
+}
+#editmode.off {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/tick-circle-frame.png") top right no-repeat;
+}
+#layoutMode {
+	padding: 3px 25px 3px 5px;
+  font-size: 11px;
+  color:#666;
+	margin: 0px 5px;
+}
+#layoutMode.on {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/layout-header-2.png") top right no-repeat;
+}
+#layoutMode.off {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/ui-layout-panel.png") top right no-repeat;
+}
+#cache {
+  padding: 3px 25px 3px 10px;
+  font-size: 11px;
+	border-left: 1px dotted #88B9D2;
+  color:#666;
+	margin: 0px 5px;
+}
+#cache.true {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/battery-charge.png") top right no-repeat;
+}
+#cache.false {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/battery-low.png") top right no-repeat;
+}
+  
+
+.article {
+  padding-bottom: 10px;
+  padding-left: 35px;
+  border-bottom: 1px dotted #DDD;
+}
+.articlestyle_Notice {
+  background:url(/modules/eunify/includes/images/icons/error.png) 0px 5px no-repeat;
+  font-size:1em;
+  color:#333;
+}
+.articlestyle_Notice .newstitle a {
+  font-size:x-large;
+}
+.articlestyle_Product_News {
+  background:url(/modules/eunify/includes/images/icons/icon_component.gif) 0px 5px no-repeat;
+}
+.articlestyle_File_Additions {
+  /* Product News */
+  background:url(/modules/eunify/includes/images/icons/folder_page.gif) 0px 2px no-repeat;
+  font-size: smaller;
+  color:#666;
+}
+.articlestyle_File_Additions a:hover {
+  /* Product News */
+text-decoration:underline;}
+.articlestyle_Agreements {
+  /* Product News */
+  background:url(/modules/eunify/includes/images/icons/lorry.png) 0px 2px no-repeat;
+  font-size: smaller;
+  color:#666;
+}
+.articlestyle_Agreements .postcomments, .articlestyle_Agreements .newscontents  {
+display:none;
+}
+.articlestyle_Agreements a:hover {
+  /* Product News */
+text-decoration:underline;}
+.articlestyle_Appointments {
+  /* Product News */
+  background:url(/modules/eunify/includes/images/icons/icon_clock.gif) 0px 2px no-repeat;
+  font-size: smaller;
+  color:#666;
+}
+.articlestyle_Appointments a {
+  /* Product News */
+  font-size: 90%;
+  color:#666;
+}
+.articlestyle_Appointments .postcomments, .articlestyle_Appointments .newscontents  {
+display:none;
+}
+.articlestyle_Appointments a:hover {
+  /* Product News */
+text-decoration:underline;}
+.articlestyle_Contacts {
+  /* Product News */
+  background:url(/modules/eunify/includes/images/icons/user.png) 0px 2px no-repeat;
+  font-size: smaller;
+  color:#666;
+}
+.articlestyle_Contacts a:hover {
+  /* Product News */
+text-decoration:underline;}
+.articlestyle_Contacts .postcomments, .articlestyle_Contacts .newscontents {
+display:none;
+}
+
+.articlestyle_Figures {
+  /* Product News */
+  background:url(/modules/eunify/includes/images/icons/money_add.png) 0px 2px no-repeat;
+  font-size: smaller;
+  color:#666;
+}
+.articlestyle_Figures a:hover {
+  /* Product News */
+text-decoration:underline;}
+.articlestyle_Figures .postcomments, .articlestyle_Figures .newscontents {
+display:none;
+}
+
+.timestamp {
+  /* Product News */
+  font-size: smaller;
+}
+.articlestyle_File_Additions .postcomments, .articlestyle_File_Additions .newscontents  {
+display:none;
+}
+.articlestyle_File_Additions a:hover {
+  /* Product News */
+text-decoration:underline;}
+
+.articlestyle_1 .postcomments {
+display:none;
+}
+.articlestyle_1 .newscontents {
+display:none;
+}
+.articlestyle_2 a {
+  /* Pricing News */
+  color:#333333;
+}
+.articlestyle_3 {
+  /* General News */
+}
+
+.notimportant {
+  color:#999966;
+  font-style:oblique;
+}
+hr.faint {
+  border:0px;
+  background:none;
+  border-bottom: 2px dotted #D8D8B1;
+}
+.newstitle {
+  font-size: larger;
+
+  padding-top: 3px;
+  padding-bottom: 3px;  
+}
+.newsdate {
+  font-size: smaller;
+}
+.newscontents {
+padding: 10px 0px 10px 0px;
+}
+#newsbody a {
+  color:#0000CC;
+  text-decoration:underline;
+}
+.postcomments {
+padding-left: 20px;
+background:url(/modules/eunify/includes/images/psa/comments.png) left no-repeat;
+}
+.psaConfirm {
+
+
+}
+.psaConfirm a {
+margin-left:10px;
+padding: 5px;
+display:block;
+font-weight:bold;
+  color:white;
+  text-decoration:none;
+  background: url(/modules/eunify/includes/images/psa_confirm.jpg) right;
+  padding-right: 40px;  
+  border: 1px solid #000;
+}
+.psaConfirm a:hover {
+  color:#990000;
+}
+
+
+.outlooklink {
+background:url(/modules/eunify/includes/images/outlooklink.jpg) no-repeat left top;
+display:block;
+font-weight: bold;
+font-size:10px;
+height:12px;
+padding:8px;
+padding-left: 35px;
+margin-bottom: 5px;
+}
+.outlooklink:hover {
+color:#FFFFFF;
+}
+#newspagesheader {
+  border-top: 1px dotted #999999;
+  border-bottom: 1px dotted #999999;  
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 10px 5px;
+}
+.editPencil {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/pencil.png") top right no-repeat;
+	width: 16px;
+	height: 16px;
+	float: right;
+	display: block;
+}
+.deleteIcon {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/cross-circle-frame.png") top right no-repeat;
+  width: 16px;
+  height: 16px;
+  float: right;
+  display: block;
+}
+.tdicon {
+	width:16px;
+	display: inline-block;
+	height:16px;
+}
+.btn.dropdown-toggle {
+  height: 20px !important;
+}
+@media (max-width: 1200px) {
+	#siteSearch {
+		display: none;
+	}	
+}
+@media (min-width: 1200px) {
+	body {
+    margin-top:50px
+  }
+}

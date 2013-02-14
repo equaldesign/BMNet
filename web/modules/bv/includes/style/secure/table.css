@@ -1,0 +1,89 @@
+
+table {
+  width:99%;
+  text-align: left;
+  border-top:1px solid #CCCCCC;
+  border-left:1px solid #CCCCCC;    
+  -webkit-box-shadow:0 0 5px rgba(0,0,0,0.2); 
+  -moz-box-shadow: 0 0 5px rgba(0,0,0,0.2); 
+  box-shadow:0 0 5px rgba(0,0,0,0.2);   
+  border-collapse:collapse;
+  }
+caption {
+  color: #9ba9b4;
+  font-size:.94em;
+    letter-spacing:.1em;
+    margin:1em 0 0 0;
+    padding:0;
+    caption-side:top;
+    text-align:center;
+  } 
+table tr.odd  {
+  background: #E8E8E8 url("/includes/images/secure/table/tr_odd.png") repeat-x 
+  }
+table tr.highlightMember  {
+  background:#990000  !important;
+  color:#FFF  !important;
+  font-weight: bold !important; 
+  } 
+table tr.even {
+  background: #DFECF0 url("/includes/images/secure/table/tr_even.png") repeat-x  
+  }
+
+table td.positive {
+  color:green;  
+}
+table td.negative {
+  color:#d42945;
+}
+table td {
+  border-bottom:1px solid #CCCCCC;
+  border-right:1px solid #CCCCCC;
+  padding:.3em 1em;
+  
+  }       
+table tbody th {
+  font-weight:normal;
+  color:#e5eff8;
+
+  font:bold 1.1em 'Lato',"Century Gothic","Trebuchet MS",Arial,Helvetica,sans-serif;
+  border-bottom: 1px solid #CCCCCC;
+  border-right:1px solid #CCCCCC;
+  padding:.3em 1em;
+  background: #01547B url("/includes/images/secure/table/tbody_th.png") top center repeat-x;   
+  }             
+table thead tr, table tfoot tr {
+  background:#01547B url("/includes/images/secure/table/thead_th.png") top center repeat-x;  
+  } 
+table thead th, table tfoot th {
+  font-weight:normal;
+  color:#e5eff8;
+  font:bold 1.1em 'Lato',"Century Gothic","Trebuchet MS",Arial,Helvetica,sans-serif;
+  border-bottom: 1px solid #CCCCCC;
+  border-right:1px solid #CCCCCC;
+  padding:.3em 1em;
+}
+table th a:link {
+  color:#e5eff8;
+  text-decoration:none; 
+  } 
+table th a:visited {
+  color:#e5eff8;
+  border-bottom:none;
+  text-decoration:none;
+  }   
+table th a:hover,
+table th a:focus {
+  color:#e5eff8;
+  text-decoration:none;
+  }
+
+.tr {
+  text-align:right;
+}
+.tc {
+  text-align:center;
+}       
+.tl {
+  text-align: left;
+}

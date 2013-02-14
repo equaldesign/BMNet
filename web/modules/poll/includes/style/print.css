@@ -1,0 +1,25 @@
+body, td {
+  font-family: "Droid Sans",DroidSans,Arial,Helvetica,sans-serif;
+  font-size: 0.8em;
+} 
+.chartDiv {
+	margin-top: 6px;
+	width: 45%;
+	padding: 3px;
+	float:left;		
+}
+.chartDiv h4 {
+	font-size: 120%;
+	text-align: center;
+	color: #999;
+	font-weight:lighter; 
+}
+table thead th, table tfoot th {
+	font-size: 90%;
+	font-weight: lighter;
+	color: #666;
+}
+h1.page-header span {
+	margin-top: 5px;
+}
+

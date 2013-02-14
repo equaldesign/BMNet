@@ -1,0 +1,23 @@
+.promotion h2 {
+	color:#99CC00;
+	font-weight:bold;
+}
+.promotion h4.valid {
+	padding: 0 0 4px 30px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/alarm-clock-blue.png") no-repeat;
+	color:#990000;
+	
+	
+}
+.promo a.edit {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/pencil.png") no-repeat;
+}
+.promo a.deletep {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/cross.png") no-repeat;
+}

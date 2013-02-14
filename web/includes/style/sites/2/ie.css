@@ -1,0 +1,27 @@
+#topnav  .navbar-inner:before {
+	display: none;
+}
+#topnav  .navbar-inner:after {
+	display: none;
+}
+#footerMain:before {
+	display: none;
+}
+#footerMain:after {
+	display: none;
+}
+#footerSub:before {
+	display: none;
+}
+#footerSub:after {
+	display: none;
+}
+#myCarousel:after {
+	display: none;
+}
+#hometext:after {
+	display: none;
+}
+#hometext:before {
+	display: none;
+}

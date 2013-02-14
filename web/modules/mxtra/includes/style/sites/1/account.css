@@ -1,0 +1,36 @@
+.accountBox {
+	float: left;
+	margin-right: 10px;
+	
+	width: 190px;
+	padding:10px;
+}
+.accountBox h2 {
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	border-bottom: 1px dotted #DEDEDE;
+}
+.accountBox table {
+	border: 1px solid #CCC;
+  margin: 0px auto 20px;
+	margin: 0 auto;
+	width: 100%;
+	clear: both;
+	border-collapse: collapse;
+  background: white;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.17), 0 0 60px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.17), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.17),  0 0 40px rgba(0, 0, 0, 0.06) inset;
+}
+.accountBox table thead tr {
+	background: url("/includes/images/subbar.jpg") 50% 50% repeat-x;
+}
+.accountBox table td, .accountBox table th {
+  padding: 3px 10px;
+}
+.accountBox table tr {
+	background-color: #F4F4F4;
+}
+.accountBox h3 {
+	margin: 10px 0px 5px 0px !important;
+}

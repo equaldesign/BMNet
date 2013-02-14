@@ -1,0 +1,2 @@
+<cfheader name="Content-Disposition" value="attachment;filename=#rc.document.name#.#rc.document.filetype#">
+<cfcontent file="#rc.fileName#" type="#getPageContext().getServletContext().getMimeType('#rc.fileName#')#">

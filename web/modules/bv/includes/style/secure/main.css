@@ -1,0 +1,181 @@
+/*  
+Sticky Footer Solution
+by Steve Hatcher 
+http://stever.ca
+http://www.cssstickyfooter.com
+*/
+
+* {	
+    margin:0;
+		padding:0;
+		-webkit-font-smoothing: antialiased;
+  } 
+
+/* must declare 0 margins on everything, also for main layout components use padding, not 
+vertical margins (top and bottom) to add spacing, else those margins get added to total height 
+and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
+
+html, body {
+	height: 100%;	
+	font-family:'Lato', 'Lato', "Lucida Sans Unicode","Trebuchet MS",Tahoma,Verdana;
+	-webkit-font-smoothing: antialiased;
+}
+input,button {
+  font-family:'Lato',"Lucida Sans Unicode","Trebuchet MS";
+	-webkit-font-smoothing: antialiased;
+
+}
+#greenBG {
+  background:url(/includes/images/public/green.jpg) top repeat-y #5C9122;
+  /*min-height:207px;*/
+  margin-top:-15px;
+  margin-bottom: 20px;
+}
+#greenBG .pageheading {
+  padding: 20px 20px;
+}
+#greenBG .pageheading h1 {
+  margin-top: 0;
+	padding-top: 10px;
+	margin-bottom: 20px;
+	color: #325012;
+	font-size: 500%;
+	font-weight: bold;
+	text-shadow: #B9E97C 0px 1px 1px;
+}
+#greenBG .pageheading .pricingHeader h1 {
+  font-size: 300%;
+	line-height:150%;
+	text-align: center; 
+	margin-bottom: 10px;
+	font-weight: 800; 
+}
+#greenBG .pageheading .pricingHeader h2 {
+  font-size: 180%;
+  line-height:110%;
+  text-align: center;	
+  padding-top: 0px;
+  margin-bottom: 20px;
+	font-weight: normal;
+  color: #325012;  
+  text-shadow: #B9E97C 0px 1px 1px;  
+}
+#wrap {
+  min-height: 100%;
+	width: 100%;
+}
+.n6 {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#loginForm {
+	padding-top: 5px;
+}
+#loginForm .btn {
+	margin-top:0px;
+}
+.wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -75px;
+}
+.push {
+  height: 75px;
+}
+.wrap {
+  padding-top: 110px;
+}
+@media (max-width: 480px) {
+	.wrap {
+	  padding-top: 0px;
+	}	
+}
+#main {
+	overflow:hidden;
+  padding-bottom: 150px;
+}  /* must be same height as the footer */
+.footer {  
+  margin-top: -85px; /* negative value of footer height */
+  height: 85px;
+  width:100%;
+  bottom:0;
+  z-index:9999;
+  clear:both;
+  border-top: 1px solid #555;
+  background: #999 url("/includes/images/secure/footerbg.jpg") repeat-x top left;
+} 
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+  content:"";
+  height:100%;
+  float:left;
+  width:0;
+  margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}
+
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.hidden {
+    display: none;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+
+/* IMPORTANT
+
+You also need to include this conditional style in the <head> of your HTML file to feed this style to IE 6 and lower and 8 and higher.
+
+<!--[if !IE 7]>
+  <style type="text/css">
+    #wrap {display:table;height:100%}
+  </style>
+<![endif]-->
+
+*/
+
+#menubar ul li a {
+	font-weight: normal !important;
+}
+.siteImageLeft {
+  left: 40px;
+  top:20px;
+  
+}

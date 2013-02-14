@@ -1,0 +1,1 @@
+<cfoutput>#renderView("web/sites/viewletlist")#</cfoutput>

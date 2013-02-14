@@ -1,0 +1,15 @@
+#siteList h1 {
+	text-transform: capitalize;
+}
+.siteBlock {
+	float: left;
+	width: 300px;
+	margin-right: 10px;
+}
+.siteBlock a {
+	display: block;
+}
+.siteBlock a img {
+	float: left;
+	margin-right: 10px;
+}

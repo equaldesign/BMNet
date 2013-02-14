@@ -1,0 +1,70 @@
+/*
+ * jsTree classic theme 1.0
+ * Supported features: dots/no-dots, icons/no-icons, focused, loading
+ * Supported plugins: ui (hovered, clicked), checkbox, contextmenu, search
+ */
+
+.jstree-products li, 
+.jstree-products ins { background-image:url("/modules/eunify/includes/style/themes/classic/d.png"); background-repeat:no-repeat; background-color:transparent; }
+.jstree-products li { background-position:-90px 0; background-repeat:repeat-y;  }
+.jstree-products li.jstree-last { background:transparent; }
+.jstree-products .jstree-open > ins { background-position:-72px 0; }
+.jstree-products .jstree-closed > ins { background-position:-54px 0; }
+.jstree-products .jstree-leaf > ins { background-position:-36px 0; }
+
+.jstree-products .jstree-hovered { background:#161616;}
+.jstree-products .jstree-clicked { background:#000; color:white; }
+.jstree-products a .jstree-icon { background-position:-56px -19px; }
+.jstree-products .jstree-open > a .jstree-icon { background-position:-56px -36px; }
+.jstree-products .jstree-open .jstree-leaf > a .jstree-icon { background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document.png") no-repeat 0px 0px }
+.jstree-products a.jstree-loading .jstree-icon { background:url("/modules/eunify/includes/style/themes/classic/throbber.gif") center center no-repeat !important; }
+
+.jstree-products .jstree-icon.xls, .jstree-products .jstree-icon.xlsx {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-excel.png") no-repeat 0px 0px !important;
+}
+.jstree-products .jstree-icon.doc, .jstree-products .jstree-icon.docx {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-word.png") no-repeat 0px 0px !important;
+} 
+.jstree-products .jstree-icon.pdf, .jstree-products .jstree-icon.ps {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-pdf.png") no-repeat 0px 0px !important;
+}
+.jstree-products .jstree-icon.ppt, .jstree-products .jstree-icon.pptx {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-powerpoint.png") no-repeat 0px 0px !important;
+}
+.jstree-products .jstree-no-dots li, 
+.jstree-products .jstree-no-dots .jstree-leaf > ins { background:transparent; }
+.jstree-products .jstree-no-dots .jstree-open > ins { background-position:-18px 0; }
+.jstree-products .jstree-no-dots .jstree-closed > ins { background-position:0 0; }
+
+.jstree-products .jstree-no-icons a .jstree-icon { display:none; }
+
+.jstree-products .jstree-search { font-style:italic; }
+
+.jstree-products .jstree-no-icons .jstree-checkbox { display:inline-block; }
+.jstree-products .jstree-no-checkboxes .jstree-checkbox { display:none !important; }
+.jstree-products .jstree-checked > a > .jstree-checkbox { background-position:-38px -19px; }
+.jstree-products .jstree-unchecked > a > .jstree-checkbox { background-position:-2px -19px; }
+.jstree-products .jstree-undetermined > a > .jstree-checkbox { background-position:-20px -19px; }
+.jstree-products .jstree-checked > a > .jstree-checkbox:hover { background-position:-38px -37px; }
+.jstree-products .jstree-unchecked > a > .jstree-checkbox:hover { background-position:-2px -37px; }
+.jstree-products .jstree-undetermined > a > .jstree-checkbox:hover { background-position:-20px -37px; }
+
+#vakata-dragged.jstree-default ins { background:transparent !important; }
+#vakata-dragged.jstree-default .jstree-ok { background:url("/modules/eunify/includes/style/themes/classic/d.png") -2px -53px no-repeat !important; }
+#vakata-dragged.jstree-default .jstree-invalid { background:url("/modules/eunify/includes/style/themes/classic/d.png") -18px -53px no-repeat !important; }
+#jstree-marker.jstree-default { background:url(/modules/eunify/includes/style/themes/classic/d.png") -41px -57px no-repeat !important; }
+
+.jstree-products a.jstree-search { color:aqua; }
+
+#vakata-contextmenu.jstree-default-context, 
+#vakata-contextmenu.jstree-default-context li ul { background:#f0f0f0; border:1px solid #979797; -moz-box-shadow: 1px 1px 2px #999; -webkit-box-shadow: 1px 1px 2px #999; box-shadow: 1px 1px 2px #999; }
+#vakata-contextmenu.jstree-default-context li { }
+#vakata-contextmenu.jstree-default-context a { color:black; }
+#vakata-contextmenu.jstree-default-context a:hover, 
+#vakata-contextmenu.jstree-default-context .vakata-hover > a { padding:0 5px; background:#e8eff7; border:1px solid #aecff7; color:black; -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px; }
+#vakata-contextmenu.jstree-default-context li.jstree-contextmenu-disabled a, 
+#vakata-contextmenu.jstree-default-context li.jstree-contextmenu-disabled a:hover { color:silver; background:transparent; border:0; padding:1px 4px; }
+#vakata-contextmenu.jstree-default-context li.vakata-separator { background:white; border-top:1px solid #e0e0e0; margin:0; }
+#vakata-contextmenu.jstree-default-context li ul { margin-left:-4px; }
+
+/* TODO: IE6 support - the `>` selectors */

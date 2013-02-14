@@ -1,0 +1,103 @@
+html, body {
+	height: 100%;         /* required */
+}
+body {
+	text-align: center;   /* horizontal centering hack for IE */
+	padding: 0;           /* required to "hide" distance div */
+	margin: 0;            /* required to "hide" distance div */
+	color: #999;
+	background: #ffffff !important; 
+}
+div#distance { 
+	margin-bottom: -150px; /* half of content height */
+	background: none;      /* temporary - used to see div */
+	width: 1px;           /* required to "hide" distance div */
+	height: 50%;          /* required */
+	float: left;          /* required */
+
+}
+div#content {
+	position: relative;   /* positions content on top of distance */
+	text-align: left;     /* horizontal centering hack for IE */
+	height: 330px;         /* required - desired height */
+	width: 590px;          /* required - desired width */    /* cosmetic */
+	margin: 0 auto;
+	float: none;       /* required */
+	clear: left;          /* required */	
+
+}
+div#loginBox {
+	border: 1px solid #CCC;
+	height: 300px;         /* required - desired height */
+	width: 550px;
+	padding: 20px;
+	background: url("/modules/eunify/includes/images/eGroup_footer.png") bottom left no-repeat;
+  -webkit-box-shadow:0 0 5px rgba(0,0,0,0.2); 
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,0.2); 
+	box-shadow:0 0 5px rgba(0,0,0,0.2); 
+	-webkit-border-radius:5px;
+  -moz-border-radius:5px;
+	border-radius: 5px;
+}
+#j_username, #j_password, #email {
+	width: 123px;
+}
+
+div.form-signUp {
+	width: 300px;
+	position: absolute;
+	right: 40px;
+	top: 30px;
+}
+div.form-signUp legend {
+	background: white;
+}
+div.form-signUp label.l , div.form-container span.label.l { 
+	font-weight: bold; 
+	color:#333; 
+	margin: 0 10px 0 0; 
+	padding: 8px 10px 0px 0px;
+	width: 110px; 
+	display: block; 
+	float: left; 
+	text-align: right; 
+	position: relative; 
+}
+div.form-signUp label.error {
+	padding: 0px 0px;
+}
+div.form-signUp input, div.form-signUp textarea { color:#333; }
+.doIt {
+	float: right; margin-right: 5px; color: #333 !important; 
+}
+.forgottenPassword {
+	color:#333;
+	font-size: 11px;
+	font-weight: normal;
+	float: right;
+	margin-right: 10px;
+	text-decoration: none;
+}
+.forgottenPassword:hover {
+	color:#600;	
+}
+#copyRight {
+	margin-top: 10px;
+	background: url("/modules/eunify/includes/images/logineBiz.png") no-repeat right top;
+	height:30px;
+	text-align: center;
+	font-size: 11px;
+}
+#copyRight a {
+	text-decoration: none;
+	color:#333;
+}
+#copyRight a:hover {
+	color:#600;
+}
+#errorMessage {
+	padding: 10px !important;
+}
+#errorMessage.hidden {
+		display: none;
+}

@@ -1,0 +1,18 @@
+.poll_icon_true {
+	height:16px;
+	width:16px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/tick-circle-frame.png") 0px 0px no-repeat;
+	display:inline-block;
+}
+.poll_icon_false {
+  height:16px;
+  width:16px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/cross-circle-frame.png") no-repeat;
+	display:inline-block;
+}
+.poll {
+  padding: 10px;
+	padding-left: 55px;
+	border:1px solid #D3D3D3;
+	background: #F9F9F9 url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/information.png") 10px 10px no-repeat;
+}

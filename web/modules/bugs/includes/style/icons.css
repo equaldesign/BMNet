@@ -1,0 +1,47 @@
+a.bug {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bug.png") no-repeat 2px 2px;
+}
+a.server {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/server--exclamation.png") no-repeat 2px 2px;
+}
+a.request {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/briefcase.png") no-repeat 2px 2px;  
+}
+a.request {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/briefcase.png") no-repeat 2px 2px; 
+}
+a.help {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/information-frame.png") no-repeat 2px 2px; 
+}
+a.delete {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bin-full.png") no-repeat 2px 2px; 
+}
+a.general {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/desktop.png") no-repeat 2px 2px; 
+}
+#bugList td  {
+  vertical-align:top;
+  color:#999;
+  font-weight: normal;
+} 
+a.traffic_1 {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/traffic-light--red.png") no-repeat 2px 2px;
+}
+a.traffic_2 {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/traffic-light--amber.png") no-repeat 2px 2px;
+}
+a.traffic_3 {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/traffic-light--green.png") no-repeat 2px 2px;
+}
+a.open {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/lock-unlock.png") no-repeat 2px 2px;
+}
+a.closed {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/lock.png") no-repeat 2px 2px;
+}
+a.door {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/door.png") no-repeat 2px 2px;
+}
+a.pending {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/alarm-clock.png") no-repeat 2px 2px;
+}

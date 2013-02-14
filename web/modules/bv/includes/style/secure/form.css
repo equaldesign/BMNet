@@ -1,0 +1,64 @@
+/* CSS Document */
+div.form {
+	font-family: "Droid Sans", 'Lato', "trebuchet ms","Lucida Sans Unicode", sans-serif;
+}
+div.form div {margin: 0.5em 0; clear: both; }
+div.form div div div {margin: 0; clear:none;}
+div.form label , div.form-container span.label { font-weight: bold; color:#333; margin: 0 10px 0 0; padding: 8px 10px 0px 0px; width: 150px; display: block; float: left; text-align: right; position: relative; }
+div.form label.s { font-weight: bold; color:#333; margin: 0 10px 0 0; padding: 8px 10px 0px 0px; width: 100px; display: block; float: left; text-align: right; position: relative; }
+div.form label.terms , div.form-container span.label.terms { font-size: 12px;  color:#333; margin: 0 10px 0 0; padding-right: 10px; width: 150px; display: block; float: left; text-align: right; position: relative; padding-top:0px;}
+div.form label.error, div.form-container span.error { color: #C00; }
+div.form label em, div.form-container span.label em { position: absolute; right: 0; font-style: normal; color: #C00; }
+div.form input.error { border-color: #C00; background-color: #FEF; }
+div.form div.controlset label, div.form-container div.controlset input, select { display: inline; float: none; }
+div.form div.controlset div { margin-left: 170px; }
+div.form div.rightControlSet div {float: right }
+div.form div.buttonrow { margin-left: 180px; }
+div.form input, div.form select, div.form textarea { font-size: 12px; font-family: "Droid Sans", 'Lato', "trebuchet ms","Lucida Sans Unicode", sans-serif; padding: 9px; border: solid 1px #E5E5E5; outline: 0; background: #FFFFFF url('/includes/images/secure/form/bg_form.png') left top repeat-x; background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF)); background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px); box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; }
+div.form input[type="checkbox"], div.form input[type="radio"] { 
+  border: 0; 
+  background: none;
+  margin:0;
+  padding: 0;
+  box-shadow: 0px 0px 0px; 
+}
+div.form input.button {
+	margin-left: 170px;
+}
+div.form input.terms {
+  width:auto;
+}
+div.form fieldset {
+  display: block;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px dotted #AAA;
+  color: #999;
+}
+
+div.form legend {  
+  font-weight: 700;
+  font-size: 1.3em;
+  padding: 10px;
+  color: #999;
+
+}
+
+div.form textarea { width: 400px; max-width: 400px; height: 150px; line-height: 150%; }
+div.form input:hover, div.form textarea:hover, div.form input:focus, div.form textarea:focus {border-color: #C9C9C9; -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px; }
+
+
+input.invalid {
+  border: 1px solid #990000 !important; 
+}
+label.invalid {
+  margin-left: 10px;
+  min-height: 16px;
+  font-size: 13px;
+  padding: 9px 0 8px 22px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/icons-shadowless/exclamation-red-frame.png") no-repeat 0% 50%;
+  color:#990000; 
+}
+input[type="text"], input[type="password"], textarea, select { 
+    outline: none;
+}

@@ -1,0 +1,2 @@
+<cfoutput><cfset c = getModel("eunify.CompanyService").getCompany([source.company_id])>
+<a href="/contact/index/id/[source.id]">[source.first_name] [source.surname]</a> from (<a href="/company/index/id/#c.getid()#">#c.getknown_as()#</a>) edited the meeting <a href="/calendar/detail/id/[target.id]">[target.name]</a></cfoutput>

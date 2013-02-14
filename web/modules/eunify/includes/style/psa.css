@@ -1,0 +1,302 @@
+.light {
+	font-weight: 100;
+	
+}
+.psaObjectEditControls {
+	width: 50px;
+	float:left;
+	}
+.psaObjectIcon {
+	float: left;
+	width:18px;
+	}
+.psaObjectID {margin-left: 15px; float: left; width:20px; text-transform:uppercase; font-weight:bold;}
+.psaObjectKey {margin-left: 15px; float: left; width:200px; text-transform:uppercase; font-weight:bold;}
+.psaObjectValue {float:left; margin-left: 10px; width:270px;}
+.realtd {
+	padding-bottom: 4px;
+	padding-top: 4px;
+	position:relative;
+	float:none;
+	clear:both;
+	border-bottom: 1px dotted #BBB;
+}
+.psastatus {
+
+	margin: 5px 0px;
+}
+.hidden {
+	display: none;
+}
+.psastatus a {	
+	color:#01547B !important;
+}
+.extracontainer {
+	width: 360px;
+	float: left;
+	clear: right !important;
+}
+.psastatus li {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/calendar-blue.png") no-repeat;
+	margin: 5px 0px;
+	list-style: none;
+	padding-left: 25px;
+	min-height: 20px;
+}
+.psastatus .date {
+		font:bold 1.3em "Century Gothic","Trebuchet MS",Arial,Helvetica,sans-serif;
+}
+.psastatus .confirmed {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/flag-green.png") no-repeat;
+}
+.psastatus .supplier {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/flag-blue.png") no-repeat;
+}
+.psastatus .moderator {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/flag-gray.png") no-repeat;
+}
+.psastatus .negotiator {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/flag--exclamation.png") no-repeat;
+}
+.comp {
+	clear: both;
+	width:100%;
+}
+.small {
+	font-size: 0.8em;
+}
+.gradient {
+	background: url("/modules/eunify/includes//images/gradient.jpg") repeat-x #ECECEC;
+	border: 1px solid #ECECEC;
+	vertical-align: top;
+}
+.padd1 {
+	margin: 0.5em;
+}
+.gradient h2 {
+	
+	margin:0px;	
+	display: block;
+  background:#01547B url("/modules/eunify/includes//images/table/thead_th.png") top center repeat-x;	
+	color:#ECECEC;
+	padding: 8px;
+	line-height: 1em;
+	text-shadow: 0 -1px 1px #000;
+	font-size: 1.2em;
+}
+.gradient h2.prices {
+	margin-bottom: 4px;
+}
+.gradient table {
+	margin: 5px 0px;
+}
+.gradient p {
+  padding: 5px;
+
+	margin: 0;
+}
+.gradient .accordion td {
+  font-size: 0.8em;
+
+}
+.uppercase, h5 {
+	text-transform:uppercase;
+}
+.gradient h3 {
+  padding: 5px;
+  font-family:Tahoma, Verdana; 
+    font-size: 1.1em;
+		  font-weight: bold;
+  margin: 0;
+}
+.createComponent {
+	padding-bottom: 4px;
+	padding-top: 4px;
+	position:relative;
+	float:none;
+	clear:both;
+	}
+	.smallred {
+		font-size:smaller;
+		color:#F00;
+		padding-top:4px;
+		}
+		.dragging {
+			border-top: 3px dashed #900;
+			
+			}
+#fullagreement {
+	position: relative;
+}
+.printPSA {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-24/printer.png") no-repeat;
+	padding-left: 30px;
+	padding-top: 5px;
+	height: 30px;
+	display: block;
+	color:#BBB !important;
+	width: 50px;
+	font-size: 15px;
+	font-weight: bold;
+	
+}	
+
+h5.title {
+	margin: 0 0 4px 0;
+}
+p.author {
+	font-weight: bold;
+}
+
+
+dl.dlNice
+{
+	float: left;
+	width: 670px;
+	margin: 1em 0;
+	padding: 0;
+	border-bottom: 1px solid #999;
+}
+
+.dlNice dt
+{
+	clear: left;
+	float: left;
+	width: 200px;
+	margin: 0;
+	padding: 5px;
+	border-top: 1px solid #999;
+	font-weight: bold;
+}
+
+.dlNice dd
+{
+	float: left;
+	width: 440px;
+	margin: 0;
+	padding: 5px;
+	border-top: 1px solid #999;
+}
+
+
+#tabs .dashboard {
+	padding-left: 25px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/ui-layout-panel.png") 4px 4px no-repeat;
+}
+#tabs .commentIcon {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/open-share-balloon.png") 4px 4px no-repeat;
+}
+#tabs .marketing {
+	padding-left: 25px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/newspaper.png") 4px 4px no-repeat;
+}
+#tabs .fullagreement {
+	padding-left: 25px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-text.png") 4px 4px no-repeat;
+}
+#tabs .documents {
+	padding-left: 25px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-pdf-text.png") 4px 4px no-repeat;
+}
+#tabs .figures {
+	padding-left: 25px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-excel.png") 4px 4px no-repeat;
+}
+#tabs .updates {
+	padding-left: 25px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/feed-document.png") 4px 4px no-repeat;
+}
+#tabs .buildingvine {
+	padding-left: 25px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/buildingvine.png") 4px 4px no-repeat;
+}
+#figs .calculations {
+	padding-left: 25px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/calculator--arrow.png") 4px 4px no-repeat;
+}
+#figs .spreadsheets {
+	padding-left: 25px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-excel-csv.png") 4px 4px no-repeat;
+}
+#figs .charts {
+	padding-left: 25px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/chart--arrow.png") 4px 4px no-repeat;
+}
+.tabs .chartoptions {
+	padding-left: 25px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/chart--pencil.png") 4px 4px no-repeat;	
+}
+#tabs .overview {
+	padding-left: 25px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/information-frame.png") 4px 4px no-repeat;		
+}
+#tabs .branch {
+	padding-left: 25px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/node.png") 4px 4px no-repeat;
+	
+}
+#tabs .twitter {
+	padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/balloon-twitter.png") 4px 4px no-repeat;
+}
+#tabs .contacts {
+	padding-left: 25px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user-share.png") 4px 4px no-repeat;	
+	
+}
+#tabs .agreements {
+	padding-left: 25px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document--arrow.png") 4px 4px no-repeat;
+}
+#tabs .company {
+	padding-left: 25px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/building.png") 4px 4px no-repeat;
+}
+#tabs .negotiating {
+	padding-left: 25px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-task.png") 4px 4px no-repeat;
+}
+#tabs .favourites {
+	padding-left: 25px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/star--arrow.png") 4px 4px no-repeat;
+}
+#inputStreams .delete, #chainList .delete {
+	width: 16px;
+	height: 16px;
+	float: left;
+	display: block;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/cross-circle-frame.png") no-repeat;
+}
+#inputStreams .edit {
+  width: 16px;
+	float: left;
+  height: 16px;
+	display: block;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/pencil-field.png") no-repeat;
+}
+
+
+.addComponentDiv {
+	margin-top: 5px;
+}
+.addComponentDiv ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.addComponentDiv ul li {
+	float: left;
+	margin: 4px;
+}
+.addComponentDiv ul li a {
+  padding: 1px 3px 3px 23px;
+	font-weight: bold;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/plus-circle-frame.png") no-repeat;
+}
+.editStepButtonTD img {
+	cursor: pointer;
+}

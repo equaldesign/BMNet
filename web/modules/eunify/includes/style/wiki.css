@@ -1,0 +1,79 @@
+#breadcrumb {
+	margin: 5px 0px;
+	padding-left: 20px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/ui-breadcrumb.png") no-repeat;
+	font-size: 0.9em;
+}
+.summary {
+	-webkit-box-shadow:0 0 5px rgba(0,0,0,0.2); 
+  -moz-box-shadow: 0 0 5px rgba(0,0,0,0.2); 
+  box-shadow:0 0 5px rgba(0,0,0,0.2);
+	background: #FEFEFE; 
+	padding: 10px;
+	font-size: 11px;
+	margin: 10px 0px;
+}
+.summary .createdBy {
+	display: block;
+	height: 20px;
+
+	padding-left: 20px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user.png") no-repeat;
+}
+.summary .modifiedBy {
+	display: block;
+  height: 20px;	
+  padding-left: 20px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user.png") no-repeat;
+}
+.sublinks {
+	width: 200px;
+	float: left;
+	 -webkit-box-shadow:0 0 5px rgba(0,0,0,0.2); 
+  -moz-box-shadow: 0 0 5px rgba(0,0,0,0.2); 
+  box-shadow:0 0 5px rgba(0,0,0,0.2);
+  background: #FEFEFE; 
+  padding: 10px;
+}
+.wikiBodyLinks {
+	float: left;
+	width: 445px;
+	padding: 10px;
+}
+.wikiBody {
+	padding: 10px;
+}
+.sublinks li {
+	list-style: none;
+}
+.sublinks li a {	
+	margin: 0px 10px;
+	padding: 3px 0px 0px 20px;
+	display: block;
+	font-weight: bold;
+	height: 20px;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	 
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/blue-document.png") no-repeat;
+}
+.sublinks li a:hover {  
+  color: #000;
+}
+.sublinks li a.active {
+  color: #999;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/blue-document-import.png") no-repeat;
+	
+}
+.sublinks li a.add {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/blue-document--plus.png") no-repeat;
+}
+.sublinks li a.edit {
+    background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/blue-document--pencil.png") no-repeat;
+}
+.sublinks li a.view {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/blue-document--arrow.png") no-repeat;
+}
+.sublinks li a.delete {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/blue-document--minus.png") no-repeat;
+}

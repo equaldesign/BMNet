@@ -1,0 +1,50 @@
+div.menu ul {
+  margin:0;
+}
+div.menu ul li ul {
+  padding-top:7px;
+}
+ul li.mm {
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+ul li.mm a.main {
+display: block;
+  margin:0;
+  padding: 10px 30px;
+  border-bottom: 1px solid #999;
+  border-top: 1px solid #FFF;
+	text-decoration: none;	
+	font-size: 120%;	
+}
+ul.tree {
+	padding-top: 10px;	
+}
+ul li.mm:last-of-type a.main {
+  border-bottom:none;
+}
+ul li.mm:first-of-type a.main {
+  border-top:none;
+}
+ul li.mm a.main.active {
+	background: url("/includes/images/public/bluebg.jpg") 50% 50% repeat-x;
+	border: 0px;
+	color: #FFF;
+	border-left: 1px solid #300;
+	border-bottom: 1px solid #300;
+	position: relative;
+}
+ul li.mm a:hover {
+	color: #069;
+}
+ul li.mm a.main.active span {
+	background: url("/includes/images/public/menuright.png") top right no-repeat;
+	height: 100%;
+	width: 19px;
+	position: absolute;
+	top:0;
+	right:0;
+	height: 39px;
+	display: block;
+}

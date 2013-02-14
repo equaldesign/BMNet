@@ -1,0 +1,126 @@
+.signUp {
+	margin-right: 20px;
+	background: #EFEFEF;
+	border: 1px solid #CDCDCD;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+.signUp h4 {
+	margin-left: 60px;
+	margin-bottom: 20px;
+	font-weight: normal;
+}
+.signUp h2 {
+	padding-left: 60px;
+	font-size: 250%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-weight: normal;
+	color: #000;
+	text-shadow: 0px -1px 1px #FFF;
+	margin-top:0;
+}
+.signUp h2.stage1 {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/stage1.png") no-repeat;
+}
+.signUp h2.stage2 {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/stage2.png") no-repeat;
+}
+.signUp h2.stage3 {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/stage3.png") no-repeat;
+}
+.signUp h2.stage4 {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/stage4.png") no-repeat;
+}
+#access_selection {
+clear: none;
+float: left;
+width: 150px;
+}
+#siteList {
+	width: 225px;
+}
+#siteList a {
+	border: 0px;
+	margin: 4px;
+	display: block;
+	width: 46px;
+	height: 46px;
+	float: left;
+}
+#siteList h2 {
+	font-weight: bold;
+	font-size: 150%;
+	margin: 10px 0px;
+}
+.signUp div.icon {
+	vertical-align: baseline;
+	width: 32px;
+	float: none;
+  
+}
+.signUp .tcell {
+	padding: 10px;
+}
+.signUp div.icon.personal {	
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/bronze_medal.png") 0 10px no-repeat;
+}
+.signUp div.icon.business { 
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/silver_medal.png") 0 10px no-repeat;
+}
+.signUp div.icon.enterprise { 
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/gold_medal.png") 0 10px no-repeat;
+}
+.signUp div.t label {
+	padding-top: 0px !important;
+	text-align: left;
+}
+.signUp div.trow {
+	margin-bottom: 10px;
+	border-bottom: 1px solid #CCC;
+}
+
+.signUp div.tcell p {
+	margin-top:0 !important;
+}
+.submit {
+	padding: 10px 40px 10px 40px;	
+	color: #FFF;
+	font-weight: bold;
+	font-size: 150%;
+	float: right;
+}
+div.captcha {
+  margin-left: 170px !important;
+}
+.confirmGroup {
+width: 465px;
+float: right;
+position: relative;
+top: 0px;
+right: 0px;
+margin-top: -25px !important;
+}
+.confirmGroup .confirmCheck {
+  float: left;
+  width: 18px;
+}
+.confirmGroup .confirmtext {
+  float: left;
+  margin-top: 3px !important; 
+  width: 430px; 
+}
+.submit {
+  margin-right: 15px !important;
+}
+#formmessage {
+  padding-right: 15px;
+  text-align: right;
+  padding-bottom: 10px;
+}
+#formmessage li {
+  list-style: none;
+}
+.captcha img {
+  float: left;
+}

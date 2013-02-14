@@ -1,0 +1,77 @@
+.twothirds {
+	width: 60%;
+	float: left;
+} 
+.onethird {
+  width: 35%;
+  float: right;
+} 
+.widget {
+	margin-bottom: 10px;
+}
+.widgetbar {
+	height: 9px;
+	display: block;
+	border: 1px solid #999;
+	background: url("/includes/images/secure/silvershine.jpg") repeat-x 50% 50%;
+}
+.widgetHeader {
+	position: relative;
+}
+.widgetHeader .moveItem {
+	position: absolute;
+	left:0;
+	width: 16px;
+	height: 16px;
+	cursor:move;
+	display: block;
+	top:0px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/arrow-move.png") 0px 0px no-repeat;
+}
+.widgetHeader .refreshPanel {
+  position: absolute;
+  right:20px;
+  width: 16px;
+  height: 16px;
+  display: block;
+  top:0px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/arrow-circle.png") 0px 0px no-repeat;
+}
+.widgetHeader .closePanel {
+  position: absolute;
+  right:0;
+  width: 16px;
+  height: 16px;
+  display: block;
+  top:0px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/cross-button.png") 0px 0px no-repeat;
+}
+
+.widgetHeader h4 {
+	font-size: 13px;
+	margin-left: 25px;
+}
+.widget .dataTables_wrapper {
+	position:relative;        
+    border:1px solid #CCC;
+    margin:0px auto 20px;    
+    background:#fff;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.17),
+                       0 0 60px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.17),
+                       0 0 40px rgba(0, 0, 0, 0.06) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.17), 
+                       0 0 40px rgba(0, 0, 0, 0.06) inset;
+	
+}
+
+.widget .header {	
+	background: url("/includes/images/secure/subbar.jpg") 50% 50% repeat-x;
+	padding: 3px 8px;
+}
+div.table {
+	    position:relative;
+    z-index:1;
+		padding: 5px;
+    overflow:hidden;    
+}

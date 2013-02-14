@@ -1,0 +1,88 @@
+div.invoiceForm div {margin: 0.5em 0; clear: both;}
+div.invoiceForm div div div {margin: 0; clear:none;}
+div.invoiceForm label.o , div.form-container span.label.o { font-weight: bold; color:#333; margin: 0 10px 0 0; padding: 8px 10px 0px 0px; width: 150px; display: block; float: left; text-align: right; position: relative; }
+div.invoiceForm label.s { font-weight: bold; color:#333; margin: 0 10px 0 0; padding: 8px 10px 0px 0px; width: 100px; display: block; float: left; text-align: right; position: relative; }
+div.invoiceForm label.terms , div.form-container span.label.terms { font-size: 12px;  color:#333; margin: 0 10px 0 0; padding-right: 10px; width: 150px; display: block; float: left; text-align: right; position: relative; padding-top:0px;}
+div.invoiceForm label.error, div.form-container span.error { color: #C00; }
+div.invoiceForm label em, div.form-container span.label em { position: absolute; right: 0; font-style: normal; color: #C00; }
+div.invoiceForm input.error { border-color: #C00; background-color: #FEF; }
+div.invoiceForm div.controlset label, div.form-container div.controlset input, select { display: inline; float: none; }
+div.invoiceForm div.controlset div { margin-left: 170px; }
+div.invoiceForm div.rightControlSet {margin-right: 10px;}
+div.invoiceForm div.rightControlSet div {float: right }
+div.invoiceForm div.buttonrow { margin-left: 180px; }
+div.invoiceForm input, div.invoiceForm button, div.invoiceForm select, div.invoiceForm textarea { font-size: 12px; padding: 9px; border: solid 1px #E5E5E5; outline: 0; background: #FFFFFF url('/includes/images/bg_form.png') left top repeat-x; background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF)); background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px); box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; }
+div.invoiceForm input[type="checkbox"], div.invoiceForm input[type="radio"] { border: 0; background: none }
+div.invoiceForm button {
+	cursor: pointer;
+	font-weight:bold;
+}
+div.invoiceForm input.terms {
+  width:auto;
+}
+div.invoiceForm fieldset {
+  display: block;
+  padding: 0 10px;
+  margin: 0;
+  border: 1px dotted #AAA;
+  color: #999;
+}
+
+div.invoiceForm legend {  
+  font-size: 1.5em;
+	font-weight: bold;
+  padding: 10px;
+  color: #999;
+  background:#ffffff;
+}
+
+div.invoiceForm p {
+  color: #000;
+}
+div.invoiceForm input:hover, div.invoiceForm textarea:hover, div.invoiceForm input:focus, div.invoiceForm textarea:focus {border-color: #C9C9C9; -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px; }
+
+
+input.invalid {
+  border: 1px solid #990000 !important; 
+}
+label.invalid {
+  margin-left: 10px;
+  min-height: 16px;
+  font-size: 13px;
+  padding: 9px 0 8px 22px;
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/icons-shadowless/exclamation-red-frame.png") no-repeat 0% 50%;
+  color:#990000; 
+}
+.quoteProducts {
+	float: left;
+	width: 45%;
+}
+.emailQuote {
+  float: left;
+  width: 50%;
+	margin-left: 20px;
+}
+.rel {
+	position: relative;
+}
+
+LABEL.over { position: absolute; top: 12px; left: 10px;}
+span.rel LABEL.over { top: 0px; left: 15px;}
+
+button img {
+    margin:0 6px -3px 0 !important;
+    padding:0;
+    border:none;
+    width:16px;
+    height:16px;
+}
+div.invoiceForm  input.doIt {
+  text-align: center;
+  display: block;
+	margin-left: 160px;
+  font-weight: 700;
+  padding: 8px;
+  cursor:pointer;
+  font-size: 1.3em;
+  color:#333;
+}

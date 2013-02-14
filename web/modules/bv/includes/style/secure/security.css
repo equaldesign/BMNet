@@ -1,0 +1,97 @@
+#security h2 {
+	padding-left: 40px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/security.png") no-repeat;
+	color: #666;
+	font-weight: bold;
+	color: #999;
+	text-shadow:0 1px 0 #FFF;
+	padding-bottom: 10px;
+}
+#security .intro {
+	margin: 5px;
+	padding: 10px;
+	background: #E4E4E4;
+	border: 1px solid #CCC;
+	color: #666;
+}
+#security .intro h4 {
+	padding-left: 20px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/question-shield.png") no-repeat;
+	padding-bottom: 4px;
+	font-size: 150%;
+	margin-top:0;
+	color: #999;
+	text-shadow:0 1px 0 #FFF;
+}
+#security .steps ul {
+	width: 50%;
+	margin-top: 10px;
+}
+#security .steps ul  li {
+	list-style: none;
+	font-size: 1.1em;
+	color: #777;
+	padding: 3px;
+	margin: 2px;
+	padding-left: 22px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/plus-shield.png") no-repeat;
+}
+#security .steps a.secureResource {
+	float: right;
+	font-size: 150%;
+	padding: 5px 40px 5px 0px;	
+	color: #99CC00;	
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/lock_32.png") top right no-repeat;
+}
+#security .steps a.unsecureResource {
+  float: right;
+  font-size: 150%;
+  padding: 5px 40px 5px 0px;  
+  color: #99CC00; 
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/lock_open_32.png") top right no-repeat;
+}
+#usersandsecurity.hidden {
+	display: none;
+}
+
+#currentUsers {
+	width: 45%;
+	float: left;
+
+	padding: 10px;
+
+}
+#findUsers {
+	width: 45%;
+  float: left;  
+  padding: 10px;  
+}
+#findUsers a {
+	padding: 5px;
+	display:block;
+	padding-left: 20px;
+}
+#findUsers .user {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user.png") no-repeat;
+}
+#findUsers .group {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/users.png") no-repeat;
+}
+#findUsers .currentMember {
+	padding: 2px;
+}
+.removeUser {
+	height: 16px;
+	width: 16px;
+	float: left;
+	display: block;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/cross-circle-frame.png") no-repeat;
+}
+.saveUser {
+  height: 16px;
+	float: left;
+	margin-left: 3px;
+  width: 16px;
+  display: block;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/disk.png") no-repeat;
+}

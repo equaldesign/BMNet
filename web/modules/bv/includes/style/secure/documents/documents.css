@@ -1,0 +1,514 @@
+
+#versionInfo {
+	display: none;
+}
+#makeversionable {
+	padding-right: 20px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/question-small-white.png") right no-repeat;
+}
+#folderInfo {
+  display: block;
+}
+.wordbreak {
+	word-wrap: break-word;
+	text-align: center;
+}
+.uploadFile {
+	position: relative;
+	top: 3px;
+}
+#documentActions {
+	margin-left:0px;
+}
+#documentActions .upload {
+	position: relative;
+}
+.uploadFile object, #documentActions .upload object {
+	position: absolute;
+	top:-10px;
+	left:0px;
+}
+.docTools {
+	display: block;
+	float: left;
+	width: 18px;
+	height: 18px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document--pencil.png") 50% 50% no-repeat;
+}
+.docInfo {
+  display: block;
+  width: 18px;
+  float: left;
+	height: 18px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document--exclamation.png") 50% 50% no-repeat;
+}
+#folders h2, #documents h2, #documentName {
+	color:#172C3D;
+	text-shadow: white 0px 1px 1px;
+	font-weight: bold;
+	margin-top: 0px;
+}
+.subnav .pull-right {
+	margin-right: 10px;
+}
+.subnav ul.pull-left li a {
+	padding: 4px 10px 4px 4px;
+	font-weight: bold;
+	font-size: 12px;
+	text-decoration: none;
+	font-family: 'Lato', Ubuntu, 'DejaVu Sans', Arial, sans-serif;
+}
+.subnav ul.pull-left li a:hover {
+	color:#990000;
+}
+#bvMain h2 {
+	font-weight: 700;
+}
+.floatleft {
+	float: left;
+}
+.greyBoxHover {
+  margin: 10px 0;
+  padding: 9px;
+  border: 1px solid  #FFF;	
+}
+.greyBoxHover h2 {
+	margin-top:0;
+}
+#progressbar {
+	display:none;
+}
+#docSearchButton {
+
+	height: 25px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-shadow: white 0px 1px 0px;
+	text-transform: uppercase;
+	border-radius: 5px;
+	margin:0px 4px;
+	cursor:pointer;
+	
+}
+.greyBoxHover:hover {
+  background:#EBEBEB url("/includes/images/secure/silver.jpg") 50% 50% repeat-x;
+  border: 1px solid  #D2D2D2;
+  -webkit-box-shadow:0 0 5px rgba(0,0,0,0.1); 
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,0.1); 
+	box-shadow:0 0 5px rgba(0,0,0,0.1);
+	-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+	cursor:pointer;
+}
+
+.documentDetail {
+	width: 400px;
+}
+#documentPreview {
+	float: left;
+	width:400px;
+	min-height:480px;	
+}
+.documentMeta {
+	float: left;
+	width: 240px;
+}
+#documentPreview img {
+	border: 4px solid #DDD;
+}
+#documentDownload dl {
+  width: 20em;
+	font-size: 12px;
+	float: left;
+  margin: 0;
+  padding: 0;
+}
+
+#documentDownload dt {
+  width: 6em;
+  float: left;
+  margin: 0 0 0 0;
+  padding: 0em .3em;
+  font-weight: bold;
+	color: #555;
+	text-align: right;
+}
+
+/* commented backslash hack for mac-ie5 \*/
+#documentDownload dt { clear: both; }
+/* end hack */
+
+#documentDownload dd {
+  float: left;
+  width: 12.5em;
+  margin: 0 0 0 0;
+  padding: 0em .3em;
+}
+
+#mainDocPanel {
+	min-height: 600px;
+}
+.nodocuments {
+	color:#888;
+	font-weight: normal;
+}
+.subnav {
+	margin-bottom: 10px;
+}
+.subnav ul {
+	margin: 7px;	
+}
+.subnav ul.pull-left li {
+	list-style: none;
+	display: inline-block;	
+	margin-right: 10px;
+}
+#folders {
+	width: 100%;
+}
+.folderLink {
+	width: 120px;
+	float: left;
+}
+.folderLink div {
+	text-align:center;
+}
+.subnav ul.pull-left li a {
+	border: 0;
+	padding-left: 20px;
+	color: #000;
+}
+.subnav a.uploadFile {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/drive-upload.png") left no-repeat;
+}
+.subnav a.createFolder {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/folder--plus.png") left no-repeat;	
+}
+.subnav a.deleteFolder {
+background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/folder--minus.png") left no-repeat;	
+}
+.subnav a.folderPermissions {
+background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/folder-share.png") left no-repeat;  
+}
+.subnav a.filePermissions { 
+background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/page_lock.gif") left no-repeat;  
+}
+.subnav a.deleteFile {
+background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bin-full.png") left no-repeat;  
+}
+.ajaxDocLoad {
+	position:relative;
+	left:45%;
+	margin-top: 50px;
+}
+#breadcrumb {
+	text-transform:capitalize;
+	
+}
+
+#documentDownload h2 {
+	margin-top:0;
+}
+.folderTitle {   
+  margin: 2px 5px;
+	padding: 3px;
+	font-size: 0.9em;
+  word-wrap:break-word;
+  display: block;
+	width: 100px;
+	text-align: center;
+	border: 1px solid white;
+	float: left;
+	text-decoration: none;
+	color: #000;
+	font-family: 'Lato', Ubuntu, 'DejaVu Sans', Arial, sans-serif;
+}
+.folderTitle:hover {
+	background: #F5F5F5;
+	border: 1px solid #DEDEDE;
+	border-radius: 5px;
+	-moz-box-shadow: 0 0 2px 2px rgba(0,0,0,0,0.3);
+	-webkit-box-shadow: 0 0 2px 2px rgba(0,0,0,0,0.3);
+	box-shadow: 0 0 2px 2px rgba(0,0,0,0,0.3);
+}
+#createFolder {
+	display:none;
+	position: relative;
+	width: 440px;
+}
+#folderError {
+	margin-left: 80px;
+	color:#F00;
+	font-weight:bold;
+}
+
+
+.bubbleInfo {
+    position: relative;
+}
+.popup {
+    position: absolute;
+    display: none; 
+}
+a.help {
+	border:  0;
+}
+.popup {
+	width: 250px;
+}
+#documentAttributes ul {
+	margin:0;
+	padding:0;
+}
+#documentAttributes ul li {
+	list-style:none;
+}
+.search_document {
+	padding: 10px;
+}
+.search_document_image {
+	width: 100px;
+	float: left;
+	margin-right: 10px;
+}
+.search_document_image img {
+	border: 2px solid #888;
+}
+.search_document_detail {
+	float: left;
+}
+.search_document_detail h2 {
+	margin-top: 0;
+	font-size: 1.4em;
+}
+.search_document_detail a {
+	border: 0;
+}
+.search_document_detail p {}
+#documentName { font-size: 2em; margin:  0}
+.fileExt {
+	float: left;
+	margin: 0 5px 0 0;
+}
+#documentDownload .fileDownload {
+	padding-left: 40px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/drives_17.png") no-repeat;
+	height: 35px;
+	display:block;
+	float: left;
+  text-decoration: none;	
+}
+#documentDownload a.fileDownload:hover {
+	color:#990000;
+
+}
+
+.niceInput {
+  /*background:url("/includes/images/secure/inputbg.png") no-repeat;*/
+  width: 197px;
+  height:19px;
+  margin-top: 5px;
+  border-left: 1px solid #929292;
+  border-top: 1px solid #929292;
+  border-right: 1px solid #D7D7D7;
+  border-bottom: 1px solid #D7D7D7; 
+  color:#929292;
+  padding:0; 
+  padding-top: 3px;
+  padding-right: 30px; 
+  padding-left: 10px;
+}
+
+.uploadFile {
+	position: relative;
+}
+#searchandhelp {
+	position: absolute;
+	top: 5px;
+	right: 0px;
+	height: 24px;
+	  
+}
+#searchandhelp div {
+	position: relative;
+}
+#searchandhelp input.bvinesBox {
+	color:#888;
+	
+	height: 21px;
+}
+
+#fileUpload {
+	background: #EFEFEF;
+}
+#toolsandinfo {
+	position:absolute;
+	right:0px;
+	width: 40px;
+}
+
+
+
+#documentActions ul {
+	margin:0;
+}
+#documentActions ul {
+  margin:0;
+  padding: 0;
+}
+#documentActions li {
+  margin:0;
+	font-size: 12px;
+  padding: 0px;
+  border-top: 1px dotted #FFF;
+  list-style: none;
+  border-bottom: 1px dotted #C1C1C1;
+}
+#documentActions li:first-child {
+  border-top: 0px;
+}
+#documentActions li:last-child {
+  border-bottom: 0px;
+}
+#documentActions li a {
+  text-decoration: none;  
+  padding: 5px 15px 5px 25px;
+  display: block;
+  color:#333;
+}
+#documentActions li a.view {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-view.png") 0px 4px no-repeat;
+}
+#documentActions li a.edit {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document--pencil.png") 0px 4px no-repeat;
+}
+#documentActions li a.delete {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document--minus.png") 0px 4px no-repeat;
+	position:static;
+}
+#documentActions li a.upload {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-convert.png") 0px 4px no-repeat;
+}
+#documentActions li a.tag {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-tag.png") 0px 4px no-repeat;
+}
+#documentActions li a.task {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-task.png") 0px 4px no-repeat;
+}
+#documentActions li a.copy {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-copy.png") 0px 4px no-repeat;
+}
+#documentActions li a.move {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-import.png") 0px 4px no-repeat;
+}
+#documentActions li a.permissions {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-share.png") 0px 4px no-repeat;
+}
+#documentActions li a.associateimage {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/photo-album--arrow.png") 0px 4px no-repeat;
+}
+#documentActions li a.associatedocument {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/drill--arrow.png") 0px 4px no-repeat;
+}
+#documentActions li a.checkout {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document--arrow.png") 0px 4px no-repeat;
+}
+#documentActions li a.cancelcheckout {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/cross-circle-frame.png") 0px 4px no-repeat;
+}
+#documentActions li a.vieworiginal {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/arrow-circle-135.png") 0px 4px no-repeat;
+}
+
+
+.docThumb {
+	min-width: 75px;
+	vertical-align: baseline;
+	height: 110px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-repeat: no-repeat;
+	position:relative;
+	background-position: 50% 50%;
+}
+.docThumb img {
+	border: 1px solid #999;
+	position: absolute;
+	bottom:0px;
+}
+#documentAccordion {
+	margin-top: 5px;
+}
+#documentAccordion h3 {
+	font-size: 13px;
+}
+#bc #blinks {
+	padding: 5px;
+	padding-left: 25px;
+	text-shadow: 0px 1px 0px #FFF;
+	font-family: 'Lato', Ubuntu, 'DejaVu Sans', Arial, sans-serif;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/home.png") 0px 7px no-repeat;
+}
+#bc #blinks a {
+	padding-right: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/arrow-000-small-grey.png") right top no-repeat;
+}
+#showPreview {
+	float: right;
+	margin-right: 5px;
+	width: 24px;
+	height: 34px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-24/magnifier-zoom-in.png") 0px 10px no-repeat;
+	display: block;
+}
+#showPreview.hide {  
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-24/magnifier-zoom-out.png") 0px 10px  no-repeat;  
+}
+
+.workingCopyOwner {
+	width: 16px;
+	height: 16px;
+	display: block;
+	float: left;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/lock-unlock.png") 0px 0px  no-repeat;
+}
+.workingCopy {
+  width: 16px;
+  height: 16px;
+  display: block;
+  float: left;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/lock--pencil.png") 0px 0px  no-repeat;
+}
+.lockOwner {
+  width: 16px;
+  height: 16px;
+  display: block;
+  float: left;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/lock.png") 0px 0px  no-repeat;
+}
+.locked {
+  width: 16px;
+  height: 16px;
+  display: block;
+  float: left;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/lock--exclamation.png") 0px 0px  no-repeat;
+}
+
+#relationships {
+	margin-left:0px;
+}
+#relationships li {
+	list-style: none;
+}
+#relationships .del {
+	width: 16px;
+  height: 16px;
+  display: block;
+  float: left;
+	margin-right: 4px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/cross-circle-frame.png") 0px 0px  no-repeat;
+}

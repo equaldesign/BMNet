@@ -1,0 +1,36 @@
+#chart {	
+	height: 700px;
+	width:100%;
+}
+#chart #overviewChart {
+	height: 500px;
+  width:100%;
+}
+#chartFilter {
+	position:absolute;
+	top:10px;
+	right:0;
+	width: 350px;
+	margin-left: -330px;
+}
+#overviewTable {
+	clear: both;
+}
+#personchart {
+	
+}
+#personchart #overviewChart {
+	width: 50%;
+	margin-right: 9px;
+	float: left;
+}
+#personchart #thisMonth {
+	width: 49%;
+	float: right;
+}
+#personchart #lastMonth {
+  width: 49%;
+  float: right;
+	margin-top: 10px;
+	clear: right;
+}

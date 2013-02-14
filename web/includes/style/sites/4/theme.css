@@ -1,0 +1,764 @@
+
+/*------------------------------------------------------------------
+
+[Green Theme]
+
+	Project:		Bootstrap Landing Template
+	Version:		1.0
+	Last change:	04/26/2012
+	Assigned to:	Rod Howard (rh)
+
+
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Navbar]
+*/
+.m10top {
+	margin-top: 10px;
+}
+.navbar .nav > li.active > a,
+.navbar .nav > li.active > a:hover {
+	color: #81994D;
+}
+
+.navbar .nav > li > a {
+	color: #FFF;
+	
+    text-shadow: 1px 1px 2px rgba(0,0,0,.5);
+}
+form em {
+	color:#C00;	
+	font-family: sans-serif;
+}
+.navbar .nav > li > a:hover {
+	color: #BBB;
+}
+
+.navbar {
+	border-bottom-color: #777;
+}
+
+.navbar .navbar-inner {
+	background: #333;	
+	position: relative;
+	border-bottom: 1px solid #111;	
+}
+.navbar .nav {
+	position: absolute;
+	bottom:5px;
+	margin-bottom: 0px;
+	left: auto !important;
+	right: 10px;
+}
+.navbar .brand {
+	
+	/* 	
+	width: 180px;
+	height: 34px;
+	
+	background: url(../img/logo.png) no-repeat 0 0; 
+	*/
+}
+
+
+
+
+/*------------------------------------------------------------------
+[Content]
+*/
+
+
+#content .inner {	
+	
+	background: #fff;
+}
+
+#content .container {
+	border-width: 4px;
+	border-color: #444;
+}
+
+
+
+/*------------------------------------------------------------------
+[Landing]
+*/
+
+#landing .inner {
+	background: url(/includes/images/sites/4/woodbg.jpg) repeat 0 0;
+	
+	text-shadow: 1px 1px 2px rgba(0,0,0,.4);
+}
+
+#landing .inner p {
+	font-size: 1.3em;	
+	line-height: 1.4em;
+}
+
+#landing .inner p a.white {
+	color: #EEE;
+	font-size: 0.8em;
+}
+
+#landing .landing-screenshot img {
+	float: right;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	margin-top: -10px;
+}
+
+/*------------------------------------------------------------------
+[Screenshots / #screenshots]
+*/	
+
+#screenshots {	
+	background: #E8E8E8;
+	
+	border-top: 1px solid #CCC;
+}
+
+#screenshots .inner {
+	border-top: 1px solid #FFF;
+}
+
+
+
+
+/*------------------------------------------------------------------
+[Subheader]
+*/
+
+#subheader {
+	color: #EEE;
+	
+	background: #444;
+	
+	border-color: #556828;
+}
+
+#subheader .inner {
+	background: #81994D url(./img/header-bg.png) repeat 0 0;
+	
+}
+
+
+
+/*------------------------------------------------------------------
+[Extra]
+*/
+
+#extra {	
+	border-top: 1px solid #000;
+}
+
+#extra .inner {	
+	color: #fff;
+	
+	background-color: #222;
+	
+	border-top: 1px solid #555;
+}
+
+
+
+/*------------------------------------------------------------------
+[Footer]
+*/
+
+#footer {
+	border-top: 1px solid #000;
+}
+
+#footer .inner {		
+	background: #111;
+	
+	border-top: 1px solid #222;	
+}
+
+.footer-links a {
+	color: #777;
+}
+
+
+
+/*------------------------------------------------------------------
+[Miscellaneous]
+*/
+
+.circle-icon {	
+	
+	background: #393939;
+}
+
+.slash {
+	color: #677E30;
+}
+
+.sidebar {
+	
+	background: #EEE;
+}
+
+
+
+.nav-list > li.active > a,
+.nav-list > li.active > a:hover {		
+	color: #FFF;
+	
+	background: #81994D;
+}
+
+
+/*------------------------------------------------------------------
+
+[FAQ Page]
+
+  Project:    Bootstrap Landing Template
+  Version:    1.0
+  Last change:  04/26/2012
+  Assigned to:  Rod Howard (rh)
+  
+
+-------------------------------------------------------------------*/
+
+
+
+
+.faq-search {
+  margin-bottom: 2em;
+  
+  text-align: right;
+}
+
+.faq-search input {
+  width: 96%;
+  display: block;
+  padding: 2%;
+}
+
+
+
+.faq-empty {
+  display: none;
+}
+
+
+
+.faq-toc {
+  padding: 1.5em 0;
+  margin: 2em 0 0;
+  
+  border: 1px dotted #CCC;
+  border-right: none;
+  border-left: none;
+}
+
+.faq-toc ol {
+  padding: 0;
+  margin: 0;
+}
+
+.faq-toc li {
+  margin-bottom: .75em;
+  
+  list-style: none;
+}
+
+.faq-toc a {
+  margin-left: .5em;
+}
+
+
+
+.faq-list {
+  padding: 0;
+  margin: 3em 0 0;
+  
+  list-style: none; 
+}
+#list .faq-list {
+	margin-top: 10px;
+}
+.faq-list li {
+  display: table;
+  margin-bottom: 2em;
+}
+
+.faq-icon {
+  display: table-cell;
+  padding-right: 1.25em;
+  vertical-align: top;
+}
+
+.faq-text {
+  display: table-cell;
+  vertical-align: top;
+  
+}
+            
+.faq-circle-icon {
+  width: 38px;
+  height: 38px;
+  
+  background: #999;
+}
+#list .faq-circle-icon {
+  width: 38px;
+  height: 38px;
+  
+  background: #468847;
+}
+#list .faq-list li {
+	margin-bottom: 0.3em;
+}
+.faq-circle-icon div {
+  display: table-cell;
+  width: 32px;
+  height: 32px;
+  margin-top: -16px;
+  margin-left: -16px;
+  
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 29px;
+  color: #FFF;  
+  
+  border-color: #FFF;
+  
+  text-shadow: 1px 1px 2px rgba(0,0,0,.35); 
+}
+#loginForm {
+	margin-top: -10px;
+	padding-bottom: 10px;
+}
+#loginForm .btn {
+  margin-top: 0px;
+}
+#loginForm .checkbox.inline {
+  color: white;
+}
+#loginForm #socialSignIn {
+  padding-top: 7px;
+  color: #DEDEDE;
+}
+
+
+
+#big_stats 
+{ 
+  width: 100%; 
+  display: table;
+  margin-top: .5em;
+  margin-bottom: 1em;
+  
+}
+
+.big-stats-container .widget-content {
+  background: #E9E9E9;
+  background:-moz-linear-gradient(top, #FAFAFA 0%, #E9E9E9 100%); /* FF3.6+ */
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#FAFAFA), color-stop(100%,#E9E9E9)); /* Chrome,Safari4+ */
+  background:-webkit-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%); /* Chrome10+,Safari5.1+ */
+  background:-o-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%); /* Opera11.10+ */
+  background:-ms-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%); /* IE10+ */
+  background:linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9')";
+}
+
+#big_stats .stat
+{
+  width: 25%;
+  height: 90px;
+  text-align: center;
+  display: table-cell;
+  padding: 0;
+  position: relative;
+  
+  border-right: 1px solid #CCC;
+  border-left: 1px solid #FFF;
+}
+
+#big_stats .stat:first-child {
+  border-left: none;
+}
+
+#big_stats .stat:last-child {
+  border-right: none;
+}
+
+#big_stats .stat h4
+{
+  font-size: 11px;
+  font-weight: bold;
+  color: #777;
+  margin-bottom: 1.5em;
+}
+
+#big_stats .stat .value
+{
+  font-size: 56px;
+  font-weight: bold;
+  color: #333;
+  line-height: 1em;
+}
+#big_stats .stat .value small {
+	font-size: 26px;
+	display:block;
+}
+
+
+@media all and (max-width: 950px) and (min-width: 1px) {
+  
+  #big_stats {
+    display: block;
+    margin-bottom: -40px;
+  }
+  
+  #big_stats .stat {
+    width: 49%;
+    display: block;
+    margin-bottom: 3em;
+    float: left;
+  } 
+  
+  #big_stats .stat:nth-child(2) {
+    border-right: none;
+  }
+  
+  #big_stats .stat:nth-child(3) {
+    border-left: none;
+  }
+  
+}
+
+@media (max-width: 767px) {
+  #big_stats .stat .value {
+    font-size: 40px;
+  }
+}
+
+
+/*------------------------------------------------------------------
+
+[Dashboard Stylesheet]
+
+  Project:    Base Admin
+  Version:    1.0
+  Last change:  05/21/2012
+  Assigned to:  Rod Howard (rh)
+
+
+
+[Table of contents]
+
+  1. Shortcuts
+  2. Stats
+  3. Task List
+  4. News Item
+
+-------------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------------
+[1. Shortcuts / .shortcuts]
+*/
+
+.shortcuts {
+  text-align: center; 
+}
+
+.shortcuts .shortcut { 
+  width: 22.50%;
+  display: inline-block;
+  padding: 12px 0;
+  margin: 0 .9% 1em;
+  vertical-align: top;  
+  
+  text-decoration: none;
+  
+  background: #F3F3F3;
+  
+  border-radius: 5px;
+}
+
+.shortcuts .shortcut .shortcut-icon {
+  margin-top: .25em;
+  margin-bottom: .25em;
+  
+  font-size: 32px;
+  color: #888;
+}
+
+.shortcuts .shortcut:hover {
+  background: #E8E8E8;
+}
+
+.shortcuts .shortcut:hover .shortcut-icon {
+  color: #666;
+}
+
+.shortcuts .shortcut-label {
+  display: block;
+  
+  font-weight: 400;
+  color: #666;
+}
+
+
+
+/*------------------------------------------------------------------
+[2. Stats / .stats]
+*/
+
+.stats {
+  width: 100%;
+  display: table;
+  padding: 0 0 0 10px;
+  margin-top: .5em;
+  margin-bottom: 1.9em;
+}
+
+.stats .stat {
+  display: table-cell;
+  width: 40%;
+  vertical-align: top;
+  
+  font-size: 11px;
+  font-weight: bold;
+  color: #999;
+}
+
+.stat-value {
+  display: block;
+  margin-bottom: .55em;
+  
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  color: #444;
+}
+
+.stat-time {
+  text-align: center;
+  padding-top: 1.5em;
+}
+
+.stat-time .stat-value {
+  color: #F90;
+  font-size: 40px;
+}
+
+.stats #donut-chart {
+  height: 100px;
+  margin-left: -20px; 
+}
+
+
+
+
+
+/*------------------------------------------------------------------
+[3. News Item / .news-items]
+*/
+
+.news-items {
+  margin: 1em 0 0;
+}
+
+.news-items li {
+  display: table;
+  padding: 0 2em 0 1.5em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  
+  border-bottom: 1px dotted #CCC;
+}
+
+.news-items li:last-child { padding-bottom: 0; border: none; }
+
+.news-item-date {
+  display: table-cell;
+}
+
+.news-item-detail {
+  display: table-cell;
+}
+
+.news-item-title {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.news-item-date {
+  width: 75px;
+  vertical-align: middle;
+  
+  text-align: right;
+}
+
+.news-item-day {
+  display: block;
+  margin-bottom: .25em;
+  
+  font-size: 24px;
+  color: #888;
+}
+
+.news-item-preview {
+  margin-bottom: 0;
+  
+  color: #777;
+}
+
+.news-item-month {
+  display: block;
+  padding-right: 1px; 
+  
+  font-size: 12px;
+  font-weight: 600;
+  color: #888;
+}
+
+
+
+/*------------------------------------------------------------------
+[4. Action Table / .action-table]
+*/
+
+.action-table .btn-small {
+  padding: 4px 5px 5px;
+  
+  font-size: 10px;
+}
+
+.action-table .td-actions { 
+  width: 80px; 
+  
+  text-align: center; 
+}
+
+  .action-table .td-actions .btn { 
+    margin-right: .5em;   
+  }
+  
+  .action-table .td-actions .btn:last-child { 
+    margin-rigth: 0;    
+  }
+  
+  
+  
+  
+  
+  
+  
+@media (max-width: 979px) {
+  
+  .shortcuts .shortcut {
+    width: 31%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  
+  .stats .stat {
+    
+    margin-bottom: 3em;
+  }
+  
+  .stats .stat .stat-value {
+    margin-bottom: .15em;
+    
+    font-size: 20px;
+  }
+  
+  .stats {
+    float: left;
+    
+    display: block;
+    
+    margin-bottom: 0;
+  }
+  
+  #chart-stats {
+    margin: 2em 0 1em;    
+  }
+  
+  .shortcuts .shortcut {
+    width: 48%;
+  }
+}
+
+/*------------------------------------------------------------------
+[3. Sidebar Nav / #main-nav]
+*/
+
+#main-nav.nav-tabs.nav-stacked > li { 
+  margin-bottom: 4px; 
+}
+
+#main-nav.nav-tabs.nav-stacked > li > a { 
+  padding: 10px 8px;
+  
+  font-size: 12px;
+  font-weight: 600;
+  color: #4A515B;
+  
+  background: #E9E9E9;
+  background:-moz-linear-gradient(top, #FAFAFA 0%, #E9E9E9 100%); /* FF3.6+ */
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#FAFAFA), color-stop(100%,#E9E9E9)); /* Chrome,Safari4+ */
+  background:-webkit-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%); /* Chrome10+,Safari5.1+ */
+  background:-o-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%); /* Opera11.10+ */
+  background:-ms-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%); /* IE10+ */
+  background:linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9')";
+  
+  
+  border: 1px solid #D5D5D5;
+  
+  border-radius: 4px;
+}
+.btn-icon-only {
+  padding-right: 3px;
+  padding-left: 3px;
+}
+#main-nav.nav-tabs.nav-stacked > li.active > a,
+#main-nav.nav-tabs.nav-stacked > li > a:hover { 
+  color: #FFF;
+  
+  background: #3C4049;
+  background:-moz-linear-gradient(top, #4A515B 0%, #3C4049 100%); /* FF3.6+ */
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#4A515B), color-stop(100%,#3C4049)); /* Chrome,Safari4+ */
+  background:-webkit-linear-gradient(top, #4A515B 0%,#3C4049 100%); /* Chrome10+,Safari5.1+ */
+  background:-o-linear-gradient(top, #4A515B 0%,#3C4049 100%); /* Opera11.10+ */
+  background:-ms-linear-gradient(top, #4A515B 0%,#3C4049 100%); /* IE10+ */
+  background:linear-gradient(top, #4A515B 0%,#3C4049 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4A515B', endColorstr='#3C4049');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#4A515B', endColorstr='#3C4049')";
+  
+  border-color: #2B2E33;
+}
+
+#main-nav.nav-tabs.nav-stacked > li:first-child > a,
+#main-nav.nav-tabs.nav-stacked > li:last-child > a {
+  border-radius: 5px;
+}
+
+#main-nav.nav-tabs.nav-stacked li [class^="icon-"],
+#main-nav.nav-tabs.nav-stacked li [class*=" icon-"] {
+  position: relative;
+  top: 1px;
+  
+  margin-right: .35em;
+  
+  font-size: 15px;
+}
+
+#main-nav.nav-tabs.nav-stacked li .label {
+  position: relative;
+  top: 2px;
+}

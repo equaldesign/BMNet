@@ -1,0 +1,9 @@
+.t {
+	display:inline-table;
+}
+.trow {
+  display:table-row;
+}
+.tcell {
+  display:table-cell;
+}

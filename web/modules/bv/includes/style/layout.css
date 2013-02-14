@@ -1,0 +1,294 @@
+.blueBar {
+	background: url("/includes/images/secure/blueBg.jpg") 50% 50% repeat-x;
+}
+.topright {
+	width: 550px;
+	padding-top: 10px;
+}
+#user {
+	margin-top: 10px;
+}
+#logo {
+	margin-top: 5px;
+}
+#homebuttons {
+  clear: both;
+  margin-top: 15px;
+	margin-bottom: 15px;
+}
+.carousel .item > img {
+  width: 100%;
+}
+strong {
+	font-weight:900;
+}
+#homebuttons a {
+  font-size: 120%;
+  padding: 10px 15px;
+	font-weight: 900;
+}
+.page-header {
+  margin-top:0px;
+}
+#BVSearch {
+	position: relative;
+}
+.disable a {
+	cursor: not-allowed; 
+}
+#BVSearch #query {
+	height: 30px;
+	border: 0px;
+	border-radius: 5px 0px 0px 5px;
+	width: 305px;
+	padding-left: 10px;
+	font-family: 'Lato', Ubuntu, 'DejaVu Sans', Arial, sans-serif;
+}
+#BVSearch #searchButton {
+	width: 85px;
+	border: 0px;
+	border-left: 1px solid #A2CEE5;
+	font-family: 'Lato', Ubuntu, 'DejaVu Sans', Arial, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	height: 30px;
+	background: url("/includes/images/secure/submitbg.jpg") 50% 50% repeat-x;
+	border-radius: 0px 5px 5px 0px;
+	position: relative;
+  left: -5px;
+}
+#user p {
+	font-family: 'Lato', Ubuntu, 'DejaVu Sans', Arial, sans-serif;
+	margin:0;
+	text-align: right;
+	color: white;
+	font-weight: bold;
+	font-size: 12px;
+}
+#user p a {
+	color: white;
+	font-weight: normal;
+	text-decoration: none;
+}
+#user img {
+	float: right;
+	border: 2px solid #FFF;
+	margin-left: 10px;
+}
+#mainMenu {
+	margin:0;
+	padding:0;
+	float: right;
+	margin-top: 15px;
+}
+#mainMenu li {
+	display: inline;
+	float: left;
+	border-radius: 5px 5px 0 0;
+	list-style: none;		
+	margin:0;
+	border-left: 1px solid #256C92;
+  border-bottom: 0px;
+	margin-right: 1px;
+}
+#mainMenu li:first-of-type {
+  border-left: none;
+  
+}
+#mainMenu li a {
+	padding: 5px 13px;
+	display: block;
+	text-transform:capitalize;
+	font-family: 'Lato', Ubuntu, 'DejaVu Sans', Arial, sans-serif;
+	font-size: 13px;
+	color: white;
+	font-weight: bold;	
+	text-decoration: none;
+	text-shadow: 0 -1px 0px #000;	
+}
+#mainMenu li.active a {
+  color: #172C3D;
+	text-shadow: 0 0px 0px #91BDD5;
+}
+#mainMenu li a.dashboard {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/dashboard-network.png") 8px 7px no-repeat; 
+}
+#mainMenu li a.sales {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/credit-cards.png") 8px 7px no-repeat; 
+}
+#mainMenu li a.marketing {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/color-swatches.png") 8px 7px no-repeat; 
+}
+#mainMenu li a.products {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/drill.png") 8px 7px no-repeat; 
+}
+#mainMenu li a.documents {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-word.png") 8px 7px no-repeat; 
+}
+#mainMenu li a.customers {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user-worker-boss.png") 8px 7px no-repeat; 
+}
+#mainMenu li a.suppliers {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user-business-boss.png") 8px 7px no-repeat; 
+}
+#mainMenu li a.tools {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/wrench--pencil.png") 8px 7px no-repeat; 
+}
+#mainMenu li a.wiki {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-text-image.png") 8px 7px no-repeat; 
+}
+#mainMenu li a.logout {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/clipboard-sign-out.png") 8px 7px no-repeat; 
+}
+#mainMenu li.disable a.dashboard {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/dashboard-network--disabled.png") 8px 7px no-repeat;
+}
+#mainMenu li.disable a.sales {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/credit-cards--disabled.png") 8px 7px no-repeat;
+}
+#mainMenu li.disable a.customers {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user-worker-boss--disabled.png") 8px 7px no-repeat;
+}
+#subNav {
+	background: url("/includes/images/secure/subbar.jpg") 50% 50% repeat-x;
+	height: 3px;
+	border-bottom: 1px solid #999;
+}
+#subNav .toolbar {
+	position:relative;
+}
+#content {
+	
+}
+.bvinesBox {}
+#searchandhelp .greyStraight {
+	border: 1px solid #CCC;
+	background: url("/includes/images/secure/subbar.jpg") 50% 50% repeat-x;
+	border-radius: 25px;
+	font-family: 'Lato', Ubuntu, 'DejaVu Sans', Arial, sans-serif;
+	font-weight:bold;
+	padding-left: 10px;
+	padding-right: 10px;
+	
+}
+
+
+#copyright {
+	text-align: center;	
+	width: 300px;
+	padding-top: 15px;
+	margin-left: auto;	
+	margin-right: auto;	
+}
+#copyright h5 {
+	font-family: 'Lato', Ubuntu, 'DejaVu Sans', Arial, sans-serif;
+	color: #FFF;
+	margin:0;
+	margin-bottom: 3px;
+	font-weight: normal;
+  font-size: 12px;
+}
+#copyright p {
+  font-family: 'Lato', Ubuntu, 'DejaVu Sans', Arial, sans-serif;
+  color: #FFF;
+	margin:0;
+  font-weight: normal;
+  font-size: 10px;
+}
+.footer .footerLogos {
+	height: 30px;
+	width: 300px;
+	position: absolute;
+	top:15px;
+	right: 0px;
+	background: url("/includes/images/secure/footerLogos.png") right top no-repeat;
+}
+.footer .n6 {
+	position: relative;
+}
+#logo {
+	padding: 10px 0px;
+}
+.n6 {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#whiteBox {
+	border: 1px solid #CCCCCC;
+	background: white;	
+	width: 640px;
+	margin: 10px;
+	padding: 20px;
+	position: relative;	
+	min-height: 500px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); 
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); 
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); 
+}
+
+.optionSelected {
+	position: absolute;
+	width: 17px;
+	height: 45px;
+	z-index:100;
+	top:-5px;
+	right: -11px;
+	display: block;
+	background: url("/includes/images/secure/option_selected.png") no-repeat;
+}
+#dashboardShortcuts li {position:relative;}
+
+.filetype.xls, .filetype.xlsx , .filetype.rtf {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-excel.png") no-repeat 0px 3px !important;
+}
+.filetype.doc, .filetype.docx, .filetype.rtf {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-word.png") no-repeat 0px 3px !important;
+}
+.filetype.pdf, .jstree .filetype.ps {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-pdf.png") no-repeat 0px 3px !important;
+}
+.filetype.ppt, .filetype.pptx {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-powerpoint.png") no-repeat 0px 3px !important;
+}
+.filetype.jpg, .filetypejpeg, .filetype.png, .filetype.gif, .filetype.bmp, .filetype.tiff {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-image.png") no-repeat 0px 3px !important;
+}
+.small {
+	font-size: 85%;
+	font-weight: normal;
+}
+.t {
+  display:table;
+	width: 100%;
+}
+.trow {
+  display:table-row;
+	
+	
+}
+.tcell {
+  display: table-cell;
+	vertical-align: top;	
+	border-bottom: 1px dotted #DEDEDE;	
+	padding: 3px 0px 3px 10px;
+  margin: 3px 0px;
+}
+.tcell:first-of-type {
+	padding-left: 0px;
+}
+.tcell > * {
+  margin-top: 0px;
+}
+.mainmenu h2 {
+	font-weight: bold;
+	color:#999;
+	text-shadow: 0px 1px 0px #FFF;
+	padding-bottom: 7px;
+	border-bottom: 1px solid #DDD;
+	margin-bottom: 8px;
+	margin-right: 5px;
+}
+.mainmenu a {
+	font-weight: normal;
+}

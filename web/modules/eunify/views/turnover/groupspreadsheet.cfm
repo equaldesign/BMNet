@@ -1,0 +1,4 @@
+<cffile action="copy" source="/fs/sites/ebiz/resources/eGroupResources/pivotTemplate.xls" destination="/tmp/#getSetting('groupName')#spreadsheet_#rc.sess.eGroup.contactID#.xls">
+<cfspreadsheet action="update" sheetName="Turnover" query="rc.figures" filename="/tmp/#getSetting('groupName')#spreadsheet_#rc.sess.eGroup.contactID#.xlsx" />
+<cfheader name="Content-Disposition" value="attachment;filename=SpreadSheet.xlsx">
+<cfcontent deletefile="true" reset="true" file="/tmp/#getSetting('groupName')#spreadsheet_#rc.sess.eGroup.contactID#.xls" type="#getPageContext().getServletContext().getMimeType('/tmp/#getSetting('groupName')#spreadsheet_#rc.sess.eGroup.contactID#.xls')#">

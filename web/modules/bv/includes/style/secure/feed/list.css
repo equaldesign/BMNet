@@ -1,0 +1,17 @@
+.feeditem  {	
+	border-bottom: 1px dotted #DDD;
+	padding: 5px 0px;
+}
+.feeditem .feedimage {
+	float: left;
+	margin-right: 10px;
+	border: 1px solid #999;
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.feeditem .timestamp {
+	font-size: smaller;
+	font-family: 'Lato', Ubuntu, 'DejaVu Sans', Arial, sans-serif;
+	color: #AAA;
+}

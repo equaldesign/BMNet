@@ -1,0 +1,88 @@
+h1.basket {
+	margin: 0 0 5px 0;
+}
+#basketHeader {
+	background:URL("/includes/images/turnbull/productList.jpg") 50% 50% repeat-x;
+	padding: 10px;
+	-webkit-box-shadow:0 0 5px rgba(0,0,0,0.2); 
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,0.2); 
+	box-shadow:0 0 5px rgba(0,0,0,0.2); 
+	margin-bottom: 10px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #CDCDCD;
+}
+#basketHeader #intro {
+	float: left;
+	border-right: 1px solid #E2E2E2;
+	width: 500px;
+}
+#basketHeader #intro  h2 {
+  margin: 0;
+}
+#basketHeader #grandTotal {
+	float: left;
+	width: 130px;
+	padding-left: 10px;
+}
+#basketHeader #grandTotal  h2 {
+  margin: 0;
+}
+#basketHeader #grandTotal  h1 {
+  color: #FF9900;
+	  margin: 0;
+}
+#basketHeader #grandTotal  p {
+	margin: 0;
+}
+.basketDetailHeader {
+	height: 8px;
+	display: block;
+	background: #030133;
+}
+#basket {
+  background: #C6C6C6;
+}
+#basket th {
+	background: #C6C6C6;
+	color: #FFF;
+}
+#basket td {
+  background: #FFF;
+	vertical-align: top;
+}
+.productInfo img {
+	margin-right: 5px;
+}
+.productInfo h2 {
+	margin: 0;
+}
+.button.update {
+  padding: 3px;
+	border: 0;
+	background: #FFF;
+}
+.doIt {
+	text-align: center;
+  display: block;
+  font-weight: 700;
+	float: right;
+	clear: both;
+  padding: 8px;
+  cursor:pointer;
+  font-size: 1.3em;
+  color:#333;
+  font-family: Calibri, 'Trebuchet MS', Arial, Helvetica, sans-serif;
+	border: solid 1px #E5E5E5; 
+	outline: 0; 
+	background: #FFFFFF url('/includes/images/bg_form.png') left top repeat-x; 
+	background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF)); 
+	background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px); 
+	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+	-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+}
+.doIt:hover {
+	border-color: #C9C9C9; 
+	-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+}

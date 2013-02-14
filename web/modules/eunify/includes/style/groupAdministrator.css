@@ -1,0 +1,19 @@
+#groupAdministrator {
+	margin: 10px;
+}
+#left {
+  width: 360px;
+  float: left;
+	padding: 10px;
+	background: #F2F2F2;
+}
+#groupsandusers {
+	width: 555px;
+	float: right;
+}
+.silver {
+	background: #EBEBEB url("/includes//images/dms/silver.jpg") repeat-x 50% 50%;
+	border: 1px solid #BBB;
+	padding: 8px;
+	margin-bottom: 5px;
+}

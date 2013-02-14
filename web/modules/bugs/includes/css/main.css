@@ -1,0 +1,191 @@
+* {margin:0;padding:0;} 
+
+/* must declare 0 margins on everything, also for main layout components use padding, not 
+vertical margins (top and bottom) to add spacing, else those margins get added to total height 
+and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
+
+html, body {height: 100%;}
+html {
+  background: #F0F0F0;
+}
+#wrap {min-height: 100%;
+margin-left:auto;
+  margin-right:auto;
+  width:960px; 
+	background: #ffffff;
+   -webkit-box-shadow:0 0 15px rgba(0,0,0,0.2); 
+  -moz-box-shadow: 0 0 15px rgba(0,0,0,0.2); 
+  box-shadow:0 0 15px rgba(0,0,0,0.2);  
+}
+.siteTitle {
+  color:#999;
+  font-weight: lighter;
+}
+#container {overflow:auto;
+
+position:relative;
+  padding: 0px 0px 100px 0px;
+ 
+  }  /* must be same height as the footer */
+
+
+body {
+margin:0;
+padding:0;
+
+}
+h4 {
+  margin:0;
+}
+p {
+  margin: 0.5em 0;
+}
+body, input {
+  font: 0.8em "Droid Sans", DroidSans, "trebuchet ms","Lucida Sans Unicode", sans-serif;
+  /*font-family:DroidSans,"Trebuchet MS","Lucida Sans Unicode";*/
+}
+.grad {
+	background: #F5F5F5 url("/includes/images/grad.jpg") repeat-x;
+}
+#main {
+	padding: 0 10px;
+}
+#logo {
+	background: url("/includes/images/ebiz.png") no-repeat 10px 10px;	
+	height: 45px;
+	font-weight: bold;
+}
+#telsupport {
+	position: absolute;
+	top:14px;
+	right: 10px;
+	text-align: right;
+	font-size: 20px;
+	font-weight: bold;
+	color:#CCC;
+  text-shadow: rgba(255, 255, 255, 0.7) 0px 1px 0px;
+	width: 400px;
+}
+#logo a {
+	text-decoration: none;
+	top: 20px;
+	position: absolute;
+	top: 17px;
+	left: 95px;
+	font-weight: bold;
+	font-size: 16px;
+	color:#BCBCBC;
+	text-shadow: rgba(255, 255, 255, 0.7) 0px 1px 0px;
+}
+#topwhite {
+	height: 50px;
+	position: relative;
+	border-bottom: 1px solid #DDD;
+}
+#loginInfo {
+	margin: 10px 0px 10px 10px;
+	background: url(/images/icons/user-business.png) no-repeat;
+	padding: 3px 25px;
+}
+#loginInfo div.login {
+	color: #666;
+	float: left;
+	width: 500px;
+	font-size: 11px;
+	margin: 0px;
+}
+table {
+	width: 100%;
+	border: 1px solid #DDDDDD;
+	border-collapse:collapse;
+}
+table thead tr {
+  background: #F5F5F5 url("/includes/images/trgrad.jpg") repeat-x;
+	border-bottom: 1px solid #DDD;
+}
+table thead tr th {
+	padding: 3px;
+	text-align: left;
+	color:#AAA;
+	text-shadow: rgba(255, 255, 255, 0.7) 0px 1px 0px;
+}
+table td {
+	padding: 4px;
+}
+a.tdicon {
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+}
+a.buglisttitle {
+	color:#333;
+}
+a.bug {
+  background: url("/images/icons/bug.png") no-repeat 2px 2px;
+}
+a.server {
+  background: url("/images/icons/server--exclamation.png") no-repeat 2px 2px;
+}
+a.request {
+	background: url("/images/icons/briefcase.png") no-repeat 2px 2px;	
+}
+a.request {
+  background: url("/images/icons/briefcase.png") no-repeat 2px 2px; 
+}
+a.help {
+  background: url("/images/icons/information-frame.png") no-repeat 2px 2px; 
+}
+a.delete {
+  background: url("/images/icons/bin-full.png") no-repeat 2px 2px; 
+}
+a.general {
+	background: url("/images/icons/desktop.png") no-repeat 2px 2px; 
+}
+table td  {
+	vertical-align:top;
+	color:#999;
+	font-weight: normal;
+}
+a.traffic_1 {
+  background: url("/images/icons/traffic-light--red.png") no-repeat 2px 2px;
+}
+a.traffic_2 {
+  background: url("/images/icons/traffic-light--amber.png") no-repeat 2px 2px;
+}
+a.traffic_3 {
+  background: url("/images/icons/traffic-light--green.png") no-repeat 2px 2px;
+}
+a.open {
+  background: url("/images/icons/lock-unlock.png") no-repeat 2px 2px;
+}
+a.closed {
+  background: url("/images/icons/lock.png") no-repeat 2px 2px;
+}
+a.pending {
+  background: url("/images/icons/alarm-clock.png") no-repeat 2px 2px;
+}
+table td a {
+  font-weight: bold;
+	text-decoration: none;
+	color:#999;
+}
+#createticket {
+	float: right;
+	width: 115px;
+
+}
+#createticket a {
+	padding-left: 20px;
+	font-weight: bold;
+	color:#666;
+	font-size: 11px;
+	 height: 16px;
+	 display: block;
+	 text-decoration: none;
+	background: url("/images/icons/ticket--plus.png") no-repeat;
+}
+.clear {
+	clear: both;
+	display: block;
+	height: 0px;
+}

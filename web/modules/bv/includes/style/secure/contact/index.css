@@ -1,0 +1,34 @@
+#contactDetail h4 {
+	border-bottom: 1px dotted #DEDEDE;
+} 
+#contactDetail dl {
+	font-size: 90%;
+}
+#contactDetail dt {
+  width: 100px;
+  float: left;
+  margin: 0 0 0 0;
+  padding: 2px;
+  font-weight: bold;
+	color: #000;
+	font-size: 100%;	  
+}
+/* commented backslash hack for mac-ie5 \*/
+#contactDetail dt { clear: both; }
+/* end hack */
+
+#contactDetail dd {
+  float: left;
+  width: 260px;	
+  margin: 0 0 0 0;
+  padding: 2px 5px;
+}
+
+.avatar {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); 
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); 
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); 
+}

@@ -1,0 +1,3 @@
+<cfcomponent name="general" output="false"  autowire="true"><!------------------------------------------- PUBLIC EVENTS ------------------------------------------>
+	<!--- Default Action --->	<cffunction name="index" returntype="void" output="false" hint="My main event">		<cfargument name="event" required="true">		<cfscript>		  var rc = event.getCollection();		  setNextEvent(uri="/");    	</cfscript>	</cffunction><!------------------------------------------- PRIVATE EVENTS ------------------------------------------>
+</cfcomponent>

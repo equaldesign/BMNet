@@ -1,0 +1,208 @@
+.homecol {
+ 	float: left;
+	width: 48%;
+	margin-right: 10px;
+ }
+.homecol h3 {
+	color: #777;
+	padding-top: 7px;
+	padding-left: 40px;
+	padding-bottom: 6px;
+}
+.homecol p {
+	font-size: 12px;
+	color: #666;
+}
+#signUpTips {
+	color: #FFF;
+}
+#signUpTips h1 {
+	margin-top:0;
+	margin-bottom: 10px;	
+	font-weight: normal;
+	color: #AAA;
+	font-size: 300%;	
+	line-height: 35px;
+}
+#signUpTips h1 small {
+  color: #BBB;
+}
+.homecol h3.products {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/finder.png") no-repeat top left;
+}
+.homecol h3.ecommerce {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/shop.png") no-repeat top left;
+}
+.homecol h3.mobile {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/smartphone.png") no-repeat top left;
+}
+.homecol h3.target {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/target.png") no-repeat top left;
+}
+.homecol h3.press {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/newspaper.png") no-repeat top left;
+}
+.homecol h3.comment {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/comment_user_add_32.png") no-repeat top left;
+}
+.homecol h3.api {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/web_layout_rss_32.png") no-repeat top left;
+}
+.homecol h3.twitter {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/twitter_32.png") no-repeat top left;
+}
+.homecol h3.cost {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/wallet.png") no-repeat top left;
+}
+.homecol h3.desktop {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/display.png") no-repeat top left;
+}
+.homecol h3.medal {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/medal.png") no-repeat top left;
+}
+.homecol h3.autoCAD {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/autocadws-icon.png") no-repeat top left;
+}
+#homePages {	
+	height: 550px;
+	overflow: hidden;
+}
+#homePages .page {
+	margin-bottom: 100px;
+}
+#homeQuickNav {
+	background: url("/includes/images/public/bluebg.jpg") 50% 50% repeat-x;
+	border: 1px solid #62A8C8;
+	height: 30px;
+	margin-bottom: 20px;
+}
+#homeQuickNav ul {
+	margin: 4px 4px;
+	padding: 0;
+	clear: both;	
+}
+
+#homeQuickNav ul li {	
+	background: none;
+	padding:0;
+	width: 31%;
+	margin-right: 10px;
+	display: inline-block;
+	border: 0px;
+}
+#homeQuickNav ul li a {
+	font-size: 11px;
+  font-weight: bold;
+	padding: 4px 0px 5px 20px;	
+	display: block;
+  color: #C0E3EF;
+  text-decoration: none;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/light-bulb-off.png") 0px 3px no-repeat;
+}
+#homeQuickNav ul li a:hover {
+	border:0;
+	color: #FFF;
+}
+#homeQuickNav ul li.last {
+  margin-right: 0px;
+}
+
+#homeQuickNav ul li a.active {
+	font-weight: bold;
+	color: #FFF;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/light-bulb.png") 0px 3px no-repeat;
+}
+.page h2 {
+  margin-bottom: 5px;
+}
+h2.features {
+	border: 1px solid #58ADBE;
+	background: url("/includes/images/public/bluebg.jpg") 50% 50% repeat-x;
+	padding: 7px 10px 7px 20px;
+	
+}
+h2.productCount {  
+	color: #5C9122;
+  font-size: 28px;
+  text-shadow: 0 1px 1px #FFF;
+  text-decoration: none;
+	margin-top: 15px;
+  
+}
+h2 a.showthematrix {
+	color: white;
+	font-size: 18px;
+	text-shadow: 0 -1px 1px #003;
+	text-decoration: none;
+	padding: 3px;
+	border: none;
+	display: block;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-24/table-import.png") no-repeat right top;
+}
+
+#supporters {
+	position: relative;
+	background: #EBEBEB url("/includes/images/public/searchinputbg.jpg") repeat-x;
+	padding: 20px;	
+	margin-top: 20px;
+}
+
+.supporters_tag {
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	z-index: 2;
+	width: 100px;
+	height: 100px;
+	background: url("/includes/images/public/supporters.png") no-repeat;
+}
+.supporter_logo {	
+	margin-right: 7px;
+}
+#supporters h2 {
+	padding-top: 12px;
+}
+#supporters p {
+  font-size: 13px;
+}
+#supporters p:first-of-type {
+	 margin-top: 20px;
+}
+.supporterCycle {
+	height: 170px;
+	width: 380px;
+}
+
+#greenBG .tour {
+	margin-right: 30px;
+	border: 1px solid #58ADBE;
+  background: url("/includes/images/public/bluebg.jpg") 50% 50% repeat-x;
+	color: #FFF;
+	text-transform: uppercase;
+	text-shadow: 0px -1px 1px #036;	
+}
+#greenBG .register {
+	 margin-right: 30px;
+  border: 1px solid #FF9A00;
+  background: url("/includes/images/public/orangebg.jpg") 50% 50% repeat-x;
+  color: #FFF;
+  text-transform: uppercase;
+  text-shadow: 0px -1px 1px #FF9A00; 	
+}
+#greenBG .tour:hover {
+	background: url("/includes/images/public/bluebg_over.jpg") top repeat-x;
+}
+#greenBG .register:hover {
+	background: url("/includes/images/public/orangebg_over.jpg") top repeat-x;
+}
+.homebutts {
+	float: right;
+	padding-top: 20px;
+}
+#storyBody {
+	margin-left: 0px;
+	float: left;
+}
+#storyBody h2 {
+	margin-bottom: 0px;
+} 

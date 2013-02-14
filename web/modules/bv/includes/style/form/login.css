@@ -1,0 +1,80 @@
+form {
+	margin:0;
+	padding:0;
+}
+input {
+	font-family:'Lato',"Lucida Sans Unicode","Trebuchet MS";
+
+}
+div.login {
+	float: right;
+	
+}
+.logininput {
+  width: 145px;
+  height: 20px;
+  border:0;	
+	margin-right: 5px;
+	padding-top:4px;
+	padding-left: 5px;
+	color:#333;
+}
+.login .over {
+	top: 10px;
+}
+.login .loginlabel {
+	display: block;
+	width: 60px;
+	float: left;
+	position: relative;
+	padding-top: 10px;
+	color: #FFF;
+	font-weight: bold;
+	padding-right: 8px;
+	text-align: right;
+}
+.login .l {
+	padding-top: 5px;
+}
+.login #remember {
+	clear: both;
+	text-align:left;
+	margin-left:70px;
+}
+.login label.remember {
+	float: none;
+	font-size: 0.8em;
+	font-weight: normal;
+	padding: 4px 0px 0px; 
+	padding-top: 4px;
+	position: relative;
+	color:#FFF;
+	width: 220px;
+}
+input.rememberCheck {
+	position:relative;
+	
+}
+.login_username {
+	background:url("/includes/images/login_email.png") no-repeat;
+}
+.login_password {
+  background:url("/includes/images/login_password.png") no-repeat;
+} 
+
+#login_button {
+	position: relative;
+	top: -1px;
+}
+#topright #passwordLost {
+  padding-right: 5px;
+  padding-top: 3px;
+	float: right;
+  text-align: right;
+}
+#topright #passwordLost a {
+  border:0;
+  color:#EBEBEB;
+  font-weight: normal;
+  font-size: smaller;
+}

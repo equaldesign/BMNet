@@ -1,0 +1,1 @@
+<a href="/contact/index/id/[source.id]">[source.first_name] [source.surname]</a> created a new contact <a href="/contact/index/id/target.id]">[target.first_name] [target.surname]</a> for <a href="/company/index/id/[related.id]">[related.known_as]</a>

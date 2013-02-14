@@ -1,0 +1,1 @@
+<cfoutput>#renderView(view="#args.emailView#.plain",args=args)#</cfoutput>

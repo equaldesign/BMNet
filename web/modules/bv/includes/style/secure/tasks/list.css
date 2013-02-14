@@ -1,0 +1,50 @@
+#taskFilter, .ui-selectmenu {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	width: 200px;	
+	margin-right: 10px;
+}
+.ui-select-menu { float: left; margin-right: 10px; }
+.greyBox {
+	background: #F2F2F2;
+	border: 1px solid #CCC;
+	 margin: 10px;
+  padding: 20px;
+  position: relative; 
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); 
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); 
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); 
+}
+.task li {
+	padding-left: 20px;
+	list-style: none;	
+	margin:0;
+}
+.task h4 a {
+	text-decoration: none;
+}
+li.taskdue {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/calendar-task.png") 0px 0px no-repeat; 
+}
+li.taskstatus.notyetstarted {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/flag--exclamation.png") 1px 0px no-repeat;	
+}
+li.taskstatus.onhold {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/flag-purple.png") 1px 0px no-repeat;  
+}
+li.taskstatus.inprogress {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/flag-yellow.png") 1px 0px no-repeat;  
+}
+.relationships {
+	width: 35%;
+	float: right;
+}
+.relationships li  a {
+	 padding: 2px 2px 2px 23px;  
+  font-weight: bold;
+  font-size: 13px;
+	display: block;
+  text-decoration: none;
+  font-family: 'Lato', Ubuntu, 'DejaVu Sans', Arial, sans-serif;
+}

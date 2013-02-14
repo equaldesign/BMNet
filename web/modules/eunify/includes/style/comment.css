@@ -1,0 +1,81 @@
+.commentBox {
+  position: relative;
+  width: 100%;
+  margin-top: 15px;
+  background: url("/modules/eunify/includes/images/comments/lip.png") no-repeat 0px 0px;
+}
+.commentBox .commentTitle {
+  position: relative;
+  font-family: DroidSans, "Droid Sans", Ubuntu, 'DejaVu Sans', Arial, sans-serif;
+  top: 9px;
+  background: #EFEFEF;
+  float: left;
+  height: 50px;
+  width: 100%;
+  
+}
+.commentBox .commentTitle .commentSubject {
+  position: absolute;
+  left: 65px;
+  top: 27px;
+  font-size: 11px;
+  font-weight: bold;
+}
+.commentBox .commentTitle .commentControls {
+  position: absolute;
+  bottom: 5px; 
+  right: 5px;
+  width: 32px;
+  height: 16px;
+}
+.commentBox .commentTitle .commentControls .deleteComment {
+  width: 16px;
+  height: 16px;
+  display: block;
+  float: left;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/balloon--minus.png") 0px 0px no-repeat;
+}
+.commentBox .commentTitle .commentControls .editComment {
+  width: 16px;
+  height: 16px;
+  display: block;
+  float: left;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/balloon--pencil.png") 0px 0px no-repeat;
+}
+.commentBox .commentTitle .commentAuthorImage {
+  position: absolute;
+  left: 24px;
+  top: 8px;
+  height: 30px;
+  border: 2px solid #FFF;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); 
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); 
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); 
+  width: 30px;
+}
+.commentBox .commentTitle .commentMeta {}
+.commentBox .commentTitle .commentMeta .commentDate {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 11px;
+  font-weight: normal;
+  text-align: right;
+}
+.commentBox .commentTitle .commentMeta .commentAuthor {
+  position: absolute;
+  top: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  left: 64px; 
+}
+.commentBox .commentTitle .commentMeta .commentAuthor a {
+  color: #000; 
+}
+.commentBox .commentContent {
+  clear: both;
+  margin-left: 35px;
+  border-left: 4px solid #DDD;
+  padding-left: 20px;
+  padding-top: 20px;
+}

@@ -1,0 +1,46 @@
+#fullList div.section {
+	margin-left: 15px;
+}
+#fullList div.section a {
+  color: #000 !important;
+	font-weight: bold !important;
+}
+#fullList .currentUser p {
+font-weight: normal;
+color: #999;
+margin: 2px 0px 0px 0px;
+font-size: 11px;
+}
+#fullList .currentUser {
+display: block;
+clear: both;
+margin: 5px;
+}
+#fullList ul {
+	margin:0;
+	list-style: none;
+	padding:0;	
+	margin-left: 15px;
+}
+#fullList ul li h3 {
+	color: #666;
+}
+
+#fullList ul li {
+  margin:0;
+  list-style: none;
+  padding:0;  
+	display: block;
+	clear: both;
+	margin: 5px;
+}
+#fullList ul li a b {
+	color: #444;
+  font-size: 12px;
+}
+#fullList ul li p {
+	font-weight: normal;
+	color: #999;
+	margin: 2px 0px 0px 0px;
+	font-size: 11px;
+}

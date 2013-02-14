@@ -1,0 +1,41 @@
+#bvtabs .company {
+	padding-left: 25px;
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/building.png") 4px 4px no-repeat;
+}
+#bvtabs .benefits {
+	padding-left: 25px;
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/wand.png") 4px 4px no-repeat;
+}
+#bvtabs .intranet {
+	padding-left: 25px;
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/globe-network-ethernet.png") 4px 4px no-repeat;
+}
+#bvtabs .desktop {
+	padding-left: 25px;
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/computer.png") 4px 4px no-repeat;
+}
+#bvtabs .mobile {
+	padding-left: 25px;
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/icons-shadowless/mobile-phone--arrow.png") 4px 4px no-repeat;
+}
+#bvtabs .signup {
+	padding-left: 25px;
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/arrow-000-medium.png") 4px 4px no-repeat;
+}
+#bvtabs .web {
+	padding-left: 25px;
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/document-globe.png") 4px 4px no-repeat;
+}
+#bvtabs .email {
+	padding-left: 25px;
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/mail--arrow.png") 4px 4px no-repeat;
+}
+em {
+	font-weight: bold;
+	font-style:normal;
+	color:#990000;
+}
+.condition {
+	font-size: 12px;
+}
+

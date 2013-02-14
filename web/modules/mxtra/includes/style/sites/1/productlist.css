@@ -1,0 +1,67 @@
+
+.productlist {
+background:URL("/includes/images/turnbull/productList.jpg") 50% 50% repeat-x;
+padding: 10px;
+-webkit-box-shadow:0 0 5px rgba(0,0,0,0.2); 
+-moz-box-shadow: 0 0 5px rgba(0,0,0,0.2); 
+box-shadow:0 0 5px rgba(0,0,0,0.2); 
+margin: 10px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border: 1px solid #CDCDCD; 
+}
+.productlist h2 {
+	margin: 0px 0px 10px 0px;
+	color: #020033;
+	line-height:normal;
+} 
+.summary {
+background:URL("/includes/images/turnbull/productList.jpg") 50% 50% repeat-x;
+padding: 10px;
+-webkit-box-shadow:0 0 5px rgba(0,0,0,0.2); 
+-moz-box-shadow: 0 0 5px rgba(0,0,0,0.2); 
+box-shadow:0 0 5px rgba(0,0,0,0.2); 
+margin: 10px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border: 1px solid #CDCDCD;
+
+}
+.productImage {
+  margin-left: 0px;
+  float: left;
+	margin-right: 10px;
+  width:105px;
+	min-height: 150px;
+}
+
+.productDesc {
+  float: left;
+  width:333px;
+	border-right: 1px solid #FFF;
+}
+.productDesc h3 {
+  margin-top: 0px;
+	font-size: 24px;
+	color:#FF6600;
+}
+.deliveryDetails {
+  width: 190px;  
+  border-left: 1px solid #DEDEDE;
+  padding-left: 10px; 
+}
+.deliveryDetailsProduct {
+  width: 190px;
+  float:left;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+.deliveryDetailsProduct  h3 {
+ margin: 0px;
+  color: #020033;
+}
+
+.deliveryDetails h3 {
+  margin: 0px;
+	color: #020033;
+}

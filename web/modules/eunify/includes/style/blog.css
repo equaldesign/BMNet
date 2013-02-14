@@ -1,0 +1,76 @@
+.bloglist h2 {
+	font-size: 1.5em; margin: 0em 0 0.3em 0;
+}
+.bloglist {
+	padding: 4px 8px;
+	border: 1px solid #EFEFEF;
+	margin: 4px;
+	position: relative;
+}
+.bloglist .meta {
+	margin-top: 15px;
+	display: block;
+}
+.bloglist .blogdate {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/calendar.png") no-repeat;
+	padding: 3px 10px 3px 20px;
+	border-right: 1px solid #999;
+	color: #666;
+}
+.bloglist .blogauthor {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/icons-shadowless/user-business-gray.png") no-repeat;
+  	padding: 3px 10px 3px 20px;
+  	margin-left: 10px;
+  	border-right: 1px solid #999;
+	color: #666;	
+}
+.bloglist .blogauthor a {
+	font-weight: normal;
+	border: 0;
+color: #666;	
+}
+.bloglist .blogcomments {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/balloon.png") no-repeat;
+  padding: 3px 10px 3px 20px;
+  margin-left: 10px;
+	color: #666;
+}
+
+.dateBadge {
+  display: block;
+  float: left;
+  width: 46px;
+  margin-right: 10px;
+  background: #600;
+  text-align: center;
+  font-family: DroidSans, "Droid Sans", Ubuntu, 'DejaVu Sans', Arial, sans-serif;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); 
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); 
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); 
+}
+.dateBadge .month {
+  display: block;
+	margin: 3px;
+  font-size: 110%;
+  font-weight: bold;  ;
+  color: #FFF;
+}
+.dateBadge .day {
+  display: block;
+  background: #FFF;
+  margin: 3px;
+	padding: 3px;
+  font-size: 12px;
+}
+.blogpost .blogdate {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/calendar-month.png") no-repeat;
+  padding-left: 23px;
+	display: block;
+	float: left;
+	height: 16px;
+	padding-right: 10px;
+	border-right: 1px dotted #DDD;	
+}
+.blogpost .blogauthor {	
+	padding-left: 10px;
+}

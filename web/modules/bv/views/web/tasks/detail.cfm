@@ -1,0 +1,1 @@
+<cfoutput>#renderView("secure/tasks/types/detail/#ListFirst(rc.task.task.data.definition.title," ")#")#</cfoutput>

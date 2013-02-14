@@ -1,0 +1,574 @@
+/*  
+Sticky Footer Solution
+by Steve Hatcher 
+http://stever.ca
+http://www.cssstickyfooter.com
+*/
+
+* {margin:0;padding:0;} 
+
+/* must declare 0 margins on everything, also for main layout components use padding, not 
+vertical margins (top and bottom) to add spacing, else those margins get added to total height 
+and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
+
+
+html, body {  
+	padding: 2px;
+}
+.rel {
+  position: relative;
+}
+.pageheading h1 {
+  margin-top: 0;
+padding-top: 10px;
+margin-bottom: 20px;
+color: #325012;
+font-size: 500%;
+font-weight: bold;
+text-shadow: #B9E97C 0px 1px 1px;
+}
+.right {
+  float: right;
+}
+#wrap {
+  min-height: 100%;
+  width: 100%;
+}
+.n6 {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#main {
+  overflow:hidden;
+  padding-bottom: 150px;
+}  /* must be same height as the footer */
+
+#footer {
+  position: relative;
+  margin-top: -151px; /* negative value of footer height */
+  height: 150px;
+  clear:both;
+  border-top: 1px solid #555;
+  background: #999 url("/includes/images/secure/footerbg.jpg") repeat-x top left;
+} 
+html, body {
+  font-size:0.90em;
+  margin:0;
+  padding: 0px 3px;
+  font-family:'Lato', 'Lato', "Lucida Sans Unicode","Trebuchet MS",Tahoma,Verdana;
+  font-weight: normal;
+}
+div.l { position: relative; float: left; }
+label.over { cursor:text;color: #ccc; position: absolute; top: 5px; left: 5px; z-index: 1000;}
+
+h1 {
+  color:#172C3D;
+  font-weight: normal;
+}
+h1              { font-size: 2.2em; margin: .67em 0 }
+h2              { font-size: 1.7em; margin: .75em 0 }
+h3              { font-size: 1.27em; margin: .83em 0 }
+
+p {
+  line-height:1.4em;
+}
+
+h2 {
+  color:#5C9122;
+  font-weight: normal;
+  font-size: 2em;
+}
+.right {
+  text-align:right;
+}
+h3 a  {
+  font-weight: normal;
+  border: 0;
+  color:#5C9122;
+}
+h1 a  {
+  font-weight: normal;
+  border: 0;
+  color:#5C9122;
+}
+.Logo {
+  margin-top: 10px;
+}
+.clear {
+  clear: both;
+  height: 1px;
+  display: block;
+  width: 100%;
+}
+#topright {
+  position:absolute;
+  right:0px;
+  width: 590px;
+  height: 87px;
+  text-align: right;
+}
+
+
+#greenBG {
+  background:url(/includes/images/public/green.jpg) top repeat-y #5C9122;
+  min-height:207px;
+}
+a {
+  color:#172C3D;
+  font-weight: bold;  
+  text-decoration: none;
+  padding-bottom: 1px;
+}
+a:hover {
+  color:#5C9122;  
+  text-decoration: none;
+}
+
+#page a.normal {
+  color:#5C9122;
+  font-weight: normal;
+  border-bottom: 1px dotted #172C3D; 
+  text-decoration: none;
+  padding-bottom: 1px;
+  
+  text-transform:capitalize;
+  line-height:20px;
+}
+#page a.normal:hover {
+  color:#172C3D;
+font-weight: normal;
+  border-bottom: 1px dotted #5C9122; 
+  text-decoration: none;
+}
+
+#profileBody {
+  background:#ffffff url("/includes/images/public/greyfade.jpg") repeat-x;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.greyBox {
+  margin: 10px 0 10px 0;
+  padding: 0 10px 0 10px;
+  background:url(/includes/images/greybg.png) #EBEBEB repeat-x;
+  border: 1px solid  #D2D2D2;
+  -moz-border-radius: 5px;
+}
+.w {
+  width: 960px;
+  margin-left:auto;
+  margin-right:auto;  
+}
+#topmenu {
+  background:url(/includes/images/topbg.png) repeat-x;
+  height:87px;
+  position:relative;
+  border-bottom: 1px solid #B5C8A0;
+}
+#topmenu .w {
+  position:relative;
+}
+#topmenu #Logo {
+  padding-top: 10px;
+}
+#dadoRail {
+  background:url(/includes/images/public/dadorail.png) repeat-x;
+  height:4px;
+}
+.column2 {width:650px;}
+.column1 {width: 300px;}
+.floatleft {float: left;}
+.floatright {float: right;}
+.icon {width: 25px;height:16px; display: block; float: left;}
+
+.icon_email {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/email.png") top left no-repeat;
+}
+.icon_mobile {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/phone.png") top left no-repeat;
+}
+.icon_telephone {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/telephone.png") top left no-repeat;
+}
+.icon_msn {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/status_online.png") top left no-repeat;
+}
+.icon_skype {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/skype.png") top left no-repeat;
+}
+
+#footer #footerlinks {}
+#footer #footerlinks ul {}
+#footer #footerlinks ul li {
+  float: left;
+  padding: 3px 9px 3px 9px;
+  list-style: none;
+  border-right: 1px solid #43701F;
+  border-left: 1px solid #89B440;
+  
+}
+#footer #footerlinks ul li.last {
+  border:0;
+  border-left: 1px solid #89B440; 
+}
+#footer #footerlinks ul li.first {
+  border:0;
+  border-right: 1px solid #43701F; 
+}
+#footer #footerlinks ul li a{
+  color: #EBEBEB;
+  font-weight: normal;
+  font-family: Tahoma,Verdana;
+  font-size: 0.8em;
+  border:0;   
+}
+
+#menubar {
+  position: absolute;
+  bottom:0px;
+  right:0;
+}
+#menubar ul {
+  margin:0;
+  padding:0;
+}
+#menubar ul li {
+  
+  list-style:none;
+  margin: 0px;
+  margin-bottom: 0px;
+  margin-right: 2px;
+  position:relative;
+  float: left;
+}
+
+#menubar ul.subnav {  
+    list-style: none;  
+         
+    overflow:hidden;
+    z-index:900;
+    right: 0;  
+    width: 130px;  
+ }  
+ 
+.hidden {
+  display: none;
+}
+
+#menubar ul li a {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: block;
+  height: 20px;
+  border:0;
+  padding-top: 7px;
+  color:#FFF;
+  font-size: 0.9em;   
+  text-decoration:none;
+  font-weight: bold;
+  text-transform:uppercase;
+}
+#menubar ul li ul li,#menubar ul li ul li:hover {
+  float:none;
+  border: 0;  
+}
+#menubar ul li ul li a {
+  padding-left: 0px;
+}
+#footer #footerlinks ul li a:hover{
+  text-decoration: underline;   
+}
+.delete {
+  position:absolute;
+  top:0;
+  right:0;
+  z-index:1;
+}
+.profileImageSmall {
+  border: 2px solid #2C3B47;
+}
+.padd {
+  padding-left: 10px;
+}
+.bold {
+  font-weight: bold;
+} 
+.smaller {
+  font-size: smaller;
+} 
+.buttonLarge {
+  background:url("/includes/images/public/buttonbg.jpg") 50% 50% repeat-x;
+  padding: 8px;
+  padding-top: 6px;
+  color:#FFF;
+  cursor:pointer;
+
+  font-size: 1em;
+  border: 3px double #FFF;
+  -moz-border-radius: 7px;
+}
+.button {
+  background:url("/includes/images/public/buttonbg.jpg") 50% 50% repeat-x;
+  padding: 4px;
+  padding-top: 2px;
+  color:#FFF;
+  cursor:pointer;
+  font-size: 0.8em;
+  border: 3px double #FFF;
+  -moz-border-radius: 5px;
+}
+.button:hover {
+  background:url("/includes/images/home/nav/bgover.png") 50% 50% repeat-x;
+}
+
+/* tabs
+*************************/
+
+ul.tabs
+{
+display: table;
+margin: 0;
+padding: 0;
+list-style: none;
+position: relative;
+}
+
+ul.tabs li
+{
+margin: 0;
+padding: 0;
+list-style: none;
+display: table-cell;
+float: left;
+position: relative;
+}
+
+ul.tabs a
+{
+position: relative;
+display: block;
+}
+
+/* dropdowns
+*************************/
+
+ul.dropdown
+{
+  text-align: left;
+margin: 0;
+padding: 0;
+display: block;
+position: absolute;
+z-index: 999;
+top: 100%;
+width: 250px;
+display: none;
+left: 0;
+}
+
+ul.dropdown ul.dropdown
+{
+top: 0;
+left: 95%;
+}
+
+ul.dropdown li
+{
+margin: 0;
+padding: 0;
+float: none;
+position: relative;
+list-style: none;
+display: block;
+}
+
+ul.dropdown li a
+{
+display: block;
+}
+
+
+#menubar ul {
+  margin: 0 auto;
+}
+
+
+
+#menubar ul li h4
+{
+margin: 0;
+}
+
+#menubar ul li h4 a
+{
+font-size: 14px;
+color: #000;
+font-weight: bold;
+padding: 0 15px;
+}
+
+
+#menubar ul li a img
+{
+vertical-align: middle;
+}
+
+
+
+#menubar ul li a span
+{
+display: block;
+padding: 0 15px 0 11px;
+}
+
+
+#menubar ul.dropdown
+{
+padding: 0px;
+overflow:hidden;
+border-bottom: 1px solid #dc902f;
+width: 290px;
+}
+
+#menubar ul.dropdown li a
+{
+overflow: hidden;
+}
+
+#menubar ul.dropdown li.last a
+{
+border-bottom-width: 0;
+}
+
+#menubar ul li a.n-home {
+  padding-left: 35px;
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/home.png") 10px 5px no-repeat;
+}
+.small {
+  font-size: 80%;
+  margin-top: 8px;
+}
+#menubar ul li a.n-blog {
+  padding-left: 35px;
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/feed.png") 10px 5px no-repeat;
+}
+#menubar ul li a.n-contact {
+  padding-left: 35px;
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/telephone.png") 10px 5px no-repeat;
+}
+#menubar ul li a.n-signup {
+  padding-left: 35px;
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/card-address.png") 10px 5px no-repeat;
+}
+#menubar ul li a.n-tour {
+  padding-left: 35px;
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/camera.png") 10px 5px no-repeat;
+}
+#menubar ul li a.n-faqs {
+  padding-left: 35px;
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/question-frame.png") 10px 5px no-repeat;
+}
+#menubar ul li h4 a:hover
+{
+background-image: none;
+}
+ul.dropdown li
+{
+margin: 0;
+padding: 0;
+float: none;
+position: relative;
+list-style: none;
+display: block;
+}
+a.zoom {
+  border: 0;
+}
+a[rel="external"], a.external {
+  white-space: nowrap;
+  padding-right: 20px;
+  background: url(http://d25ke41d0c64z1.cloudfront.net/images/icons/applications.png) no-repeat 100% 50%;
+  zoom: 1;
+}
+.fourty {
+  width: 50%;
+  float: left;
+  margin-right:-227px;
+}
+.sixty {
+  width:50%;
+  height: 100%;
+  background: white;
+  float: left;
+  padding-right: 227px;
+}
+.fourty .mainmenu {
+  width: 280px;
+  float: right; 
+  margin-right: 227px;
+  min-height: 500px;
+  background: url("/includes/images/public/mainmenudiv.png") top right no-repeat;
+}
+.sixty .w {
+  width: 670px;
+  margin: 20px 0px 0px 20px;  
+}
+.fourtyReverse {
+  width: 50%;
+  float: left;
+  margin-right: -227px;
+  
+}
+.sixtyReverse {
+  width:50%;
+  height: 100%;
+  position: relative;
+  float: left;
+  padding-right: 227px;
+  min-height: 500px;
+  background: white url("/includes/images/public/mainmenudiv.png") left right no-repeat;
+}
+.sixtyReverse .w {
+  width: 700px;   
+  float: right;
+  margin: 20px -227px 0px 20px;  
+}
+#profileBody.sitepage {
+  padding-top:1px;
+}
+#profileBody.sitepage .w {
+min-height: 685px;
+}
+#normalLogin button {
+  margin-right: 22px;
+  border: 1px solid #386640;
+  background: url("/includes/images/public/buttonbg.jpg") 50% 50% repeat-x;
+  color: white;
+  font-family:'Lato', 'Lato', "Lucida Sans Unicode","Trebuchet MS",Tahoma,Verdana;
+  margin-top: 5px;
+  text-transform: uppercase;
+  text-shadow: 0px -1px 1px #386640;
+  font-size: 120%;
+  font-weight: bold;
+  display: block;
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+}
+#normalLogin button span {
+  width: 16px;
+  height: 16px;
+  float: right;
+  margin-left: 10px;
+  
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/lock--arrow.png") no-repeat;
+}
+ol, ul {
+  margin-left: 20px;
+}
+#normalLogin input {
+  margin-top: 5px;
+  height: 26px;
+  margin-right: 4px;
+}
+#normalLogin label.over { cursor:text;color: #999; position: absolute; top: 1px; left: 10px; z-index: 1000;}

@@ -1,0 +1,47 @@
+@media (max-width: 480px) {
+  /* mobile exceptions
+   * 
+   */
+  #mainB {
+  	width: 90%;
+		margin:0 !important;
+		float: none;
+		padding: 5px 5% !important;
+  }
+	
+	#leftMenu .form-search .input-medium {
+		width: 145px;
+	}
+	h1 {
+		font-size: 30px;
+		line-height: 30px;
+	}
+	#productList.thumbnails, #productList ul.thumbnails {
+		margin-left: -20px;
+	}
+	.navbar-inner {
+		background: #030133 url("/includes/images/sites/1/topbg.jpg") repeat-x top !important;
+    filter: none;
+	}
+	footer {
+	color: #666;
+	background: #222;
+	padding: 17px 0 18px 0;
+	border-top: 1px solid black;
+	position: inherit;
+	}
+	.navbar-fixed-top {
+		position:relative;
+		margin-right: 0px;
+	}
+	.navbar-fixed-top .container ul.nav {
+	 position: relative;
+  	top: 0px;
+	  float: left;
+	  margin-left: 10px;
+	}
+	.navbar-fixed-top .container ul.nav li {
+		float: left;
+		font-size: 10px;
+	}
+}

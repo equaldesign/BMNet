@@ -1,0 +1,157 @@
+#adminBar {
+	font-family: "Droid Sans";
+	font-size: 0.8em;
+}
+#adminBar > .navbar-inner > .nav-collapse > ul.nav > li > a {
+	text-transform: uppercase;
+}
+.cke {
+	z-index:1102;
+}
+.icon-move.draghandler {
+	cursor: pointer;
+}
+#saveButton.hidden {
+	display: none;
+}
+.navbar .nav > li .nav-stacked > li {
+float: none;
+}
+#linkSelector ul {
+	margin-bottom: 10px;
+}
+#pageList {
+	width: 400px;
+}
+#linkSelector {
+	padding: 10px;
+}
+#linkList {
+	margin-left: 0px;
+	width: 100%;
+}
+#linkSelector li {
+	display: block;
+}
+#linkSelector li > a {
+	padding: 0px !important;
+	border:0 !important;
+  display: inline-block;
+}
+#linkSelector li > a.pull-right {
+  float: right !important;
+	clear: none;
+}
+#linkSelector li > a.pull-right:hover {
+	background:none;
+}
+.slimScrollDiv {
+	position: absolute;
+}
+#adminBar .navbar-inner .nav > li > a {
+  padding: 10px 10px 11px;
+  font-family: 'Droid Sans', DroidSans, 'trebuchet ms', 'Lucida Sans Unicode', sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+#BMNetAdmin {
+	position: fixed;
+	right: 0px;
+	z-index:1200;
+	display: block;
+	top: 0px;
+	background: url("/modules/sums/includes/images/a_logo.png");
+	width: 69px;
+	height: 44px;
+}
+
+#adminBar ul li a.edit_page {
+  background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document--pencil.png");
+}
+#adminBar ul li a.new_page {
+  background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document--plus.png");
+}
+#adminBar ul li a.pages {
+  background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/documents-stack.png");
+}
+#adminBar ul li a.save_page {
+  background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/disk.png");
+}
+#adminBar ul li a.publish_page {
+  background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/disk--arrow.png");
+}
+#adminBar ul li a.page_versions {
+  background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/clock-history.png");
+}
+#adminBar ul li a.media_library {
+  background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/photo-album.png");
+}
+#adminBar ul li a.delete_page {
+  background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bin--exclamation.png");
+}
+#adminBar ul li a.cancel_checkout {
+  background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/do-not-disturb-sign-cross.png");
+}
+#adminBar ul li a.working_copy {
+  background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/lock-unlock.png");
+}
+#adminBar ul li a.page_links {
+  background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/chain.png");
+}
+#adminBar ul li a.page_attributes {  
+  background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document--pencil.png");
+}
+#adminBar ul li.backtointranet a.backtointranet{  
+  border:0;
+  background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user-worker-boss.png");
+}
+a.templateDiv {
+	padding: 4px;
+	min-height: 40px;
+	display:block;
+	font-weight: normal;
+	margin: 8px 3px;
+	padding-left: 50px;
+	border-bottom: 1px dotted #DDD;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/page_blank_add_32.png") top left no-repeat;
+}
+a.templateDiv span.title {
+	font-size: 14px;
+	font-weight: bold;
+}
+a.templateDiv:hover {
+	text-decoration: none;
+}
+a.templateDiv:last-of-type {  
+  border-bottom: none;
+}
+a.templateDiv span.summary, a.templateDiv:hover span.summary {
+	display: block;
+	margin-top: 4px;
+	font-size: 12px;
+	color:#555;
+	
+}
+a.templateDiv.template_contact {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/envelope.png") top left no-repeat;
+}
+a.templateDiv.template_branchlocator {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/map (2).png") top left no-repeat;
+}
+a.templateDiv.template_blogpost {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/rss_32.png") top left no-repeat;
+}
+a.templateDiv.template_homepage {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/home_32.png") top left no-repeat;
+}
+a.templateDiv.template_bvproductlist {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/buildingVine.png") top left no-repeat;
+}
+#pageTree {
+	margin-left:0px !important;
+}
+#adminBar [class^="icon-"], [class*=" icon-"] {
+margin-right: 6px;
+margin-top: -2px; 
+}

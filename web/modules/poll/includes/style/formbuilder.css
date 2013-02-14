@@ -1,0 +1,47 @@
+.box {
+	border: 1px solid #C6E2FF;
+	background: #EAF4FF;
+	padding: 15px;
+	margin: 10px;	
+} 
+.box label {
+	display: block;
+	width: 150px;
+	float: left;
+}
+.box input, .box select {
+	float: left;
+}
+.f {
+	display: block;
+	clear: both;
+	margin: 3px;
+	padding: 3px;
+}
+.handle {
+	width:16px;
+	height: 16px;	
+	display: block;
+	float: right;
+	cursor: move;
+}
+.collpase {
+	width:16px;
+	margin:0 4px;
+  height: 16px;  
+  display: block;
+  float: right;
+  cursor:crosshair;
+}
+.deleteE {
+  width:16px;
+  height: 16px;  
+  display: block;
+  float: right;  
+}
+.widget-header {
+	padding-right: 25px;	
+}
+.widget-header a {
+	margin-top: 13px;
+}

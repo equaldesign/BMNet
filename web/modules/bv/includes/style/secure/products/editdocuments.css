@@ -1,0 +1,91 @@
+#documentSearch #documentQuery {
+	border-left: 1px solid #DEDEDE;
+	border-top: 1px solid #DEDEDE;
+	height: 30px;
+	border-bottom: 1px solid #DEDEDE;
+  border-radius: 5px 0px 0px 5px;  
+  padding-left: 10px;
+  font-family: 'Lato', Ubuntu, 'DejaVu Sans', Arial, sans-serif;
+
+}
+#documentSearch #documentSearchButton {	
+	border: 1px solid #A2CEE5;
+	width: 85px;		
+	font-family: 'Lato', Ubuntu, 'DejaVu Sans', Arial, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	height: 30px;
+	background: url("/includes/images/secure/submitbg.jpg") 50% 50% repeat-x;
+	border-radius: 0px 5px 5px 0px;
+	position: relative;
+  left: -5px;
+}
+#documentSearch #upload { 
+  border: 1px solid #A2CEE5;
+  width: 85px;    
+  font-family: 'Lato', Ubuntu, 'DejaVu Sans', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  height: 30px;
+  background: url("/includes/images/secure/submitbg.jpg") 50% 50% repeat-x;
+  border-radius: 5px;
+  position: relative;
+  left: -5px;
+}
+#documentSearch #upload object {
+position: absolute;
+top: 0px;
+left: 0px;
+}
+.rel {
+	position: relative;
+}
+.rel label {
+	top: 7px !important;
+}
+
+.icon {		
+	width: 16px;
+	height: 16px;
+	display: block;
+}
+.magnify {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/magnifier-zoom-in.png") no-repeat;
+	clear: left;
+	float: left;
+}
+.choose {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/tick-button.png") no-repeat;
+  float: right;
+}
+.unchoose {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/cross-button.png") no-repeat;
+  float: right;
+} 
+#chosenDocuments {
+	margin: 10px 0;
+	width: 100%;	
+	background: #EFEFEF;
+	border: 1px solid #DEDEDE;
+}
+.chooseDocument {
+	background: #EFEFEF;
+	border: #DEDEDE;
+	padding: 3px;
+	margin-right: 5px;
+}
+.chooseDocument img {
+	margin: 3px;
+}
+.dragok {
+	background: #DEF5D6 !important;
+	border: 1px solid #B6E9A3 !important;
+}
+#productDocuments {
+	float: left;
+  width: 150px;
+	margin: 3px;
+  padding: 3px;
+	background: #EFEFEF;
+  border: 1px solid #DEDEDE;
+}

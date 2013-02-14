@@ -1,0 +1,39 @@
+.pagingTabsTotals, .pagingTabsCarrousel {
+  float :left;
+	display:block;
+}
+.pagingTabsCarrousel {
+  margin-left: 10px;
+}
+.pagingTabsCarrousel a.selected {
+  color: #999 !important;
+}
+#pagingheader {
+  border-top: 1px dotted #999999;
+  border-bottom: 1px dotted #999999;  
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 5px;
+}
+#pageCount {
+float: right;
+font-size: 90%;
+padding-right: 0px;
+text-align: right;
+}
+.pagingTabsCarrousel a {
+	text-decoration: none;
+}
+.pagingTabsCarrousel .nextPage {
+	display: inline-block;
+	height: 19px;
+	
+	width: 16px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-page-next.png") no-repeat 0px 3px !important;
+}
+.pagingTabsCarrousel .previousPage {
+  display: inline-block;
+  height: 19px;
+  width: 16px;	
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-page-previous.png") no-repeat 0px 3px !important;
+}

@@ -1,0 +1,48 @@
+#bv_blog h1 {
+	color:#172C3D;
+  text-shadow: white 0px 1px 1px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 4px;
+	margin: .67em 0;
+}
+#bv_blog p {
+	margin: 1.12em 0
+}
+.blogDate {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/calendar.png") no-repeat;
+	padding: 3px 10px 3px 20px;	
+	color: #666;
+}
+.blogAuthor {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user-business-gray.png") no-repeat;
+  	padding: 3px 10px 3px 20px;
+  	margin-left: 10px;
+  	border-right: 1px solid #999;
+	color: #666;	
+}
+.blogAuthor a {
+	font-weight: normal;
+	border: 0;
+color: #666;	
+}
+.blogComments {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/balloon.png") no-repeat;
+  padding: 3px 10px 3px 20px;
+  margin-left: 10px;
+		color: #666;
+}
+
+.w h1 {
+  margin-top: 0;
+  padding-top: 10px;
+	margin-bottom: 20px;
+	color: #466F1A;
+	font-size: 500%;
+  font-weight: bold;
+	text-shadow: #B9E97C 0px 1px 1px;
+}
+h3.blogtitle {
+	font-size: 190%;
+	font-weight: bold;
+}

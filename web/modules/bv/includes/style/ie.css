@@ -1,0 +1,44 @@
+.glow {
+  border: 1px solid #DDD;
+}
+#featuresFree {
+	margin-right: 5px !important;
+}
+#profileBody.homepage .w {
+  height: 685px;
+}
+.blogItem {
+	font-size: 110%;
+}
+#searchDiv {height: 207px;}
+#topright {
+	width: 600px;
+}
+#publicSearchButton {
+	left: 360px;
+	border-right: 1px solid #333;
+}
+#recentSites {
+	width: 490px;
+}
+#homeQuickNav ul li a {
+	font-size: 10px !important;
+	padding-top: 5px !important;
+}
+#signupRight {
+	width: 450px;
+}
+#greenBG .register {
+	margin-right: 10px !important;
+	font-size: 16px;
+}
+#greenBG .tour {
+	font-size: 16px;
+}
+#tour h3 {
+	line-height: 20px;
+}
+#normalLogin input {
+	color: #000;
+	font-family: sans-serif;
+}

@@ -1,0 +1,75 @@
+.editProductImage {
+   width: 16px;
+  height: 16px;
+  margin:3px;
+  display: block;
+  float: left;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/image--pencil.png") no-repeat;
+}
+.editProductDocs {
+  width: 16px;
+  height: 16px;
+  margin:3px;
+  display: block;
+  float: left;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-pdf.png") no-repeat;
+}
+.editVideo {
+  width: 16px;
+  height: 16px;
+  margin:3px;
+  display: block;
+  float: left;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/camcorder--pencil.png") no-repeat;
+}
+.feature {
+   width: 16px;
+  height: 16px;
+  margin:3px;
+  display: block;
+  float: left;  
+}
+.feature.true {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/star-empty.png") no-repeat;  
+}
+.feature.false {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/star.png") no-repeat;  
+}
+.editProduct {
+  width: 16px;
+  height: 16px;
+  margin:3px;
+  display: block;
+  float: left;
+  position: absolute;
+  bottom:5px;
+  right: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/drill--pencil.png") no-repeat;
+}
+.deleteProduct {
+  width: 16px;
+  height: 16px;
+  margin:3px;
+  position: absolute;
+  bottom:5px;
+  right: 5px;
+  display: block;
+  float: left;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/drill--minus.png") no-repeat;
+}
+.deletePrice {
+	width: 16px;
+  height: 16px;
+  margin:3px;
+  display: block;
+  float: left;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/money--minus.png") no-repeat;
+}
+.editPrice {
+  width: 16px;
+  height: 16px;
+  margin:3px;
+  display: block;
+  float: left;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/money--pencil.png") no-repeat;
+}

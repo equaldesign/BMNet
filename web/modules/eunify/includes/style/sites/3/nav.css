@@ -1,0 +1,71 @@
+.navbar-fixed-top .navbar-inner .nav > li > a {
+    padding: 10px 10px 11px;
+    font-family: 'Droid Sans', DroidSans, 'trebuchet ms', 'Lucida Sans Unicode', sans-serif;
+    font-size: 11px;
+    font-weight:bold;
+}
+.navbar .nav > li > a {
+    text-shadow: 0 1px 0 #FFF;
+}
+
+.navbar .divider-vertical {
+    width: 1px;
+    height: 40px;
+    margin: 0 9px;
+		padding:0;
+    overflow: hidden;
+    background-color: #DDD;
+    border-right: 1px solid #FFF;
+}
+.icon-sales {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/chart-pie.png") no-repeat ;
+}
+.icon-feed {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/house.png") no-repeat ;
+}
+.icon-customers {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user-worker.png") no-repeat ;
+}
+.icon-suppliers {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user-worker-boss.png") no-repeat ;
+}
+.icon-products {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/drill.png") no-repeat ;
+}
+.icon-egroup {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/eGroup.png") no-repeat ;
+}
+.icon-website {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/globe-network.png") no-repeat ;
+}
+.icon-documents {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-pdf.png") no-repeat ;
+}
+.icon-marketing {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/mail-open-image.png") no-repeat ;
+}
+.icon-facebook {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/balloon-facebook.png") no-repeat ;
+}
+.icon-twitter {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/balloon-twitter.png") no-repeat ;
+}
+.icon-email-list {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/mails.png") no-repeat ;
+}
+.icon-email-new {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/mail--plus.png") no-repeat ;
+}
+#topnav ul li a:hover {
+  background-color: #0070A6;	
+}
+#topnav ul li a.active {
+	background-color: #FFF;
+	border-bottom: 1px solid #FFF;
+	color:#333;
+  text-shadow: 0 -1px 1px rgba(255,255,255,.6);
+	margin-bottom:-1px}
+.navbar .nav .active > a {
+	background:none;
+	color:inherit;
+}

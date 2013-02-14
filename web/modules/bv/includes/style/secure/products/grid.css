@@ -1,0 +1,88 @@
+
+/*
+ * Styles for the product listings...
+ */
+
+div.productList {
+  display: block;
+	width: 85px;
+	float: left;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  background: #F5F5F5;
+  border: 1px solid #DEDEDE;  
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05); 
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05); 
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+}
+div.productList .productImage {
+  float :left;
+  margin-right: 10px;
+  width: 85px; 
+	height: 110px;
+	background: white;
+	overflow: hidden;
+	border: 2px solid #DFDFDF;
+}
+div.productList .productImage img {
+  border:none;
+	width: 85px;
+}
+div.productList:hover {
+  text-decoration: none;
+  background: #EFEFEF;
+  
+}
+.productList .productInfo {
+  width:auto;
+}
+div.productList h2 {
+  margin-top: 0px;
+  font-size: 11px;
+	display:compact;
+	text-align: center;
+	width:auto;
+}
+div.productList h5 {
+  margin-top: 0px;
+	font-size: 10px;
+  color: #666;
+	float: none;
+}
+div.productList h4 {
+  margin-top: 0px;
+	font-size: 100%;
+	width: auto;
+	float: none;
+}
+div.productList .editProduct {
+  width: 16px;
+  height: 16px;
+  margin:3px;
+  display: block;
+  float: left;
+	position: relative;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/drill--pencil.png") no-repeat;
+}
+div.productList .deleteProduct {
+  width: 16px;
+  height: 16px;
+  margin:3px;
+	position: relative;
+  display: block;
+  float: left;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/drill--minus.png") no-repeat;
+}
+.productList .editProductImage {
+  display: none;   
+}
+span.rrp {
+	display: none;
+}
+span.EAN {
+  display: none;
+}
+span.code {
+  display: none;
+}

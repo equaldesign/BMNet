@@ -1,0 +1,11 @@
+#alphabet {}
+#alphabet li {	
+	float: left;
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+#alphabet li a {
+	display: block;	
+	text-decoration: none;
+}

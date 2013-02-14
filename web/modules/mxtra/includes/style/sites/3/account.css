@@ -1,0 +1,10 @@
+#main {
+  background: url("/includes/images/sites/0/white_transp_bg.png");
+    padding: 20px;
+    margin:0px;
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+	
+}

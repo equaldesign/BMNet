@@ -1,0 +1,16 @@
+.wikipage a {
+	text-decoration: underline;
+	color: #99CC00;
+}
+.wikipage h1, .wikipage h2 {
+	font-weight: bold;
+}
+.wikipage h2 {
+	font-size: 170%;
+}
+.wikipage p, .wikipage li {
+	color: #666;
+}
+.wikipage p {
+	margin: 0.2em 0;
+}
