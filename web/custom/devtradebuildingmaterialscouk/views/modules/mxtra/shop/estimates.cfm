@@ -1,1 +1,0 @@
-<p><small>* Totals are approximate. We expect you will receive quotations less than the shown amount.</small></p>
