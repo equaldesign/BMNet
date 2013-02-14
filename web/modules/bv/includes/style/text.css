@@ -1,0 +1,59 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: content-box;
+  -webkit-box-sizing: content-box;  
+  -moz-box-sizing: content-box;
+} 
+body {
+    font-family: Cantarell, 'Lato', Ubuntu, 'DejaVu Sans', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #2e3436;
+}
+h1, h2, h3, h4, h5, h6, dt {
+    color: #0489B7;
+		font-family: 'Lato', Ubuntu, 'DejaVu Sans', Arial, sans-serif;
+}
+h1 {
+    font-size: 42px;
+}
+h2 {
+    font-size: 25px;
+}
+h3 {
+    font-size: 21px;
+    margin: 0.4em 0 0.5em;
+    color: #2E3436;
+}
+dt {
+    color: #E36615;
+}
+dt a:hover {
+    color: #fa7721;    
+}
+h4 {
+    font-size: 16px;
+    color: #ce5c00;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 12px;
+}
+ol {
+    list-style:decimal;
+}
+ul {
+    list-style:square;
+}
+li {
+    margin-left:30px;
+}
+dl,dt,h1,h2,h3,h4,h5,h6,pre,table,address,fieldset {
+    margin: 0.8em 0 0.4em;
+}
+p, dd, .action_box, ul, ol {
+    margin: 0.4em 0 1em;
+}

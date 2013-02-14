@@ -1,0 +1,83 @@
+#tabs .dashboard_dashboard {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/chart-up.png") 4px 4px no-repeat;
+}
+#tabs .dashboard_rebatedue {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/flag.png") 4px 4px no-repeat;
+}
+#tabs .dashboard_rebategroup {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/flag-yellow.png") 4px 4px no-repeat;
+}
+#tabs .dashboard_rebateready {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/flag-green.png") 4px 4px no-repeat;
+}
+#tabs .dashboard_rebatepartpaid {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/flag-purple.png") 4px 4px no-repeat;
+}
+.dL {	
+	float: left;
+	width: 43%;
+	padding: 10px;
+	margin: 10px;	
+  background:#EBEBEB url("/includes/images/dms/headerbg.jpg") repeat-x;
+  border: 1px solid  #D2D2D2;
+  -webkit-box-shadow:0 0 5px rgba(0,0,0,0.1); 
+  -moz-box-shadow: 0 0 5px rgba(0,0,0,0.1); 
+  box-shadow:0 0 5px rgba(0,0,0,0.1);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;  
+}
+.turnover_download {
+	padding-left: 35px;
+	display: block;
+}
+.turnover_download.member {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-24/table-export.png") 4px 4px no-repeat;
+}
+.turnover_download.group {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-24/table-sheet.png") 4px 4px no-repeat;
+}
+.turnover_download h3 {
+	color: #990000;
+	margin-bottom: 5px;
+}
+.rebateMarkPaid {
+	display: inline-block;
+	height:16px;
+	width: 16px;
+	background:url("https://d25ke41d0c64z1.cloudfront.net/images/icons/tick-circle-frame.png") no-repeat;
+}
+.rebateMarkPart {	
+  height:16px;
+  width: 16px;
+  background:url("https://d25ke41d0c64z1.cloudfront.net/images/icons/tick-white.png") no-repeat;
+}
+.rebateMarkPaidWarning {
+  display: inline-block;
+  height:16px;
+  width: 16px;
+  background:url("https://d25ke41d0c64z1.cloudfront.net/images/icons/tick-shield.png") no-repeat;
+}
+.rebateAddNote {
+  display: inline-block;
+  height:16px;
+  width: 16px;
+  background:url("https://d25ke41d0c64z1.cloudfront.net/images/icons/sticky-note--plus.png") no-repeat;
+}
+.createPaymentRequest {
+	display: inline-block;
+  height:16px;
+  width: 16px;
+  background:url("https://d25ke41d0c64z1.cloudfront.net/images/icons/table--plus.png") no-repeat;
+}
+.viewPaymentRequest {
+  display: inline-block;
+  height:16px;
+  width: 16px;
+  background:url("https://d25ke41d0c64z1.cloudfront.net/images/icons/mail-open-table.png") no-repeat;
+}

@@ -1,0 +1,2 @@
+<cfheader name="Content-Disposition" value="attachment;filename=/tmp/new_#rc.buildingVine.syncOptions.filename#">
+<cfcontent deletefile="true" reset="true" file="/tmp/new_#rc.buildingVine.syncOptions.filename#" type="#getPageContext().getServletContext().getMimeType('/tmp/new_#rc.buildingVine.syncOptions.filename#')#">

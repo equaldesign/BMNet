@@ -1,0 +1,376 @@
+#shortCuts {
+  width: 250px;
+  position: relative;
+	min-height: 100px;
+}
+#shortCuts h2 {
+  color: #999;
+  text-shadow: 0px 1px 0px #FFF;  
+} 
+
+#dashboardShortcuts li {  
+  list-style: none;  
+}
+#dashboardShortcuts li:first-child {  
+  border-top: 0px;
+}
+#dashboardShortcuts li:last-child {
+  border-bottom: 0px;
+}
+#dashboardShortcuts li a {
+	padding-left: 0px;
+}
+.subpages ul {
+	margin-left: 5px;
+}
+#dashboardShortcuts li a {
+  text-decoration: none;    
+	background-position: 0px 6px;
+	background-repeat: no-repeat;  
+  color:#666;
+	margin-left:0px;
+}
+#dashboardShortcuts li a.nopadd {
+  text-decoration: none;  
+  padding: 5px 15px 5px 5px;
+  display: block;
+  color:#666;
+}
+#dashboardShortcuts li a:hover {  
+  color:#000;
+}
+#dashboardShortcuts li a.feed { 
+ padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/feed.png");
+	
+}
+#dashboardShortcuts li a.createcontact {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user--plus.png"); 
+}
+#dashboardShortcuts li a.createcompany {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/building--plus.png"); 
+}
+#dashboardShortcuts li a.createlead {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/money-coin.png"); 
+}
+#dashboardShortcuts li a.createopporuntity {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/zone-money.png"); 
+}
+#dashboardShortcuts li a.createquote {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/table-money.png"); 
+}
+#dashboardShortcuts li a.createcase {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/toolbox--plus.png"); 
+}
+#dashboardShortcuts li a.createmeeting {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/calendar--plus.png"); 
+}
+#dashboardShortcuts li a.createcall {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/mobile-phone--plus.png"); 
+}
+#dashboardShortcuts li a.stockists {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/maps.png"); 
+}
+#dashboardShortcuts li a.stockistMap {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/map.png"); 
+}
+#dashboardShortcuts li a.createtask {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/clipboard-task.png"); 
+}
+#dashboardShortcuts li a.createproduct {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/drill--plus.png"); 
+}
+#dashboardShortcuts li a.uploadproducts {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/table-excel.png"); 
+}
+#dashboardShortcuts li a.listproducts {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/drill--arrow.png");
+}
+#dashboardShortcuts li a.listproducts {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/drill--arrow.png");
+}
+#dashboardShortcuts li a.invite {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user-share.png"); 
+}
+#dashboardShortcuts li a.manageusers {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user--pencil.png");  
+}
+#dashboardShortcuts li a.help {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/question-frame.png");  
+} 
+#dashboardShortcuts li a.searchproducts {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/drill.png"); 
+}
+#dashboardShortcuts li a.searchdocuments {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-search-result.png"); 
+}
+#dashboardShortcuts li a.searchpeople {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user.png"); 
+}
+#dashboardShortcuts li a.searchcompany {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/building.png"); 
+}
+#dashboardShortcuts li a.searchblog {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/feed.png"); 
+}
+#dashboardShortcuts li a.blog {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/blog-blue.png"); 
+}
+#dashboardShortcuts li a.createblog {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/blog--plus.png"); 
+}
+#dashboardShortcuts li a.createcampaign {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/mail-forward-all.png"); 
+}
+#dashboardShortcuts li a.campaignlists {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/mail-open-table.png"); 
+}
+#dashboardShortcuts li.disable a.createcampaign {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/mail-forward-all--disabled.png"); 
+}
+#dashboardShortcuts li.disable a.campaignlists {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/mail-open-table--disabled.png"); 
+}
+#dashboardShortcuts li a.twitter {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/balloon-twitter.png"); 
+}
+#dashboardShortcuts li a.importprices {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/table-money.png"); 
+}
+#dashboardShortcuts li a.userdetails {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user--pencil.png"); 
+}
+#dashboardShortcuts li a.password {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user--exclamation.png"); 
+}
+#dashboardShortcuts li a.emailsettings {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/mail--pencil.png"); 
+}
+#dashboardShortcuts li a.googledocs {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/google-icon.png"); 
+}
+#dashboardShortcuts li a.promotions {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/store-open.png"); 
+}
+#dashboardShortcuts li a.pending-promotions {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/store--arrow.png"); 
+}
+#dashboardShortcuts li a.expired-promotions {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/store--exclamation.png"); 
+}
+#dashboardShortcuts li a.edit-promotions {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/store--plus.png"); 
+}
+#dashboardShortcuts li a.manageusers {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user--pencil.png"); 
+}
+#dashboardShortcuts li a.inviteusers {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user--plus.png"); 
+}
+#dashboardShortcuts li a.existingusers {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user--arrow.png"); 
+}
+#dashboardShortcuts li a.userlist {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/users.png"); 
+}
+#dashboardShortcuts li a.editsite {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/globe--pencil.png"); 
+}
+#dashboardShortcuts li a.sitelogo {
+   padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/picture--pencil.png"); 
+}
+#dashboardShortcuts li a.siteBuyingGroups {
+ padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/truck-empty.png"); 
+}
+
+#dashboardShortcuts li a.edit_page {
+   padding: 5px 15px 5px 25px;
+	background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document--pencil.png");
+}
+#dashboardShortcuts li a.new_page {
+   padding: 5px 15px 5px 25px;
+	background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document--plus.png");
+}
+#dashboardShortcuts li a.pages {
+  background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/documents-stack.png");
+	 padding: 5px 15px 5px 25px;
+}
+#dashboardShortcuts li a.save_page {
+  background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/disk.png");
+	 padding: 5px 15px 5px 25px;
+}
+#dashboardShortcuts li a.publish_page {
+  background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/disk--arrow.png");
+	 padding: 5px 15px 5px 25px;
+}
+#dashboardShortcuts li a.page_versions {
+  background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/clock-history.png");
+	 padding: 5px 15px 5px 25px;
+}
+#dashboardShortcuts li a.media_library {
+  background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/photo-album.png");
+	 padding: 5px 15px 5px 25px;
+}
+#dashboardShortcuts li a.delete_page {
+  background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bin--exclamation.png");
+	 padding: 5px 15px 5px 25px;
+}
+#dashboardShortcuts li a.cancel_checkout {
+  background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/do-not-disturb-sign-cross.png");
+	 padding: 5px 15px 5px 25px;
+}
+#dashboardShortcuts li a.working_copy {
+  background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/lock-unlock.png");
+	 padding: 5px 15px 5px 25px;
+}
+
+
+
+#dashboardShortcuts li a.sitecolour {
+	padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/color-swatch.png");
+}
+#dashboardShortcuts li a.api {
+  padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/graphic-card.png");
+}
+#dashboardShortcuts li a.products {
+  padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/drill.png");
+}
+#dashboardShortcuts li a.documents {
+  padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-pdf.png");
+}
+#dashboardShortcuts li a.prices {
+  padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/table.png");
+}
+#dashboardShortcuts li a.fullfilment {
+  padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/truck--pencil.png");
+}
+#dashboardShortcuts li a.siteDetail {
+  padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/building-medium.png");
+}
+#dashboardShortcuts li a.followers {
+  padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user-worker-boss.png");
+}
+#dashboardShortcuts li a.website {
+  padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/globe.png");
+}
+#dashboardShortcuts li a.googlePlus {
+  padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/social/google_16.png");
+}
+#dashboardShortcuts li a.facebook {
+  padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/social/facebook_16.png");
+}
+#dashboardShortcuts li a.twitter {
+  padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/social/twitter_16.png");
+}
+#dashboardShortcuts li a.linkedIn {
+  padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/social/linkedin_16.png");
+}
+#dashboardShortcuts li a.youTube {
+  padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/social/youtube_16.png");
+}
+#dashboardShortcuts li a.sites {
+  padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/globe-share.png");
+}
+#dashboardShortcuts li a.email {
+  padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/mail--pencil.png");
+}
+
+#dashboardShortcuts li a.emailList {
+  padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/mails.png");
+}
+#dashboardShortcuts li a.emailNew {
+  padding: 5px 15px 5px 25px;
+ background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/mail--pencil.png");
+}
+
+#dashboardShortcuts li.disable a:hover {
+	color:#666;
+}
+#documentTree {
+  width: 255px;
+}
+.leftExpand { 
+	position: absolute;
+	width:6px;
+	height: 28px;
+	right: -11px;
+	z-index: 9;	
+	top: 10px;
+}
+.leftExpand .doExpand {
+  width: 6px;
+  display: block;
+  height: 28px; 
+  background: url("/includes/images/secure/expandBox.png") 0px 0px no-repeat;
+  margin-right: 0px;
+}
+
+.leftExpand .doContract {
+	width: 6px;
+	display: block;
+	height: 28px;	
+	background: url("/includes/images/secure/contractBox.png") 0px 0px no-repeat;
+	margin-right: 0px;
+}

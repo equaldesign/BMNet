@@ -1,0 +1,76 @@
+#productDesc h2 {
+  margin: 0px;
+  font-size: 24px;
+  color:#FF6600;
+}
+#productImage {
+  margin-left: 0px;
+	padding: 10px;
+	text-align: left;
+  float: left;
+  width:325px;
+}
+#productImage img {
+-webkit-box-shadow:0 0 5px rgba(0,0,0,0.4); 
+-moz-box-shadow: 0 0 5px rgba(0,0,0,0.4); 
+box-shadow:0 0 5px rgba(0,0,0,0.4); 
+}
+#productDesc {
+  float: left;  
+	border-left: 1px solid #DEDEDE;
+	width: 332px;
+	min-height: 450px;
+}
+.descr {
+	background: #FAFAFA;
+	width: 100%;
+	padding: 10px;
+	border-bottom: 1px solid #DEDEDE;
+}
+.ills {
+	font-size: 10px;
+	color: #8C8C8C;
+	margin-top: 5px;
+}
+#productPrice {
+	background: #F5F5F5;
+	width: 100%;
+	padding: 10px;
+	border-bottom: 1px solid #DEDEDE;
+}
+#productDetail {
+  padding: 0px;
+	border-left: 1px solid #DEDEDE;
+	border-right: 1px solid #DEDEDE;
+	border-top: 3px solid #666;
+	border-bottom: 8px solid #666;
+}
+.furtherInfo dl
+{
+  float: left;
+  width: 300px;
+  margin: 1em 0;
+  padding: 0;
+  border-bottom: 1px solid #999;
+}
+
+.furtherInfo dl dt
+{
+  clear: left;
+  float: left;
+  width: 110px;
+  margin: 0;
+  padding: 5px;
+  border-top: 1px solid #999;
+  font-weight: bold;
+}
+
+.furtherInfo dl dd
+{
+  float: left;
+  width: 170px;
+  margin: 0;
+  padding: 5px;
+  border-top: 1px solid #999;
+}
+

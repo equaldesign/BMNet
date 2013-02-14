@@ -1,0 +1,98 @@
+.subnav {
+	width: 100%;	
+	background-color: #EEE;
+	background-repeat: repeat-x;
+	background-image: -moz-linear-gradient(top, whiteSmoke 0%, #EEE 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,whiteSmoke), color-stop(100%,#EEE));
+	background-image: -webkit-linear-gradient(top, whiteSmoke 0%,#EEE 100%);
+	background-image: -ms-linear-gradient(top, whiteSmoke 0%,#EEE 100%);
+	background-image: -o-linear-gradient(top, whiteSmoke 0%,#EEE 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#eeeeee',GradientType=0 );
+	background-image: linear-gradient(top, whiteSmoke 0%,#EEE 100%);
+	border: 1px solid #E5E5E5;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.subnav .nav > li > a {
+	margin: 0;
+	padding-top: 11px;
+	padding-bottom: 11px;
+	border-left: 1px solid whiteSmoke;
+	border-right: 1px solid #E5E5E5;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+.subnav > .nav {
+	margin-bottom:0px;
+}
+.subnav ul {
+	margin:0px !important;
+}
+.subnav > .nav > li {
+	float: left;
+	padding: 0px !important;
+	border: 0px !important;	
+}
+
+/* ICONS */
+.icon-flo-sales {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/chart-pie.png") no-repeat;
+}
+.icon-flo-callback {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/mobile-phone.png") no-repeat;
+}
+.icon-flo-funnel {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/funnel.png") no-repeat;
+}
+.icon-flo-sales-new {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/star--plus.png") no-repeat;
+}
+.icon-flo-tasks {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/calendar-task.png") no-repeat;
+}
+.icon-flo-alarm {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/calendar--exclamation.png") no-repeat;
+}
+.icon-flo-reminder {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/alarm-clock.png") no-repeat;
+}
+.icon-flo-log {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-list.png") no-repeat;
+}
+.icon-flo-settings {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/toolbox--pencil.png") no-repeat;
+}
+.grabbable {
+	cursor: move;
+}
+
+.nav-tabs .open .dropdown-toggle, .nav-pills .open .dropdown-toggle, .nav > li.dropdown.open.active > a:hover {
+	background-color: #DDD;
+	background-repeat: repeat-x;
+	background-image: -moz-linear-gradient(top, #EEE 0%, #DDD 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#EEE), color-stop(100%,#DDD));
+	background-image: -webkit-linear-gradient(top, #EEE 0%,#DDD 100%);
+	background-image: -ms-linear-gradient(top, #EEE 0%,#DDD 100%);
+	background-image: -o-linear-gradient(top, #EEE 0%,#EEE 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EEEEEE', endColorstr='#DDDDDD',GradientType=0 );
+  background-image: linear-gradient(top, #EEE 0%,#DDDD 100%);
+	border-color: transparent !important;
+}
+
+.widget-header.overdue {
+	background: #FFECEC;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFECEC), color-stop(100%,#FFBBBB));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFECEC', endColorstr='#FFBBBB');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFECEC', endColorstr='#FFBBBB')";
+}
+tr.ui-draggable-dragging {display: block}
+
+legend {
+	padding: 3px 0px;
+  color: #999;
+  font-family: "Lato", "Droid Sans";
+  font-weight: 300;
+}
+

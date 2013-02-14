@@ -1,0 +1,25 @@
+.rel {
+	position: relative;
+}
+.rel label {
+	top: 7px !important;
+}
+
+.icon {		
+	width: 16px;
+	height: 16px;
+	display: block;
+}
+.magnify {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/magnifier-zoom-in.png") no-repeat;
+	clear: left;
+	float: left;
+}
+.choose {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/tick-button.png") no-repeat;
+  float: right;
+}
+.unchoose {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/cross-button.png") no-repeat;
+  float: right;
+}

@@ -1,0 +1,137 @@
+
+/*
+ * Styles for the product listings...
+ */
+
+div.productList {
+  display: table;
+  padding: 10px;
+	width: 100%;
+	float: none;
+  margin: 10px 0;
+	position:relative; 
+  text-decoration: none;
+  background: #F5F5F5;
+  border: 1px solid #DEDEDE;  
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05); 
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05); 
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+}
+div.product {
+	display: table-row;
+}
+div.productList .productImage {
+  display: table-cell;
+  margin-right: 10px;
+  width: 100px; 
+	border: none;
+	background: none;
+  height: auto;
+	vertical-align: top;
+	position:relative;
+	overflow: visible;
+}
+div.productList .productImage img {
+  border: 2px solid #DFDFDF;	 
+	display: block;
+}
+div.productList:hover {
+  text-decoration: none;
+  background: #EFEFEF;
+  
+}
+.productList .productInfo {
+  
+	margin-left: 10px;
+	display: table-cell;
+	vertical-align: top;	
+}
+div.productList h2 {
+  margin-top: 0px;
+  font-size: 150%;
+	text-align: left;
+	float: none;
+}
+div.productList h5 {
+  margin-top: 0px;
+  color: #666;
+	font-size: 100%;
+	float: none;
+}
+div.productList h4 {
+  margin-top: 0px;
+	position:static;
+	font-size: 110%;
+	float: none;
+}
+div.productList .editProduct {
+  width: 16px;
+  height: 16px;
+  margin:3px;
+  display: block;
+  float: left;
+	position: absolute;
+	bottom:5px;
+	right: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/drill--pencil.png") no-repeat;
+}
+div.productList .deleteProduct {
+  width: 16px;
+  height: 16px;
+  margin:3px;
+	position: absolute;
+  bottom:5px;
+  right: 5px;
+  display: block;
+  float: left;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/drill--minus.png") no-repeat;
+}
+.editProductImage {
+   width: 16px;
+  height: 16px;
+  margin:3px;
+  display: block;
+  float: left;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/image--pencil.png") no-repeat;
+}
+.editProductDocs {
+   width: 16px;
+  height: 16px;
+  margin:3px;
+  display: block;
+  float: left;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-pdf.png") no-repeat;
+}
+.feature {
+   width: 16px;
+  height: 16px;
+  margin:3px;
+  display: block;
+  float: left;  
+}
+.feature.true {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/star-empty.png") no-repeat;  
+}
+.feature.false {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/star.png") no-repeat;  
+}
+.refreshProductImage {
+  width: 16px;
+  height: 16px;
+  margin:3px;
+  display: block;  
+	position: absolute;
+	left: 3px;
+	top: 3px;
+	display: none;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/arrow-circle.png") 0px 0px no-repeat;
+}
+span.rrp {
+  display: inline;
+}
+span.EAN {
+  display: inline;
+}
+span.code {
+  display: inline;
+}

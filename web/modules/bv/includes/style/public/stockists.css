@@ -1,0 +1,135 @@
+
+#stockistMap {
+  position: relative;
+}
+#branchLocator #mapcontainer .gmnoprint {
+
+}
+#popOverlay h1.name {
+	font-weight: bold;
+	font-size: 200%;
+}
+#popOverlay h2.name {
+  font-weight: bold;
+  font-size: 150%;
+}
+#popOverlay h3 {
+  
+}
+.branchLogo {
+	border: 3px solid #DEDEDE;
+   box-shadow:0 0 5px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow:0 0 5px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow:0 0 5px rgba(0, 0, 0, 0.7);
+	float: left;
+	margin: 0px 10px 10px 0px;
+}
+#popOverlay {
+  width: 100%;
+  z-index: 90000;  
+  height: 100%;
+  background: url("/includes/images/public/overlaysolid.png");
+  position: absolute;
+  left: 0px;
+  padding: 10px;
+  top: 0px;
+  display: none;
+}
+#popOverlay h1 {
+  font-size: 200%;
+  color: #FFF;
+  margin: 0 0 7px;
+}
+#smallMap {
+	border: 3px solid #DEDEDE;
+	 box-shadow:0 0 5px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow:0 0 5px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow:0 0 5px rgba(0, 0, 0, 0.7);
+}
+#popOverlay h2 {
+  font-size: 160%;
+  font-weight: bold;
+  color: #FFF;
+  margin: 0 0 5px;
+}
+#popOverlay h3 {
+  font-size: 130%;
+  color: #FFF;
+  font-weight: bold;
+}
+#popOverlay h4 {
+  margin: 3px 0px 0px 0px;
+  font-size: 115%;
+  color: #FFF;
+  padding-left: 25px;
+  font-weight: bold;
+}
+#popOverlay h4 a {
+  text-decoration: none;
+}
+#popOverlay h4 a:hover {
+  color: #D7EBFF !important;
+}
+#popOverlay h4.phone {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/mobile-phone.png") top left no-repeat;
+}
+#popOverlay h4.fax {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/telephone-fax.png") top left no-repeat;
+}
+#popOverlay h4.email {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/mail-send-receive.png") top left no-repeat;
+}
+#popOverlay h4.web {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/globe-share.png") top left no-repeat;  
+}
+#popOverlay h2, .infoBox h3, .infoBox h4, .infoBox h5 {
+  font-family: 'Lato', "Trebuchet MS", Tahoma, Arial;
+  color: #FFF !important;
+  text-shadow: 0 -1px 0 #000;
+}
+#popOverlay p, .infoBox td {
+  color: #FFF !important;
+  font-family: 'Lato', "Trebuchet MS", Tahoma, Arial;
+}
+#popOverlay td {
+  padding: 3px;
+  font-weight: bold;
+  font-size: 110%;
+} 
+#popOverlay .windowClose {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: block;
+  padding-right: 20px;
+  height: 16px;
+  color: #FFF;
+  text-decoration: none;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/cross-button.png") top right no-repeat;
+}
+
+.branchDetail p.email {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/mail-send-receive.png") no-repeat;
+  padding-left: 20px;
+  display: block;
+  height: 16px;
+}
+.branchDetail p.tel {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/mobile-phone.png") no-repeat;
+  padding-left: 20px;
+  display: block;
+  height: 16px;
+}
+.branchDetail p.web {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/globe-share.png") no-repeat;
+  padding-left: 20px;
+  display: block;
+  height: 16px;
+}
+.branchDetail a {
+  color: #FFF !important;
+}
+
+.infoBox p.companyDescription {
+  font-size: 120%;
+}

@@ -1,0 +1,332 @@
+#breadcrumb {
+	margin: 10px 0px;
+	text-shadow: white 0px 1px 1px;
+}
+
+#versionInfo {
+	display: none;
+}
+#makeversionable {
+	padding-right: 20px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/question-small-white.png") right no-repeat;
+}
+#folderInfo {
+  display: block;
+}
+.docTools {
+	display: block;
+	float: left;
+	width: 18px;
+	height: 18px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document--pencil.png") 50% 50% no-repeat;
+}
+.docInfo {
+  display: block;
+  width: 18px;
+  float: left;
+	height: 18px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document--exclamation.png") 50% 50% no-repeat;
+}
+#folders h2, #documents h2, #documentName {
+	color:#172C3D;
+	text-shadow: white 0px 1px 1px;
+	font-weight: bold;
+	margin-top: 0px;
+}
+.greyBoxHover:hover {
+  background:#EBEBEB url("/modules/eunify/includes/images/dms/silver.jpg") 50% 50% repeat-x;
+  border: 1px solid  #D2D2D2;
+  -webkit-box-shadow:0 0 5px rgba(0,0,0,0.1); 
+  -moz-box-shadow: 0 0 5px rgba(0,0,0,0.1); 
+  box-shadow:0 0 5px rgba(0,0,0,0.1);
+  -webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+  cursor:pointer;
+}
+#folderNav a {
+	padding: 4px 10px 4px 4px;
+	font-weight: bold;
+}
+#folderNav a:hover {
+	color:#990000;
+}
+#bvMain h2 {
+	font-weight: 700;
+}
+.floatleft {
+	float: left;
+}
+.greyBoxHover {
+  margin: 10px 0;
+  padding: 9px;
+  border: 1px solid  #FFF;	
+}
+.greyBoxHover h2 {
+	margin-top:0;
+}
+
+#docSearchButton {
+
+	height: 25px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-shadow: white 0px 1px 0px;
+	text-transform: uppercase;
+	border-radius: 5px;
+	margin:0px 4px;
+	cursor:pointer;
+	
+}
+
+
+.documentDetail {
+	width: 400px;
+}
+#documentPreview {
+	float: left;
+	width:300px;
+	min-height:480px;	
+}
+
+#documentPreview img {
+	border: 4px solid #86AF40;
+}
+#documentAttributes {
+	margin: 10px;
+}
+#documentAttributes dl {
+  width: 22em;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9em;
+}
+
+#documentAttributes dt {
+  width: 6em;
+  float: left;
+  margin: 0 0 0 0;
+  padding: .3em;
+  font-weight: bold;
+	text-align: right;
+}
+
+/* commented backslash hack for mac-ie5 \*/
+#documentAttributes dt { clear: both; }
+/* end hack */
+
+#documentAttributes dd {
+  float: left;
+  width: 13em;
+  margin: 0 0 0 0;
+  padding: .3em;
+}
+
+#mainDocPanel {
+	min-height: 600px;
+}
+.nodocuments {
+	color:#888;
+	font-weight: normal;
+}
+#folderNav ul {
+	margin: 0;
+	clear: both;
+}
+#folderNav ul li {
+	list-style: none;
+	float: left;	
+	margin-right: 10px;
+}
+#folders {
+	width: 100%;
+}
+.folderLink {
+	width: 120px;
+	float: left;
+}
+.folderLink div {
+	text-align:center;
+}
+#folderNav ul li a {
+	border: 0;
+	padding-left: 20px;
+}
+#folderNav a.uploadFile {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/drive-upload.png") left no-repeat;
+}
+#folderNav a.createFolder {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/folder--plus.png") left no-repeat;	
+}
+#folderNav a.deleteFolder {
+background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/folder--minus.png") left no-repeat;	
+}
+#folderNav a.folderPermissions {
+background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/folder-share.png") left no-repeat;  
+}
+#folderNav a.filePermissions { 
+background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/page_lock.gif") left no-repeat;  
+}
+#folderNav a.deleteFile {
+background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bin-full.png") left no-repeat;  
+}
+.ajaxDocLoad {
+	position:relative;
+	left:45%;
+	margin-top: 50px;
+}
+#breadcrumb {
+	text-transform:capitalize;
+	
+}
+#breadcrumb a {
+	text-transform:capitalize;
+	font-weight:700;
+	border:0;
+}
+#documentDownload h2 {
+	margin-top:0;
+}
+.folderTitle {
+  text-transform:uppercase;
+  margin: 5px 0 0 0;
+  word-wrap:break-word;
+  display: block;
+}
+#createFolder {
+	display:none;
+	padding: 10px;
+	width: 440px;
+}
+#createFolder label {
+	margin-right: 5px;
+	font-weight: bold;
+	color:#888;
+}
+#createFolder input.button {
+  margin-bottom:-7px;
+  
+}
+#folderError {
+	margin-left: 80px;
+	color:#F00;
+	font-weight:bold;
+}
+
+.bubbleInfo {
+    position: relative;
+}
+.popup {
+    position: absolute;
+    display: none; 
+}
+a.help {
+	border:  0;
+}
+.popup {
+	width: 250px;
+}
+#documentAttributes ul {
+	margin:0;
+	padding:0;
+}
+#documentAttributes ul li {
+	list-style:none;
+}
+.search_document {
+	padding: 10px;
+}
+.search_document_image {
+	width: 100px;
+	float: left;
+	margin-right: 10px;
+}
+.search_document_image img {
+	border: 2px solid #888;
+}
+.search_document_detail {
+	float: left;
+}
+.search_document_detail h2 {
+	margin-top: 0;
+	font-size: 1.4em;
+}
+.search_document_detail a {
+	border: 0;
+}
+.search_document_detail p {}
+#documentName { font-size: 2em; margin: .67em 0}
+.fileExt {
+	float: left;
+	margin: 0 5px 0 0;
+}
+#documentDownload .fileDownload {
+	padding-left: 40px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/drives_17.png") no-repeat;
+	height: 35px;
+	display:block;
+	float: left;
+}
+#documentDownload a.fileDownload:hover {
+	color:#990000;
+}
+#documentDownload .fileView {
+  padding-left: 40px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/window_app_list_search_32.png") no-repeat;
+  height: 35px;
+  display:block;
+  float: left;
+}
+.button {
+  background:url("/modules/eunify/includes/images/dms/buttonbg.jpg") 50% 50% repeat-x;
+  padding: 4px;
+    padding-top: 4px;
+  color:#FFF;
+  cursor:pointer;
+  font-size: 0.8em;
+  border: 3px double #FFF;
+  
+}
+.button:hover {
+  background:url("/modules/eunify/includes/images/dms/bgover.png") 50% 50% repeat-x;
+}
+.niceInput {
+  /*background:url("/includes/images/secure/inputbg.png") no-repeat;*/
+  width: 197px;
+  height:19px;
+  margin-top: 5px;
+  border-left: 1px solid #929292;
+  border-top: 1px solid #929292;
+  border-right: 1px solid #D7D7D7;
+  border-bottom: 1px solid #D7D7D7; 
+  color:#929292;
+  padding:0; 
+  padding-top: 3px;
+  padding-right: 30px; 
+  padding-left: 10px;
+}
+
+#searchandhelp {
+	position: absolute;
+	top: 5px;
+	right: 0px;
+	height: 24px;
+	  
+}
+#searchandhelp div {
+	position: relative;
+}
+#searchandhelp input.bvinesBox {
+	color:#888;
+	
+	height: 21px;
+}
+
+#fileUpload {
+	background: #EFEFEF;
+}
+#toolsandinfo {
+	position:absolute;
+	right:0px;
+	width: 40px;
+}

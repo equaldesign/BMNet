@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* CSS Document */
+html, body {
+	width: 100%;
+	margin:0;	
+	-moz-box-sizing: padding-box;
+	padding:0;
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+}
+#background {
+	width:100%;
+	position: fixed;
+	z-index: -1;
+	height: 100%;
+	-webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+
+}
+#logo {
+	z-index: 10;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width:433px;
+	height: 93px;
+	background:url("/includes/images/sites/0/logo.png") no-repeat;
+}
+#nav {
+	position:absolute;
+	right:20px;
+	top:20px;
+	z-index:10;
+}
+#nav ul {
+	list-style:none;	
+}
+#nav ul li {
+	float:left;
+	padding: 5px 5px;
+	margin: 5px;	
+}
+#nav ul li a {
+	font-weight:900;
+	color:#FFF;
+	font-size: 14px;
+	text-decoration:none;
+	text-transform:uppercase;
+	letter-spacing:-1px;
+}
+#nav ul li a:hover {
+	color:#DCFF71;
+}
+#nav ul li a.login {
+	color:#99CC00;
+}
+#nav ul li a.login:hover {
+	color:#FFF;
+}
+#main {
+	position:absolute;
+	top: 250px;
+	overflow:hidden;
+	width:95%;
+	z-index:2;
+	box-sizing: padding-box;
+	margin-right: 40px;
+}
+
+#mainPanel {
+	padding: 20px;
+	font-weight:300;
+	margin-right: 570px;
+	margin-left: 40px;
+	z-index:2;
+	background: url("/includes/images/sites/0/white_transp_bg.png");
+}
+h1 {
+	font-size: 60px;
+	font-weight:300;
+	margin:0;
+}
+h2 {
+	font-size: 42px;
+	font-weight:300;
+}
+p {
+	font-size: 16px;
+	font-weight:400;
+}
+#mainPanel #intrologos img {
+	margin:5px;
+}
+#homescreen {
+	float: right;
+	background:url(/includes/images/sites/0/screenshots/home.png) no-repeat;
+	width:436px;
+	height:520px;
+}
+#features {
+	width: 383px;
+	float: left;
+	padding: 20px;
+	
+	font-weight:300;
+	margin-left: 40px;
+	z-index:2;
+	background: url("/includes/images/sites/0/white_transp_bg.png");
+}
+#features h2 {
+	margin:0;
+}
+#featureDetail {
+	margin-left: 483px;
+	padding: 20px;
+	color:#FFF;
+	background: url("/includes/images/sites/0/black_transp_bg.png");
+}
+#featureDetail h2 {
+	margin-bottom:0px;
+}

@@ -1,0 +1,13 @@
+.sendregisterbutton {
+	padding: 8px 15px;
+	background: #9C0;
+	color:#000;
+	font-weight: bold;
+	text-decoration: none;
+	display: inline-block;
+	border: 1px solid #FFF;
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,0.2);
+	box-shadow: 0 0 5px rgba(0,0,0,0.2);
+	margin: 5px 0px;
+}

@@ -1,0 +1,557 @@
+  .hide {
+	display: none;
+}
+.show {
+	display: block;
+}
+#newcatInfo {
+	display: none;
+}
+.dmsDoc {
+	display: block;
+	font-weight: bold;
+	padding: 4px 0px 4px 20px;
+}
+.dmsDoc:hover {
+	color:#660000 !important;
+}
+.dmssep {
+  display: inline-block !important;
+  width: 10px !important;
+  height: 10px !important;
+  background-position: -35px -19px;
+}
+#createDMSFolder {
+	display: none;
+}
+.rel {
+	position: relative;
+}
+.small_xls, .small_xlsx {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/fileExtentions/document-xls.png") 0px 2px no-repeat;
+}
+.small_doc, .small_docx {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/fileExtentions/document-doc.png") 0px 2px no-repeat;
+}
+.small_pdf {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/fileExtentions/document-pdf.png") 0px 2px no-repeat;
+}
+#dmsupload {
+  display: none;
+}
+.uploaddmsfiles {
+	height: 16px;
+	display: block;
+	padding-left: 20px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/drive-upload.png") no-repeat;
+	font-family: DroidSans;
+	font-weight: bold;
+	font-size: 12px;
+	color:#600 !important;
+}
+
+
+#folderNav a.uploadDMSFile {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/drive-upload.png") left no-repeat;
+}
+#folderNav a.createDMSFolder {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/folder--plus.png") left no-repeat; 
+}
+#folderNav a.backUp {
+  background: url("/includes/images/folder_backup.png") left no-repeat; 	
+}
+#folderNav a.deleteDMSFolder {
+background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/folder--minus.png") left no-repeat;  
+}
+#folderNav a.DMSfolderPermissions {
+background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/folder-share.png") left no-repeat;  
+}
+#folderNav a.DMSfolderInfo {
+background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/folder--pencil.png") left no-repeat;  
+}
+#folderNav a.DMSfileInfo {
+background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document--pencil.png") left no-repeat;  
+}
+
+#folderNav a.DMSfilePermissions { 
+background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-share.png") left no-repeat;  
+}
+#folderNav a.deleteDMSFile {
+background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bin-full.png") left no-repeat;  
+}
+
+
+div.documentEdit div {margin: 0.5em 0; clear: both;}
+div.documentEdit div div div {margin: 0; clear:none;}
+div.documentEdit label.o , div.form-container span.label.o { font-weight: bold; color:#333; margin: 0 10px 0 0; padding: 8px 10px 0px 0px; width: 150px; display: block; float: left; text-align: right; position: relative; }
+div.documentEdit label.s { font-weight: bold; color:#333; margin: 0 10px 0 0; padding: 8px 10px 0px 0px; width: 100px; display: block; float: left; text-align: right; position: relative; }
+div.documentEdit label.terms , div.form-container span.label.terms { font-size: 12px;  color:#333; margin: 0 10px 0 0; padding-right: 10px; width: 150px; display: block; float: left; text-align: right; position: relative; padding-top:0px;}
+div.documentEdit label.error, div.form-container span.error { color: #C00; }
+div.documentEdit label em, div.form-container span.label em { position: absolute; right: 0; font-style: normal; color: #C00; }
+div.documentEdit input.error { border-color: #C00; background-color: #FEF; }
+div.documentEdit div.controlset label, div.form-container div.controlset input, select { display: inline; float: none; }
+div.documentEdit div.controlset div { margin-left: 170px; }
+div.documentEdit div.rightControlSet div {float: right }
+div.documentEdit div.buttonrow { margin-left: 180px; }
+div.documentEdit input, div.documentEdit select, div.documentEdit textarea { font-size: 12px; font-family: DroidSans; padding: 9px; border: solid 1px #E5E5E5; outline: 0; background: #FFFFFF url('/includes/images/bg_form.png') left top repeat-x; background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF)); background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px); box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; }
+div.documentEdit input[type="checkbox"], div.documentEdit input[type="radio"] { border: 0; background: none }
+div.documentEdit input.terms {
+  width:auto;
+}
+div.documentEdit fieldset {
+  display: block;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px dotted #AAA;
+  color: #999;
+}
+
+div.documentEdit legend {
+  font-family: DroidSans;
+  font-weight: 700;
+  font-size: 1.3em;
+  padding: 10px;
+  color: #999;
+  background:#ffffff;
+}
+
+div.documentEdit textarea { height: 150px; line-height: 150%; }
+div.documentEdit input:hover, div.documentEdit textarea:hover, div.documentEdit input:focus, div.documentEdit textarea:focus {border-color: #C9C9C9; -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px; }
+
+
+input.invalid {
+  border: 1px solid #990000 !important; 
+}
+label.invalid {
+  margin-left: 10px;
+  min-height: 16px;
+  font-size: 13px;
+  padding: 9px 0 8px 22px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/icons-shadowless/exclamation-red-frame.png") no-repeat 0% 50%;
+  color:#990000; 
+}
+div.documentEdit  input.doIt {
+  text-align: center;
+  display: block;
+  font-weight: 700;
+  padding: 8px;
+  cursor:pointer;
+  font-size: 1.3em;
+  color:#333;
+}
+#docs #breadcrumb {
+  margin: 10px 0px;
+	padding: 5px 10px;
+	background: #EBEBEB url("/modules/eunify/includes/images/dms/silver.jpg") repeat-x 50% 50%;
+	border: 1px solid #D2D2D2;
+}
+.glow {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.0976563) 0px 0px 5px;
+  border: 1px solid #E4E4E4;
+	-moz-box-shadow: rgba(0, 0, 0, 0.0976563) 0px 0px 5px;
+	box-shadow: rgba(0, 0, 0, 0.0976563) 0px 0px 5px;
+}
+#folderNav a {
+  padding: 4px 10px 4px 4px;
+  font-weight: bold;
+}
+#folderNav a:hover {
+  color:#990000;
+}
+#bvMain h2 {
+  font-weight: 700;
+}
+.floatleft {
+  float: left;
+}
+.greyBoxHover {
+  margin: 10px 0 10px 0;
+  padding: 10px;
+  border: 1px solid  #FFF;  
+}
+.greyBoxHover h2 {
+  margin-top:0;
+}
+
+.greyBoxHover:hover {
+  background:#EBEBEB url("/modules/eunify/includes/images/dms/headerbg.jpg") 50% 50% repeat-x;
+  border: 1px solid  #D2D2D2;
+  -webkit-box-shadow:0 0 5px rgba(0,0,0,0.1); 
+  -moz-box-shadow: 0 0 5px rgba(0,0,0,0.1); 
+  box-shadow:0 0 5px rgba(0,0,0,0.1);
+  -webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+  cursor:pointer;
+}
+
+.documentDetail {
+  width: 400px;
+}
+#documentPreview {
+  float: left;
+  width:300px;
+  min-height:480px; 
+	position: relative;
+}
+.documentMeta {
+  float: left;
+  width: 350px;
+}
+#documentPreview img {
+  border: 4px solid #86AF40;
+}
+#documentAttributes {
+  margin: 10px;
+}
+#documentAttributes dl {
+  width: 22em;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9em;
+}
+
+#documentAttributes dt {
+  width: 6em;
+  float: left;
+  margin: 0 0 0 0;
+  padding: .3em;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* commented backslash hack for mac-ie5 \*/
+#documentAttributes dt { clear: both; }
+/* end hack */
+
+#documentAttributes dd {
+  float: left;
+  width: 13em;
+  margin: 0 0 0 0;
+  padding: .3em;
+}
+
+#mainDocPanel {
+  min-height: 600px;
+}
+.nodocuments {
+  color:#888;
+  font-weight: normal;
+}
+#folderNav ul {
+  margin: 0;
+  clear: both;
+}
+#folderNav ul li {
+  list-style: none;
+  float: left;  
+  margin-right: 10px;
+}
+#folders {
+  width: 100%;
+}
+.folderLink {
+  width: 120px;
+  float: left;
+}
+.folderLink div {
+  text-align:center;
+}
+#folderNav ul li a {
+  border: 0;
+  padding-left: 20px;
+	color:#777;
+}
+#folderNav ul li a:hover {
+	color:#333;
+}
+#folderNav a.uploadFile {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/drive-upload.png") left no-repeat;
+}
+#folderNav a.createFolder {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/folder--plus.png") left no-repeat; 
+}
+#folderNav a.deleteFolder {
+background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/folder--minus.png") left no-repeat;  
+}
+#folderNav a.folderPermissions {
+background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/folder-share.png") left no-repeat;  
+}
+#folderNav a.filePermissions { 
+background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/page_lock.gif") left no-repeat;  
+}
+#folderNav a.deleteFile {
+background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bin-full.png") left no-repeat;  
+}
+
+.ajaxDocLoad {
+  position:relative;
+  left:45%;
+  margin-top: 50px;
+}
+#breadcrumb {
+  text-transform:capitalize;
+  
+}
+#breadcrumb a {
+  text-transform:capitalize;
+  font-weight:700;
+	color:#999;
+  border:0;
+}
+#breadcrumb a:hover {
+  color:#333;
+}
+#documentDownload h2 {
+  margin-top:0;
+}
+.folderTitle {
+  text-transform:uppercase;
+  margin: 5px 0 0 0;
+  word-wrap:break-word;
+  display: block;
+}
+#createFolder {
+  display:none;
+  padding: 10px;
+  width: 440px;
+}
+#createFolder label {
+  margin-right: 5px;
+  font-weight: bold;
+  color:#888;
+}
+#createFolder input.button {
+  margin-bottom:-7px;
+  
+}
+#folderError {
+  margin-left: 80px;
+  color:#F00;
+  font-weight:bold;
+}
+
+.bubbleInfo {
+    position: relative;
+}
+.popup {
+    position: absolute;
+    display: none; 
+}
+a.help {
+  border:  0;
+}
+.popup {
+  width: 250px;
+}
+#documentAttributes ul {
+  margin:0;
+  padding:0;
+}
+#documentAttributes ul li {
+  list-style:none;
+}
+.search_document {
+  padding: 10px;
+}
+.search_document_image {
+  width: 100px;
+  float: left;
+	position: relative;
+  margin-right: 10px;
+}
+.search_folder_image {
+  position: relative;
+}
+.search_document_image img {
+  border: 2px solid #888;
+	
+}
+.search_document_detail {
+  float: left;
+}
+.search_document_detail h2 {
+  margin-top: 0;
+  font-size: 1.4em;
+}
+.search_document_detail a {
+  border: 0;
+}
+.search_document_detail p {}
+#documentName { font-size: 2em; margin: .67em 0}
+.fileExt {
+  float: left;
+  margin: 0 5px 0 0;
+}
+#documentDownload .fileDownload {
+  padding-left: 40px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/drives_17.png") no-repeat;
+  height: 35px;
+  display:block;
+  float: left;
+}
+#documentDownload a.fileDownload:hover {
+  color:#990000;
+}
+.button {
+  background:url("/modules/eunify/includes/images/dms/buttonbg.jpg") 50% 50% repeat-x;
+  padding: 4px;
+    padding-top: 4px;
+  color:#FFF;
+  cursor:pointer;
+  font-size: 0.8em;
+  border: 3px double #FFF;
+  
+}
+.button:hover {
+  background:url("/modules/eunify/includes/images/dms/bgover.png") 50% 50% repeat-x;
+}
+.niceInput {
+  /*background:url("/includes/images/secure/inputbg.png") no-repeat;*/
+  width: 197px;
+  height:19px;
+  margin-top: 5px;
+  border-left: 1px solid #929292;
+  border-top: 1px solid #929292;
+  border-right: 1px solid #D7D7D7;
+  border-bottom: 1px solid #D7D7D7; 
+  color:#929292;
+  padding:0; 
+  padding-top: 3px;
+  padding-right: 30px; 
+  padding-left: 10px;
+}
+
+#searchandhelp {
+  position: absolute;
+  top: -5px;
+  right: 0px;
+  height: 24px;
+    
+}
+#searchandhelp div {
+  position: relative;
+}
+#searchandhelp input.bvinesBox {
+  color:#888;
+  
+  height: 21px;
+}
+
+#searchandhelp a {
+  position:absolute;
+  right: 30px;
+  height: 24px;
+  float: right;
+  margin-left: 5px;
+  width: 24px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-24/information.png");
+  display: block;
+}
+#fileUpload {
+  background: #EFEFEF;
+}
+
+.dmsNotification_large {
+	position: absolute;
+	z-index: 100;
+	left: 0px;
+	top: 0px;
+	width: 250px;
+	height: 150px
+}
+.dmsNotification_small {
+  position: absolute;
+  z-index: 100;
+  left: 0px;
+  top: 0px;
+  width: 140px;
+  height: 90px
+}
+.dmsNotification_large.active {
+  background: url("/modules/eunify/includes/images/dms/valid_large.png") no-repeat;
+}  
+.dmsNotification_large.expired {
+  background: url("/modules/eunify/includes/images/dms/expired_large.png") no-repeat;
+}  
+.dmsNotification_large.inactive {
+  background: url("/modules/eunify/includes/images/dms/inactive_large.png") no-repeat;
+} 
+.dmsNotification_small.active {
+  background: url("/modules/eunify/includes/images/dms/valid_small.png") no-repeat;
+}  
+.dmsNotification_small.expired {
+  background: url("/modules/eunify/includes/images/dms/expired_small.png") no-repeat;
+}  
+.dmsNotification_small.inactive {
+  background: url("/modules/eunify/includes/images/dms/inactive_small.png") no-repeat;
+} 
+#documentAttributes .validity {
+	padding-left: 20px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/alarm-clock.png") no-repeat 0px 5px;
+	color:#990000;
+}
+.psa_priceLists {
+	margin: 0px 5px;
+	display: block;
+	clear: both;
+}
+.psa_priceLists .image {
+  float: left;
+	width: 40px;
+}
+.psa_priceLists .desc {
+  float: left;
+  width: 145px;
+}
+.psa_priceLists .fileSize {
+	font-size: 11px;
+	font-weight: bold;
+}
+.psa_priceLists .expiry {
+  font-size: 10px;
+}
+.psa_priceLists .priceListFile {
+	margin-right: 5px;
+}
+.psa_priceLists h4 {
+	padding-left: 20px;
+	color:#004465;
+	text-shadow: 0px 1px 1px #FFF;
+	font-size: 1.1em;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document.png")  no-repeat 0px 5px;
+}
+.psa_priceLists a h4:hover{  
+  color:#86AF40;
+}
+.psa_priceLists h4.xls, .psa_priceListsh4.xlsx {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-excel.png")  no-repeat 0px 5px;
+}
+.psa_priceLists h4.doc, .psa_priceLists h4.docx, .psa_priceLists h4.docm {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-word.png")  no-repeat  0px 5px;
+}
+.psa_priceLists h4.jpg, .psa_priceLists h4.jpeg {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-image.png")  no-repeat  0px 5px;
+}
+.psa_priceLists h4.pdf {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-pdf.png")  no-repeat  0px 5px;
+}
+.psa_priceLists h4.ppt, .psa_priceLists h4.pptx {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-powerpoint.png")  no-repeat  0px 5px;
+}
+#promotions {
+	width: 200px;
+	height: 290px;
+	margin: 3px 0px 0px 3px;
+}
+.validityPeriod {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/calendar.png")  no-repeat  0px 0px;
+	padding-left: 20px;
+	padding-top: 3px;
+	margin-top: 3px;
+	font-size: 0.9em;
+	font-weight: bold;
+	color:#900;
+	min-height: 17px;
+	display: block;
+}

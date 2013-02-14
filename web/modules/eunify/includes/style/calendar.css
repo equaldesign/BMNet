@@ -1,0 +1,379 @@
+#cal {
+	padding:0;
+  margin:0;
+}
+#calendarHeader {
+	padding:0;
+	margin:0;
+	padding-top: 15px;
+	background: url("/modules/eunify/includes/images/calendar/header.png") center top no-repeat;
+	text-align: center;
+}
+#calendarHeader div  {
+	padding:0px;
+	margin:0px;  
+}
+#shortCuts #calendarHolder ul li {
+	border: 0;
+}
+#calendarHeader #prevMonth {
+	width: 15%;
+	float: left;
+	padding-bottom: 4px;
+	
+}
+#calendarHeader #prevMonth a {
+	position:relative;
+	display: block;
+	padding-top: 20px;
+	color:#EFEFEF;	
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/calendar-previous.png") top center no-repeat;
+}
+
+.currentMonth {
+	padding-top: 15px;
+	width: 70%;
+	display: block;
+	float: left;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 120%;
+	color:#EFEFEF;
+	font-weight: bold;
+}
+#calendarHeader #nextMonth {
+	width: 15%;
+	float: right;
+	clear: right;
+	padding-bottom: 4px;
+}
+#calendarHeader #nextMonth a {
+	display: block;
+
+	color: #EFEFEF;
+	padding-top: 20px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/calendar-next.png") top center no-repeat;
+}
+
+#mapOverview {
+  width: 100%;
+  margin-bottom: 10px;
+  height: 325px;
+
+}
+.headingdays {
+	margin:0 !important;
+	padding: 0;
+	
+}
+.headingdays li {
+	background-image: none !important;
+	background-color: #666 !important;
+	text-align: center;
+	float: left;
+	color:#EFEFEF;
+	border: 0;
+	width: 20%;
+	margin: 0 !important;
+	padding: 4px 0 !important;
+}
+.headingdays li.first {
+	border-left: 1px solid #666;
+	clear: left;
+}
+.headingdays li.last {
+	border-right: 1px solid #666;
+}
+.days {
+	margin:0 !important;
+	padding: 0;
+	border-left: 1px solid #DDD;
+}
+.days li {
+	background-image:none !important;
+	float: left;
+	height: 30px;
+	width: 20%;
+	margin:0 !important;
+	padding:0 !important;
+}
+.days li a.d {
+	display: block;
+	border-right: 1px solid #DDD;
+	border-top: 1px solid #DDD;
+	border-bottom: 0;
+	padding: 0px !important;
+	margin:0 !important;
+	height: 100%;
+	width: 100%;
+}
+#calendarHolder {
+	border-bottom: 1px solid #DDD;
+	
+}
+.days li a.notinvited, .appointmentListItem.notinvited {
+	background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/calendar-empty.png");
+}
+.days li a.attending, .appointmentListItem.attending {
+	background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/calendar-task.png");
+}
+.days li a.declined, .appointmentListItem.declined {
+	background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/calendar-blue.png");
+}
+.days li a.unconfirmed, .appointmentListItem.unconfirmed {
+	background-image: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/calendar--exclamation.png");
+}
+.days li a {
+	background-position: 15px 5px;
+	background-repeat:  no-repeat;
+}
+.days li.empty {
+	display: block;
+	height: 30px;
+	width: 20%;
+	background-color:#DDD;	
+}
+.days li.empty.last {
+	border-right: 1px solid #DDD;	
+}
+
+
+#fullDay {
+	height: 700px;
+	position: relative;
+	top: 20px;
+}
+#fullDay .hour {
+	height: 49px;
+	border-bottom: 1px dotted #DDD;
+}
+.calendarEvent {
+	position: absolute;
+}
+.calendarEvent.notinvited {
+	background: url("/modules/eunify/includes//images/calendar/notinvited.png") repeat-x;
+}
+.calendarEvent.unconfirmed {
+	background: url("/modules/eunify/includes//images/calendar/unconfirmed.png") repeat-x;
+}
+.calendarEvent.attending {
+	background: url("/modules/eunify/includes/images/calendar/attending.png") repeat-x;
+}
+.calendarEvent.declined {
+	background: url("/modules/eunify/includes//images/calendar/declined.png") repeat-x;
+}
+.eventDetail {
+	padding: 5px;
+}
+#directions {
+		padding: 10px;
+		width: 305px;
+	margin-bottom: 10px;
+float: left;
+	border: 1px solid #AAA;
+		-webkit-box-shadow:0 0 5px rgba(0,0,0,0.2); 
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,0.2); 
+	box-shadow:0 0 5px rgba(0,0,0,0.2);
+	
+}
+.returnToDay {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/calendar-previous.png") no-repeat;
+	padding: 1px 0 4px 20px;
+	font-size: 12px;
+	font-weight: bold;
+}
+.appointmentDetail {
+	width: 340px;
+	float: left;
+	margin-left: 10px;
+}
+ol#instructions {
+	margin:0 !important;
+	padding:0 !important;
+}
+li.direction {
+	display: block;	
+	padding: 3px 3px 5px 25px;	
+	list-style:decimal;
+	background: #EFEFEF url("https://d25ke41d0c64z1.cloudfront.net/images/icons/direction--arrow.png") no-repeat 3px 2px;
+	margin: 0px 0px 1px 0px;
+}
+.showRoute {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/direction--plus.png") no-repeat;
+	padding: 1px 0px 5px 20px;
+	margin-left: 7px;
+	font-size: 12px;
+}
+#appointment {
+	margin-top: 5px;
+}
+span.info {
+	font-size: 11px;
+	display: block;
+	color:#777;
+}
+
+dl.meeting-display
+{
+	float: left;
+	width: 350px;
+	margin: 1em 0;
+	padding: 0;
+	border-bottom: 1px solid #999;
+}
+
+dl.meeting-display dt
+{
+	clear: left;
+	float: left;
+	width: 100px;
+	margin: 0;
+	padding: 5px;
+	border-top: 1px solid #999;
+	font-weight: bold;
+}
+
+dl.meeting-display dd
+{
+	float: left;
+	width: 230px;
+	margin: 0;
+	padding: 5px;
+	border-top: 1px solid #999;
+}
+
+dl.meeting-attendees
+{
+	float: left;
+	width: 350px;
+	margin: 1em 0;
+	padding: 0;
+	border-bottom: 1px solid #999;
+}
+
+dl.meeting-attendees dt
+{
+	clear: left;
+	float: left;
+	width: 315px;
+	margin: 0;
+	padding: 5px;
+	border-top: 1px solid #999;
+	font-weight: bold;
+}
+
+dl.meeting-attendees dd
+{
+	float: left;
+	width: 15px;
+	margin: 0;
+	padding: 5px;
+	border-top: 1px solid #999;
+}
+#flipDisplay {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/calendar-select.png") top right no-repeat;
+	padding-bottom: 4px;
+	float: right;
+	padding-top: 3px;
+	padding-right: 20px;
+	font-weight: bold;
+}
+#flipDisplay.list {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/calendar-task.png") top right no-repeat;	
+}
+.newappointment {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/calendar--plus.png") no-repeat;
+	padding-bottom: 4px;
+	float: left;
+	padding-top: 3px;
+	padding-left: 20px;
+	font-weight: bold;
+}
+#calendarfunctions {
+	margin-top: 5px;
+	clear: both;
+}
+
+.appointmentListItem {
+	padding: 4px 4px 4px 24px;
+	background-color:#EFEFEF;
+	border: 1px solid #DDD;
+	margin: 3px;
+	background-position: 4px 4px !important;
+	background-repeat:  no-repeat !important;	
+}
+.appointmentListItem .title a {
+	font-weight: bold;
+	color:#600;
+}
+#overview {
+	padding: 4px 4px 4px 25px;
+	margin: 4px 0px;
+	font-weight: bold;
+	background: #DEDEDE url("https://d25ke41d0c64z1.cloudfront.net/images/icons/clock-frame.png") 5px 9px no-repeat;
+	border: 1px solid #CCC;
+}
+.companyName {
+	font-size: 80%;
+}
+#recalc {
+	margin-left: 7px;
+}
+#appointmentAdmin {
+	padding: 6px;
+	margin: 4px 0px;
+	font-weight: bold;
+	background-color: #EFEFEF;
+	float: left;
+	border: 1px solid #DEDEDE;
+}
+.appAdmin {
+	font-size: 90%;
+	padding: 4px 4px 4px 25px;
+	display: block;
+}
+#deleteApp {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/calendar--minus.png") no-repeat 4px 4px;
+}
+#editApp {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/calendar--pencil.png") no-repeat 4px 4px;
+}
+#lookup {
+	
+}
+#attendees {
+	
+}
+.x-btn-text {
+	/*padding-left: 20px !important; */
+	/*background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/cross-circle-frame.png") no-repeat !important; */
+}
+#dayControls {
+	position:relative;
+}
+#dayControls .p {
+	display: block;
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	left:0;
+	top:0;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/arrow-180.png") no-repeat;
+}
+#dayControls .currentDay {
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	display: block;
+	float: left;
+	color:#600;
+}
+#dayControls .n {
+	display: block;
+	width: 32px;
+	height: 32px;
+	position: absolute;
+  right:0;
+  top:0;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/arrow.png") no-repeat;
+}

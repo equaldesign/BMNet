@@ -1,0 +1,61 @@
+#topnav {
+	position:absolute;
+	left: 230px;
+	bottom:0px;
+}
+#topnav ul {
+	list-style: none;	
+}
+#topnav ul li {
+	list-style: none;
+	padding-left: 5px;
+	float: left;
+}
+#topnav ul li a {
+	display: block;
+	border: 1px solid #2687A4;
+	border-bottom: 0px;
+	padding: 7px 15px 7px 30px;
+	background: #006090;
+	 -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+	font-weight: bold;
+	font-size: 90%;
+	color:#EFEFEF;
+	text-shadow: 0 -1px 1px rgba(0,0,0,.6);
+  border-top-right-radius: 5px; 
+}
+#topnav ul li a.sales {
+	background: #006090 url("https://d25ke41d0c64z1.cloudfront.net/images/icons/chart-pie.png") no-repeat 7px 7px;
+}
+#topnav ul li a.feed {
+  background: #006090 url("https://d25ke41d0c64z1.cloudfront.net/images/icons/house.png") no-repeat 7px 7px;
+}
+#topnav ul li a.customers {
+  background: #006090 url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user-worker.png") no-repeat 7px 7px;
+}
+#topnav ul li a.suppliers {
+  background: #006090 url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user-worker-boss.png") no-repeat 7px 7px;
+}
+#topnav ul li a.products {
+  background: #006090 url("https://d25ke41d0c64z1.cloudfront.net/images/icons/drill.png") no-repeat 7px 7px;
+}
+#topnav ul li a.egroup {
+  background: #006090 url("https://d25ke41d0c64z1.cloudfront.net/images/icons/eGroup.png") no-repeat 7px 7px;
+}
+#topnav ul li a.website {
+  background: #006090 url("https://d25ke41d0c64z1.cloudfront.net/images/icons/globe-network.png") no-repeat 7px 7px;
+}
+#topnav ul li a.documents {
+  background: #006090 url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-pdf.png") no-repeat 7px 7px;
+}
+#topnav ul li a:hover {
+  background-color: #0070A6;	
+}
+#topnav ul li a.active {
+	background-color: #FFF;
+	border-bottom: 1px solid #FFF;
+	color:#333;
+  text-shadow: 0 -1px 1px rgba(255,255,255,.6);
+	margin-bottom:-1px}

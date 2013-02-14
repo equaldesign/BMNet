@@ -1,0 +1,47 @@
+#subNav ul {
+	margin: 0;
+	padding:5px;
+}
+#subNav li {
+	margin:0;
+	display: inline;
+	float: left;
+	padding: 0px 10px;
+}
+#subNav li a {
+	padding-left: 20px;
+	text-decoration: none;	
+}
+#subNav li a.calenadar {
+	  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/calendar.png") 0px 2px no-repeat; 
+}
+#subNav li a.tasks {
+	 background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/clipboard-task.png") 0px 2px no-repeat;      
+}
+#searchandhelp {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    height: 24px;
+}
+
+#searchandhelp div {
+    position: relative;
+}
+
+#searchandhelp input.bvinesBox {
+    color:#888;
+    height: 21px;
+}
+
+
+#docSearchButton {
+    height: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-shadow: white 0px 1px 0px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin:0px 4px;
+    cursor:pointer;
+}

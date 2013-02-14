@@ -1,0 +1,101 @@
+#ajaxMain div.post {
+  font-size: 1em;
+  font-weight: normal;
+}
+#ajaxMain div.post a {
+  font-weight: bold;
+  border:0;
+  color:#5C9022;
+}
+#ajaxMain div.date {
+  font-size: 0.9em;
+  color:#666;
+  font-weight: normal;
+}
+#ajaxMain div.comment {
+  margin-left: 85px;
+  margin-right: 130px;
+  padding: 10px;
+  padding-top:5px;
+  background-color:#F5F8EF;
+  margin-top: 5px;
+}
+.profileSmall {
+  float: left;
+  width: 54px;
+}
+.post {
+  position:relative;
+	padding: 4px;
+  border-bottom: 1px dotted #DDD;
+  margin-top: 5px;
+}
+.feedContent {
+  float: left;
+  width:600px;
+	
+	
+}
+.grow {
+  width: 330px;
+  height: 15px;
+  font-family:"Myriad Pro","Lucida Sans Unicode","Trebuchet MS",Tahoma,Verdana;
+  border: 1px solid #D1DEB6;
+  font-size: .9em;
+  padding: 5px;
+  
+}
+.commentProfileSmall {
+  display: none;
+  margin-right: 10px;
+  float: left;
+}
+.commentTA {
+  float :left;
+}
+.createComment {
+  display: none;
+  text-align: right;
+}
+.comment.hidden {
+  display:none;
+}
+.showComment {
+  padding-left: 20px;
+  font-weight: normal;
+  height: 18px;
+  background:url("/images/icons/comment_add.png") no-repeat left;
+}
+input.CommentDo {
+  margin-right: 0px;
+  margin-top: 5px;  
+}
+.postType {
+  width: 25px;
+  float: left;
+}
+.post_forum {
+  background: url("/images/icons/comments_add.png") no-repeat;
+}
+.post_document {
+  background: url("/images/icons/folder_page.png") no-repeat;
+}
+.post_profile {
+  background: url("/images/icons/user_comment.png") no-repeat;
+}
+.post_wiki {
+  background: url("/images/icons/plugin.png") no-repeat;
+}
+.post_blog {
+  background: url("/images/icons/blog.png") no-repeat;
+}
+.usercomment {
+  position:relative;
+  border-bottom: 1px solid #FFF; 
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+#ajaxMain div.post a.deleteComment {
+  font-size: 0.9em;
+  font-weight:normal;
+}

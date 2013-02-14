@@ -1,0 +1,155 @@
+.history {
+	list-style: circle;
+	margin-left: 20px;
+}
+.favourite {
+	float: left;
+	padding: 5px;
+	-webkit-box-shadow:0 0 5px rgba(0,0,0,0.2); 
+  -moz-box-shadow: 0 0 5px rgba(0,0,0,0.2); 
+  box-shadow:0 0 5px rgba(0,0,0,0.2); 
+	margin: 5px;
+	
+}
+.currentUsers {
+	margin-top:10px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 2px;
+	background: #EFEFEF;
+	border: 1px solid #E4E4E4;
+	margin-bottom: 5px;
+	padding: 8px;
+}
+.currentUsers h3 {
+	color: #BCBCBC;
+	font-size: 16px;
+	font-weight: bold;
+	text-shadow: rgba(255, 255, 255, 0.699219) 0px 1px 0px;
+}
+.currentUsers .currentUser {
+  display: block;
+	clear: both;
+	margin: 5px;
+}
+.currentUsers .currentUser a {
+  font-weight: bold;
+	color:#444;
+	font-size: 12px;	
+}
+.currentUsers .currentUser p {
+  font-weight: normal;
+  color:#999;
+	margin: 2px 0px 0px 0px;
+  font-size: 11px;  
+}
+.favourite p {
+	display: block;
+	clear: both;
+}
+a.deleteContact {
+  position:absolute;
+  right: 10px;
+  top: 24px;
+  height: 16px;
+  display: block;
+  font-size: 11px;
+  padding-right: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user--minus.png")  right no-repeat;
+}
+a.editContact {
+  position:absolute;
+  right: 10px;
+  top: 2px;
+  height: 16px;
+  display: block;
+  font-size: 11px;
+  padding-right: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user--pencil.png") right no-repeat;
+}
+a.remindPassword {
+	position:absolute;
+  right: 10px;
+  top: 42px;
+  height: 16px;
+  display: block;
+  font-size: 11px;
+  padding-right: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/mail-send-receive.png") right no-repeat;
+}
+#homepagecontrols {
+  background: #EBEBEB url("/modules/eunify/includes/images/silver.jpg") repeat-x 50% 50%;
+  border: 1px solid #BBB;
+  padding: 8px;
+	margin-bottom: 5px;
+
+}
+#homepagecontrols ul {
+	list-style: none;
+	clear: both;
+}
+#homepagecontrols ul li {
+	float: left;
+	padding: 0px 7px 0px 7px;
+	border-left: 1px solid #BFBFBF;
+	border-right: 1px solid white;
+}
+#homepagecontrols ul li.first {
+	border-left: 0px;
+}
+#homepagecontrols ul li.last {
+  border-right: 0px;
+}
+#homepagecontrols ul li a {
+	font-size: 16px;
+	font-weight: bold;
+	color: #BCBCBC;	
+	padding-left: 22px;
+	text-shadow: rgba(255, 255, 255, 0.699219) 0px 1px 0px;
+}
+#homepagecontrols ul li a.feed {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/feed.png") no-repeat;
+}
+#homepagecontrols ul li a.agreements {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/clipboard-task.png") no-repeat;
+}
+#homepagecontrols ul li a.feed span.updates {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/balloon-left.png") no-repeat;
+	font-size: 10px;
+	font-weight: normal;
+	padding-left: 6px;
+	padding-top: 2px;
+	color: black;
+	padding-right: 4px;
+	padding-bottom: 2px;
+	margin-left: 4px;
+	top: -5px;
+	position: relative;
+}
+#homepagecontrols ul li a.externalfeed {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/feed--arrow.png") no-repeat;
+}
+#homepagecontrols ul li a.dashboard {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/dashboard.png") no-repeat;
+}
+#homepagecontrols ul li a.blog {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/newspaper.png") no-repeat;
+}
+#homepagecontrols ul li a.buildingVine {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/buildingvine.png") no-repeat;
+}
+#homepagecontrols ul li a.bmnet {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bmnet.png") no-repeat;
+}
+#homepagecontrols ul li a.active {
+	color: #444;
+}
+#homepagecontrols ul li a:hover {
+  color:#99CC00;
+}
+#monthpaymentsDue {
+	width: 49%;
+	float: left;
+}
+#yearpaymentsDue {
+	width: 49%;
+  float: right;
+}

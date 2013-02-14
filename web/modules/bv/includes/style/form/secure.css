@@ -1,0 +1,24 @@
+
+#searchForm {
+	position: relative;
+}
+#magnifier {
+	position:absolute;
+	right: 10px;
+	top: 10px;
+}
+.niceInput {
+	background:url("/includes/images/secure/inputbg.png") no-repeat;
+  width: 197px;
+  height:19px;
+  margin-top: 5px;
+  border-left: 1px solid #929292;
+  border-top: 1px solid #929292;
+  border-right: 1px solid #D7D7D7;
+  border-bottom: 1px solid #D7D7D7; 
+  color:#929292;
+  padding:0;
+  padding-top: 3px;
+  padding-right: 30px;
+  padding-left: 10px;
+}

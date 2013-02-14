@@ -1,0 +1,50 @@
+.search_document {
+	padding: 10px;
+}
+.search_document_image {
+	width: 100px;
+	float: left;
+	margin-right: 10px;
+}
+.search_document_image img {
+	border: 2px solid #888;
+}
+.search_document_detail {
+	float: left;
+}
+.search_document_detail h2 {
+	margin-top: 0;
+	font-size: 1.4em;
+}
+.search_document_detail a {
+	border: 0;
+}
+.search_document_detail p {}
+.search_date {
+	font-size: .8em;
+	color:#666;
+}
+
+.search_person {
+	 padding: 10px;
+	 position:relative;
+}
+.relative {   
+   position:relative;
+}
+.search_person_image {
+	width: 50px;
+  float: left;
+  margin-right: 10px;
+}
+.search_person_detail {
+	float: left;
+	
+}
+.search_person_detail h2 {
+	margin-top: 0;
+  font-size: 1.4em;
+}
+.search_person_detail a {
+	border: 0;
+}

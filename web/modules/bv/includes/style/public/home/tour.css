@@ -1,0 +1,121 @@
+#tour h1, #tour h2, #tour h3, #tour h4, #tour p {
+	margin: 0.4em 0 0.2em;
+}
+#tour p {
+	margin: 1.12em 0;
+}
+#tour h2 {
+	font-size: 350%;
+	letter-spacing: -1px;
+	color: #5C9122;
+	text-shadow: 0px 1px 1px white;
+	font-weight: bold;
+}
+#tour p {
+	font-size: 110%;
+}
+#tour h3 {
+  margin-bottom: 15px;
+}
+#tour ul {
+	list-style: none;
+	margin-top: 10px;
+}
+#tour ul li {
+	padding-left: 45px;
+	position: relative;
+}
+#tour ul li img {  
+  left: 0;
+  position: absolute;
+  top: -1px;
+}
+#tour ul li h4 {
+	font-weight: 800;
+	color: #069;
+	font-size: 140%;
+	margin:0;
+}
+#tour ul li p {
+	margin-top:3px;	
+} 
+ul li.mm ul li {
+	list-style: none;	
+}
+ul li.mm ul li a {
+	border: none;
+	display: block;
+	font-weight: normal;
+	margin-left: 30px;
+	padding: 5px 0px 7px 23px;
+	border-bottom: 1px dotted #CDCDCD;	
+}
+ul.subsection a.products {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/drill.png") no-repeat 0px 5px;
+}
+ul.subsection a.images {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/image.png") no-repeat 0px 5px;
+}
+ul.subsection a.documents {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-pdf.png") no-repeat 0px 5px;
+}
+ul.subsection a.reviews {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/star.png") no-repeat 0px 5px;
+}
+
+ul.subsection a.specifications {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-task.png") no-repeat 0px 5px;
+}
+ul.subsection a.userguides {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-pdf.png") no-repeat 0px 5px;
+}
+ul.subsection a.brochures {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-photoshop-image.png") no-repeat 0px 5px;
+}
+ul.subsection a.cad {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-illustrator.png") no-repeat 0px 5px;
+}
+ul.subsection a.desktop {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/monitor.png") no-repeat 0px 5px;
+}
+
+ul.subsection a.ecommerce {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/shopping-basket.png") no-repeat 0px 5px;
+}
+ul.subsection a.erm {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/server.png") no-repeat 0px 5px;
+}
+
+ul.subsection a.mobile {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/media-player-phone.png") no-repeat 0px 5px;
+}
+ul.subsection a.website {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/blue-document-globe.png") no-repeat 0px 5px;
+}
+
+ul.subsection a.opensource {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/open-source.png") no-repeat 0px 5px;
+}
+ul.subsection a.pricing {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/credit-cards.png") no-repeat 0px 5px;
+}
+ul.subsection a.future {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/compass.png") no-repeat 0px 5px;
+}
+
+ul.subsection a.press {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/newspaper.png") no-repeat 0px 5px;
+}
+ul.subsection a.email {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/email.png") no-repeat 0px 5px;
+}
+.hidden {
+	display: none;
+	visibility: visible !important;
+}
+.subsection {
+	margin-top: 6px;
+}
+ul li.mm ul li a.active {
+	font-weight: bold;
+}

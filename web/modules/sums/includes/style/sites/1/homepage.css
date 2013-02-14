@@ -1,0 +1,28 @@
+.topOverlay {
+	position: absolute;
+	top:0px;
+	width:66%;
+	background: url("/includes/images/black_80.png");
+	height: 20%;
+}
+.sideOverlay {
+	position: absolute;
+	height: 100%;	
+	width: 34%;
+	top:0;
+	left: 66%;
+	background: url("/includes/images/white_80.png");
+}
+.topOverlay div, .sideOverlay div {
+	padding: 8px;
+}
+.topOverlay div h1 {
+	color: #FFF;
+	font-size: 26px;
+	font-weight: bold;
+}
+.sideOverlay h3.price {
+	color: #000;
+  font-size: 22px;
+  font-weight: bold;
+}

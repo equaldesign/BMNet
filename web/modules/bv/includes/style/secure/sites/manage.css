@@ -1,0 +1,21 @@
+#memberList b {
+	padding-left: 20px;
+}
+i.authority_USER {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user.png") 0px no-repeat;
+	display: block;
+	width:16px;
+	height:16px
+}
+i.authority_GROUP {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/users.png") 0px no-repeat;
+	display: block;
+  width:16px;
+  height:16px
+}
+.deleteAuthority {
+	display: block;
+	height: 16px;
+	width: 16px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/cross-button.png") 0px no-repeat;
+}

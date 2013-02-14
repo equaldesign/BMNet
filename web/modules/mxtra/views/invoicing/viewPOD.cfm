@@ -1,0 +1,2 @@
+<cfheader name="Content-Disposition" value="attachment;filename=#LIstLast(rc.POD,'/')#.pdf">
+<cfcontent deletefile="true" reset="true" file="/fs/homes/turnbull/turnbullftp/PODs/#rc.POD#" type="#getPageContext().getServletContext().getMimeType('/fs/homes/turnbull/turnbullftp/PODs/#rc.POD#')#">

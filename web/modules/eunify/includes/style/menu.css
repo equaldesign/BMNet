@@ -1,0 +1,384 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.rightMenu h2 {
+	color: #666;
+	border-bottom: 1px dotted #BBB;
+	text-shadow: 0 1px 0px #FFF;
+}
+.rightMenu ul {
+	margin-top: 5px;
+	padding-left:0px;
+}
+.rightMenu li {
+	list-style:none;
+	margin-left: 0px;
+}
+.rightMenu ul li a {
+	padding: 3px 0px 0px 23px;
+	margin: 0px 0px 4px 0px;
+	border-bottom: 1px dotted #DEDEDE;
+	height:20px;
+	display: block;
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size: 0.8em;
+	color:#000;
+}
+.rightMenu ul.jstree li a {
+	padding-left: 0px;
+	height:20px;
+	display: inline;
+	border: none;
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size: 0.8em;
+	color:#000;
+}
+
+.rightMenu ul li a:hover {
+	color:#666;	
+}
+.rightMenu ul.jstree li.jstree-closed a {
+  cursor:default;
+}
+.rightMenu ul.jstree li.jstree-closed a:hover {
+  color: #000;
+}
+.rightMenu ul li ul {
+margin-left: 10px;
+margin-top:0px;
+}
+.rightMenu ul li {
+  background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/bullet_go.png) no-repeat;
+}
+.rightMenu .fullList {
+	background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/ui-list-box-blue.png) no-repeat;
+}
+.rightMenu .deletePSA {
+			background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/application_delete.png) no-repeat;
+	} 
+.rightMenu .clonePSA {
+		background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/document--plus.png) no-repeat;
+	}
+.rightMenu .editFigures {	
+		background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/calculator--pencil.png) no-repeat;
+}
+.rightMenu .calculateFigures {	
+		background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/calculator--arrow.png) no-repeat;
+}
+.rightMenu .viewCalculations {	
+		background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/calculator.png) no-repeat;
+}
+.rightMenu .saveTemplate {	
+		background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/disk.png) no-repeat;
+}
+.rightMenu .uploadDocument {	
+		background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/drive-upload.png) no-repeat;
+}
+.rightMenu .viewPDF {	
+		background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/document-pdf.png) no-repeat;
+}
+
+.rightMenu .createNewMeeting {
+			background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/calendar_add.png) no-repeat;
+}
+.rightMenu .blog_list {
+      background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/ui-scroll-pane-blog.png) no-repeat;
+}
+.rightMenu .blog_create {
+      background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/blog--plus.png) no-repeat;
+}
+.rightMenu .bugs_list {
+      background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/bug--arrow.png) no-repeat;
+}
+.rightMenu .bugs_create {
+      background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/bug--plus.png) no-repeat;
+}
+.rightMenu .editContactDetails {
+			background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/user--pencil.png) no-repeat;
+}
+.rightMenu .supplierContacts {
+			background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/user-worker.png) no-repeat;
+}
+.rightMenu .memberContacts {
+      background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/user-worker-boss.png) no-repeat;
+}
+.rightMenu .createContact {
+			background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/user--plus.png) no-repeat;
+}
+.rightMenu .createCompany {
+			background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/building--plus.png) no-repeat;
+}
+.rightMenu .listCompanys {
+			background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/building.png) no-repeat;
+}
+.rightMenu .createDeal {
+			background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/truck--plus.png") no-repeat;
+}
+.rightMenu .createDeal a {
+      padding-left: 22px;
+			font-weight: bold;
+}
+.rightMenu .listDeals {
+			background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/application_form_magnify.png) no-repeat;
+}
+.rightMenu .dealView {
+			background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/bullet_go.png) no-repeat;
+}
+.rightMenu .createNews {
+			background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/newspaper_add.png) no-repeat;
+}
+.rightMenu .group_administrator {
+			background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/users.png) no-repeat;
+}
+.rightMenu .bugList {
+			background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/bug.png) no-repeat;
+}
+.rightMenu .bugCreate {
+			background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/bug_add.png) no-repeat;
+}
+.rightMenu .emailSupplier {
+			background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/mail-reply.png) no-repeat;
+}
+.rightMenu .emailMember {
+			background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/mail-forward.png) no-repeat;
+}
+.rightMenu .turnover_dashboard {
+	background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/chart-pie.png) no-repeat;
+}
+.rightMenu .company_dashboard {
+	background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/dashboard--arrow.png) no-repeat;
+}
+.rightMenu .ye_targets {
+	background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/chart-up.png) no-repeat;
+}
+
+.rightMenu .export_companies {
+  background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/building--arrow.png) no-repeat;
+}
+.rightMenu .export_contacts {
+  background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/user--arrow.png) no-repeat;
+}
+.rightMenu .export_branches {
+  background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/store--arrow.png) no-repeat;
+}
+.rightMenu .bulk_email {
+  background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/mail-reply-all.png) no-repeat;
+}
+.rightMenu .bvine {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/buildingvine.png") no-repeat;
+}
+.rightMenu .bvine_createblog {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/application-blog.png") no-repeat;
+}
+.rightMenu .bvine_uploadproducts {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/table-excel.png") no-repeat;
+}
+.rightMenu .bvine_sync {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/arrow-continue-090.png") no-repeat;
+}
+.rightMenu .bvine_uploadprices {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/report-excel.png") no-repeat;
+}
+.rightMenu ul.jstree li {
+	background: none;
+}
+.rightMenu ul.jstree li ul {
+margin-left: 5px;
+margin-top:0px;
+}
+.rightMenu h3 a {
+		padding-left: 28px !important;		
+		padding-top: 0.6em !important;	
+}
+.rightMenu h3 a.admin_dealtools {
+		background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/wrench-screwdriver.png") 5px 5px no-repeat;		
+}
+.rightMenu h3 a.admin_calendar {
+		background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/calendar-day.png") 5px 5px no-repeat;		
+}
+.rightMenu h3 a.admin_wiki {
+    background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/language-balloon.png") 5px 5px no-repeat;    
+}
+.rightMenu h3 a.admin_dms {
+    background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/blue-document-pdf-text.png") 5px 5px no-repeat;    
+}
+.rightMenu h3 a.admin_favourites {
+    background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/star.png") 5px 5px no-repeat;    
+}
+.rightMenu h3 a.admin_directory {
+		background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/address-book-blue.png") 5px 5px no-repeat;		
+}
+.rightMenu h3 a.admin_promotions {
+    background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/store.png") 5px 5px no-repeat;    
+}
+
+.rightMenu h3 a.admin_blog {
+    background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/application-blog.png") 5px 5px no-repeat;   
+}
+.rightMenu h3 a.admin_bugs {
+    background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bug.png") 5px 5px no-repeat;   
+}
+.rightMenu h3 a.admin_deals {
+		background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/truck.png") 5px 5px no-repeat;		
+}
+.rightMenu h3 a.admin_figures {
+		background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/chart--arrow.png") 5px 5px no-repeat;		
+}
+.rightMenu h3 a.admin_admin {
+		background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user-business-boss.png") 5px 5px no-repeat;		
+}
+.rightMenu h3 a.admin_feedtools {
+    background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/feed.png") 5px 5px no-repeat;    
+}
+.rightMenu h3 a.admin_bv {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/buildingvine.png") 5px 5px  no-repeat;
+}
+.rightMenu h3 a.admin_prices {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/table-money.png") 5px 5px  no-repeat;
+}
+.currentUsers {
+  margin-top:10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 2px;
+  background: #EFEFEF;
+  border: 1px solid #E4E4E4;
+  margin-bottom: 5px;
+  padding: 8px;
+}
+.currentUsers h3 {
+  color: #BCBCBC;
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: rgba(255, 255, 255, 0.699219) 0px 1px 0px;
+}
+.currentUsers .currentUser {
+  display: block;
+  clear: both;
+  margin: 5px;
+}
+.currentUsers .currentUser a {
+  font-weight: bold;
+  color:#444;
+  font-size: 12px;  
+}
+.currentUsers .currentUser p {
+  font-weight: normal;
+  color:#999;
+  margin: 2px 0px 0px 0px;
+  font-size: 11px;  
+}
+#dealPromotions {
+	padding: 5px;
+	width: 200px;
+}
+
+.promotions .currentUser {
+  display: block;
+  clear: both;
+  margin: 5px;
+}
+.promotions .currentUser a {
+  font-weight: bold;
+  color:#444;
+  font-size: 12px;  
+}
+.promotions .currentUser p {
+  font-weight: normal;
+  color:#999;
+  margin: 2px 0px 0px 0px;
+  font-size: 11px;  
+}
+.promotions div.promotion {
+	width: 225px;
+	margin-top: 8px;
+}
+.promotions .promotion h4 {
+	font-size: 14px;
+	color:#900;
+}
+.promoList .promoDetail {
+	padding-top: 5px;
+}
+.promoDetail .validity {
+	padding-left: 20px;
+	display: block;
+	min-height: 17px;	
+	color: #900;
+	font-weight: bold;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/alarm-clock.png") no-repeat 0px 0px;
+}
+.promoDetail p {
+	font-size: 12px;
+}
+
+.promoDetail h4 {
+	font-size: 12px !important;
+	min-height: 17px;
+	color: #069;
+}
+#promoNavControls {
+	position: relative;
+}
+#promoNavControls .cyclePrev {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display: block;
+	width: 16px;
+	height: 16px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/blue-document-page-previous.png") no-repeat 0px 0px;
+}
+#promoNavControls .cycleNext {
+	position: absolute;
+  right: 0px;
+  top: 0px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/blue-document-page-next.png") no-repeat 0px 0px;
+}
+.promotions .cyclenav {
+	margin: 5px 0px;
+	padding: 0px 22px;
+	
+}
+.promotions .promoList {
+	margin-top: 5px;
+}
+.cyclenav a {
+	width: 7px;
+	height: 7px;
+	font-size: 0px;
+	display: block;
+	background: #CAE4F1;
+	border: 1px solid #6C94AE;
+	float: left;
+	margin-right: 2px;
+	margin-top: 2px;
+}
+.cyclenav a.activeSlide {
+	background: #FFF;
+}
+.promotions h5 {
+	color:#555;
+	font-size: 14px;
+	text-shadow: 0 1px 0 0 #FFF;
+}
+#right_promotions {
+	overflow: hidden;
+}
+.showPromotion {
+	font-size: 1.2em !important;
+	text-align: left !important;
+}
+.tabbable .nav-tabs li {
+	border:0px !important;
+}
+.icon-flo-callback {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/mobile-phone.png") no-repeat;
+}
+#googleMap img, googleMap img { 
+ max-width: none; 
+}

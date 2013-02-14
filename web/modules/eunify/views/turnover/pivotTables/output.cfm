@@ -1,0 +1,1 @@
+<cfcontent file="#rc.app.appRoot#/dms/pivot_#rc.type#_#rc.sourceID#.xml">

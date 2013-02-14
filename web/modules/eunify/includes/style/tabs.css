@@ -1,0 +1,159 @@
+.tabs > ul > li > a {
+  padding-left: 25px !important;  
+}
+.tabs .invoices {  
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-table.png") 4px 4px no-repeat;
+}
+.tabs .sales {  
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/chart-pie.png") 4px 4px no-repeat;
+}
+.tabs .upsell {  
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/chart-up.png") 4px 4px no-repeat;
+}
+
+.tabs .dashboard_dashboard {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/chart-up.png") 4px 4px no-repeat;
+}
+.tabs .dashboard_rebatedue {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/flag.png") 4px 4px no-repeat;
+}
+.tabs .dashboard_rebategroup {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/flag-yellow.png") 4px 4px no-repeat;
+}
+.tabs .dashboard_rebateready {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/flag-green.png") 4px 4px no-repeat;
+}
+.tabs .dashboard_rebatepartpaid {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/flag-purple.png") 4px 4px no-repeat;
+}
+tabs .dashboard {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/ui-layout-panel.png") 4px 4px no-repeat;
+}
+.tabs .commentIcon {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/open-share-balloon.png") 4px 4px no-repeat;
+}
+.tabs .marketing {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/newspaper.png") 4px 4px no-repeat;
+}
+.tabs .fullagreement {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-text.png") 4px 4px no-repeat;
+}
+.tabs .documents {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-pdf-text.png") 4px 4px no-repeat;
+}
+.tabs .figures {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-excel.png") 4px 4px no-repeat;
+}
+.tabs .updates {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/feed-document.png") 4px 4px no-repeat;
+}
+.tabs .buildingvine {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/buildingvine.png") 4px 4px no-repeat;
+}
+.figs .calculations {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/calculator--arrow.png") 4px 4px no-repeat;
+}
+.figs .spreadsheets {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-excel-csv.png") 4px 4px no-repeat;
+}
+.figs .charts {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/chart--arrow.png") 4px 4px no-repeat;
+}
+.tabs .chartoptions {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/chart--pencil.png") 4px 4px no-repeat;  
+}
+.tabs .overview {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/information-frame.png") 4px 4px no-repeat;    
+}
+.tabs .branch {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/node.png") 4px 4px no-repeat;
+  
+}
+.tabs .twitter {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/balloon-twitter.png") 4px 4px no-repeat;
+}
+.tabs .contacts {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user-share.png") 4px 4px no-repeat; 
+  
+}
+.tabs .agreements {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document--arrow.png") 4px 4px no-repeat;
+}
+.tabs .company {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/building.png") 4px 4px no-repeat;
+}
+.tabs .negotiating {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-task.png") 4px 4px no-repeat;
+}
+.tabs .favourites {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/star--arrow.png") 4px 4px no-repeat;
+}
+#productTabs .products {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/drill.png") 4px 4px no-repeat;
+}
+#productTabs .sales {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/chart-pie.png") 4px 4px no-repeat;
+}
+#productTabs .psa {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/eGroup.png") 4px 4px no-repeat;
+}
+#productTabs .ecommerce, .tabs .ecommerce {
+	padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/shopping-basket.png") 4px 4px no-repeat;
+}
+.tabs .company, #productTabs .company {
+	padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/store.png") 4px 4px no-repeat;
+}
+.tabs .buildingVine, #productTabs .buildingVine {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/buildingvine.png") 4px 4px no-repeat;
+}
+.tabs .email {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/mail-share.png") 4px 4px no-repeat;
+}
+.tabs .notes {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/sticky-note-pin.png") 4px 4px no-repeat;
+}
+.tabs .feed {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/feed-balloon.png") 4px 4px no-repeat;
+}
+.tabs .eBay, #productTabs .eBay {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/ebay-icon.png") 4px 4px no-repeat;
+}
+.tabs .amazon, #productTabs .amazon {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/amazon.png") 4px 4px no-repeat;
+}

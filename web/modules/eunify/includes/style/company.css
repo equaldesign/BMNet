@@ -1,0 +1,121 @@
+.map_canvas {
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin: 0 10px 10px 0px;
+	border: 1px solid #AAA;
+		-webkit-box-shadow:0 0 5px rgba(0,0,0,0.2); 
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,0.2); 
+	box-shadow:0 0 5px rgba(0,0,0,0.2);
+}
+.branchEditingControls {
+	float: left;
+	padding: 4px 8px;
+}
+.companyEditingControls {	
+	padding: 4px 8px;
+	float: left;
+}
+.branchEditingControls ul, .branchEditingControls li, .companyEditingControls ul, .companyEditingControls li {
+	list-style: none;
+}
+.branchEditingControls a, .companyEditingControls a {
+	display: block;
+	height: 17px;
+	color:#006 !important;
+}
+.branchEditingControls a:hover, .companyEditingControls a:hover {
+	color: #600 !important;
+}
+.editBranch {
+	padding-left: 20px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/node-design.png") no-repeat;
+	font-weight: bold;
+	color:#600;
+}
+.deleteBranch {
+	padding-left: 20px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/node-delete-next.png") no-repeat;
+	font-weight: bold;
+	color:#600;
+}
+.branchScreen {
+	position: relative;
+}
+.addBranch {
+	position: absolute;
+	top: 0px;
+	padding-left: 20px;
+	font-weight: bold;
+	color: #600 !important;
+	right: 0px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/node-insert-next.png") no-repeat;
+	display: block;
+	height: 17px;
+	z-index: 20;
+}
+#mapOverview {
+	width: 325px;
+	margin-bottom: 10px;
+	height: 325px;
+float: left;
+	border: 1px solid #AAA;
+		-webkit-box-shadow:0 0 5px rgba(0,0,0,0.2); 
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,0.2); 
+	box-shadow:0 0 5px rgba(0,0,0,0.2);	
+}
+#companyDescription {
+	float :left;
+	margin-left: 10px;
+	width: 315px;
+}
+.branchHidden {
+	display: none;
+}
+#companyDescription .tel {
+	padding-left: 20px;
+	font-weight: bold;
+	padding-bottom: 3px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/mobile-phone.png") 0 50% no-repeat;
+}
+#companyDescription .fax {
+	padding-left: 20px;
+	padding-bottom: 3px;
+	font-weight: bold;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/telephone-fax.png") 0 50% no-repeat;
+}
+#companyDescription .email {
+	padding-left: 20px;
+	padding-bottom: 3px;
+	font-weight: bold;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/mail.png") 0 50% no-repeat;
+}
+#companyDescription .web {
+	padding-left: 20px;
+	padding-bottom: 3px;
+	font-weight: bold;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/globe-network-ethernet.png") 0 50% no-repeat;
+}
+#companyDescription .deleteCompany {
+	padding-left: 20px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/building--minus.png") no-repeat;
+	font-weight: bold;
+	color:#600;
+}
+#companyDescription .editCompany {
+	padding-left: 20px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/building--pencil.png") no-repeat;
+	font-weight: bold;
+	color:#600;
+}
+.companyDetailImage {
+	float: left;
+		border: 4px solid #FFF;
+		-webkit-box-shadow:0 0 5px rgba(0,0,0,0.3); 
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,0.3); 
+	box-shadow:0 0 5px rgba(0,0,0,0.3);	
+	margin: 5px;
+}
+.branchDiv, #companyDiv {
+	position: relative;
+}

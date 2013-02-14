@@ -1,0 +1,77 @@
+.font1 {
+	font: 14px PTSansRegular; 
+}
+.font1 h1, .font1 h2, .font1 h3, .font1 h4 {
+	font-family: DroidSans;
+	font-weight: 700;
+}
+#bvcontent {
+	color: #000;
+}
+.hidden {
+	display: none;
+}
+.greyBox {
+	background: #EBEBEB url("/modules/buildingVine/includes/images/headerbg.jpg") repeat-x;
+	border: 1px solid #E4E4E4;
+	-webkit-box-shadow:0 0 5px rgba(0,0,0,0.1); 
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,0.1); 
+	box-shadow:0 0 5px rgba(0,0,0,0.1);
+	padding: 8px;
+}
+
+#header ul {
+	clear: both;
+}
+#header li {
+	float: left;
+	padding: 0px 10px 0px 5px;
+	list-style: none;
+	border-right: 1px solid #FFF;
+	border-left: 1px solid #BFBFBF;
+}
+#header li.first {
+	border-left: 0px;
+}
+#header li.last {
+	border-right: 0px;
+}
+#header li a {
+	display: inline-block;
+	padding: 4px 0px 4px 25px;
+	font-weight: 700;
+}
+#header li a:hover {
+	color:#990000;
+}
+
+#header li a.blog {
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/blog.png") 3px 3px no-repeat;
+} 
+#header li a.feed {
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/feed-balloon.png") 3px 3px no-repeat;
+}
+#header li a.documents {
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/document-pdf-text.png") 3px 3px no-repeat;
+} 
+#header li a.products {
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/drill.png") 3px 3px no-repeat;
+}
+#header li a.wiki {
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/language-balloon.png") 3px 3px no-repeat;
+}
+#header li a.discussions {
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/balloons-box.png") 3px 3px no-repeat;
+}
+#header li a.members {
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/icons-shadowless/user-share.png") 3px 3px no-repeat;	
+} 
+#bvMain {
+	position: relative;
+}
+.bvMember {
+	margin: 5px 0;
+	float: left;
+	width: 45%;
+	margin-right: 10px;
+}

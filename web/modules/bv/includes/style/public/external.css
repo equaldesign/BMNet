@@ -1,0 +1,102 @@
+html, body {
+  font-size:0.90em;
+  margin:0;
+  padding:0;
+  font-family:'Lato', "Lucida Sans Unicode","Trebuchet MS",Tahoma,Verdana;
+  font-weight: normal;
+	color:#666;
+}
+#facebook {
+	position: absolute;
+	top:0;
+	right: 0px;
+}
+.bvLogin {
+	width: 45%;
+	float: left;
+}
+.bvSignup {
+	width: 53%;
+	float: right;
+}
+.clear {
+	clear: both;
+	display: block;
+	height: 1px;
+}
+div.form-signUp {
+  width: 100% !important;
+}
+div.form-signUp form {
+  width: 100%;
+}
+div.form-signUp div, div.form-container div {margin: 0.5em 0; clear: both;}
+div.form-signUp div div div, div.form-container div div div {margin: 0; clear:none;}
+div.form-signUp label.o , div.form-container span.label.o, div.form-container label.o, div.form-container span.label.o { font-weight: bold; color:#333; margin: 0 10px 0 0; padding: 8px 10px 0px 0px; width: 130px; display: block; float: left; text-align: right; position: relative; }
+div.form-signUp label.s, div.form-container label.s {font-size: 11px; font-weight: bold; color:#333; margin: 0 10px 0 0; padding: 8px 10px 0px 0px; width: 75px; display: block; float: left; text-align: right; position: relative; }
+div.form-signUp label.terms , div.form-container span.label.terms, div.form-container label.terms, div.form-container span.label.terms { font-size: 12px;  color:#333; margin: 0 10px 0 0; padding-right: 10px; width: 150px; display: block; float: left; text-align: right; position: relative; padding-top:0px;}
+div.form-signUp label.error, div.form-container span.error, div.form-container label.error, div.form-container span.label.error { color: #C00; }
+div.form-signUp label em, div.form-container span.label em, div.form-container label em, div.form-container span.label.em { position: absolute; right: 0; font-style: normal; color: #C00; }
+div.form-signUp input.error, div.form-container input.error { border-color: #C00; background-color: #FEF; }
+div.form-signUp div.controlset label, div.form-container div.controlset input, div.form-container label, div.form-container dic.controlset.input, select { display: inline; float: none; }
+div.form-signUp div.controlset div, div.form-container div.controlset div { margin-left: 170px; }
+div.form-signUp div.rightControlSet div, div.form-container div.rightControlSet div {float: right }
+div.form-signUp div.buttonrow, div.form-container div.buttonrow { margin-left: 140px; }
+div.form-signUp input, div.form-signUp select, div.form-signUp textarea, div.form-container input, div.form-container select, div.form-container input { font-size: 12px; font-family: DroidSans; padding: 9px; border: solid 1px #E5E5E5; outline: 0; background: #FFFFFF url('/includes/images/bg_form.png') left top repeat-x; background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF)); background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px); box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; }
+div.form-signUp input[type="checkbox"], div.form-signUp input[type="radio"], div.form-container input[type="checkbox"], div.form-container input[type="radio"] { border: 0; background: none }
+div.form-signUp input.terms, div.form-container input.terms {
+  width:auto;
+}
+div.form-signUp fieldset div.form-container fieldset {
+  display: block;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px dotted #FFF;
+  color: #999;
+}
+ div.form-container fieldset {
+  display: block;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px dotted #333;
+  color: #999;
+ }
+div.form-signUp legend, div.form-container legend {
+  font-family: DroidSans;
+  font-weight: 700;
+  font-size: 1.3em;
+  padding: 10px;
+  color: #999;
+
+}
+
+div.form-signUp textarea, div.form-container textarea { width: 300px; max-width: 300px; height: 150px; line-height: 150%; }
+div.form-signUp input:hover, div.form-container input:hover, div.form-container textarea:hover, div.form-container input:focus, div.form-container textarea:focus, div.form-signUp textarea:hover, div.form-signUp input:focus, div.form-signUp textarea:focus {border-color: #C9C9C9; -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px; }
+
+div.form-signUp #country, div.form-container #country {
+  width: 200px;
+}
+input.invalid {
+  border: 1px solid #990000 !important; 
+}
+label.invalid {
+  margin-left: 10px;
+  min-height: 16px;
+  font-size: 13px;
+  padding: 9px 0 8px 22px;
+  background: url("/includes/images/icons/exclamation-red-frame.png") no-repeat 0% 50%;
+  color:#990000; 
+}
+div.form-signUp input.doIt, div.form-container input.doIt {
+  text-align: center;
+  display: inline-block;
+  font-weight: 700;
+  margin-left: 10px;
+  padding: 8px;
+  cursor:pointer;
+  font-size: 1.3em;
+  color:#333;
+} 
+#bvintro p {
+	font-size: 0.9em;
+}

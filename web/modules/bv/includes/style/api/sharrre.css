@@ -1,0 +1,28 @@
+#shareme{
+    float:left;
+    
+  }
+  .sharrre .button{
+    float:left;    
+		border:0;
+    background:none;
+		padding:0 5px;
+  }
+
+[class^="icon-"],
+[class*=" icon-"] {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  line-height: 14px;
+  vertical-align: text-top;  
+  background-repeat: no-repeat;
+  *margin-right: .3em;
+}
+[class^="icon-"]:last-child,
+[class*=" icon-"]:last-child {
+  *margin-left: 0;
+}
+.icon-filetype-pdf {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-pdf.png") no-repeat;
+}	

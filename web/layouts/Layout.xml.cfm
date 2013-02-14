@@ -1,0 +1,2 @@
+<cfcontent type="text/plain" reset="true"><cfheader name="Content-Type" value="text/plain;charset=UTF-16"><cfheader charset="utf-16"><?xml version="1.0" encoding="utf-16"?>
+<cfoutput>#renderView()#</cfoutput>

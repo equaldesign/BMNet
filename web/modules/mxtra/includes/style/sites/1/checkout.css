@@ -1,0 +1,101 @@
+#checkOutStage ul li a {
+	font-weight: normal;
+}
+#checkOutStage ul li {
+  padding: 1px 4px 6px 22px;
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/tick-circle-frame--inactive.png") no-repeat;
+}
+
+#checkOutStage ul li.active {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/tick-circle-frame.png") no-repeat;
+}
+#checkOutStage p {
+  clear: both;
+  display: block;
+}
+#tradeLogin {
+  float: left;
+  width: 280px;
+}
+#tradeLogin h2 {
+  margin: 0;
+}
+
+#retail {
+  float: left;
+  width: 410px;
+	margin-left: 10px;
+}
+#retail h2 {
+  margin: 0;
+}
+div.form-signUp form {
+	margin: 0;
+	padding: 0;
+}
+
+div.form-signUp div {margin: 0.5em 0; clear: both;}
+div.form-signUp div div div {margin: 0; clear:none;}
+div.form-signUp label.o , div.form-container span.label.o { font-weight: bold; color:#333; margin: 0 10px 0 0; padding: 8px 10px 0px 0px; width: 150px; display: block; float: left; text-align: right; position: relative; }
+div.form-signUp label.s { font-weight: bold; color:#333; margin: 0 10px 0 0; padding: 8px 10px 0px 0px; width: 100px; display: block; float: left; text-align: right; position: relative; }
+div.form-signUp label.terms , div.form-container span.label.terms { font-size: 12px;  color:#333; margin: 0 10px 0 0; padding-right: 10px; width: 150px; display: block; float: left; text-align: right; position: relative; padding-top:0px;}
+div.form-signUp label.error, div.form-container span.error { color: #C00; }
+div.form-signUp label em, div.form-container span.label em { position: absolute; right: 0; font-style: normal; color: #C00; }
+div.form-signUp input.error { border-color: #C00; background-color: #FEF; }
+div.form-signUp div.controlset label, div.form-container div.controlset input, select { display: inline; float: none; }
+div.form-signUp div.controlset div { margin-left: 170px; }
+div.form-signUp div.rightControlSet {margin-right: 10px;}
+div.form-signUp div.rightControlSet div {float: right }
+div.form-signUp div.buttonrow { margin-left: 180px; }
+div.form-signUp input, div.form-signUp select, div.form-signUp textarea { font-size: 12px; font-family: Calibri, 'Trebuchet MS', Arial, Helvetica, sans-serif;; padding: 9px; border: solid 1px #E5E5E5; outline: 0; background: #FFFFFF url('/includes/images/bg_form.png') left top repeat-x; background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF)); background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px); box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; }
+div.form-signUp input[type="checkbox"], div.form-signUp input[type="radio"] { border: 0; background: none }
+div.form-signUp input.terms {
+  width:auto;
+}
+div.form-signUp fieldset {
+  display: block;
+  padding: 0 10px;
+  margin: 0;
+  border: 1px dotted #AAA;
+  color: #999;
+}
+
+div.form-signUp legend {
+  font-family: Calibri, 'Trebuchet MS', Arial, Helvetica, sans-serif;;
+  font-weight: 700;
+  font-size: 1.3em;
+  padding: 10px;
+  color: #999;
+  background:#ffffff;
+}
+
+div.form-signUp p {
+	margin:0;
+}
+div.form-signUp input:hover, div.form-signUp textarea:hover, div.form-signUp input:focus, div.form-signUp textarea:focus {border-color: #C9C9C9; -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px; }
+
+
+input.invalid {
+  border: 1px solid #990000 !important; 
+}
+label.invalid {
+  margin-left: 10px;
+  min-height: 16px;
+  font-size: 13px;
+  padding: 9px 0 8px 22px;
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/icons-shadowless/exclamation-red-frame.png") no-repeat 0% 50%;
+  color:#990000; 
+}
+.notice {
+	margin-top: 10px;
+	padding: 0 10px;
+}
+.notice em {
+	color: #C00;
+}
+#checkout h1 {
+	margin: 0;
+}
+#checkout h3 {
+  margin: 0 0 5px 0;
+}

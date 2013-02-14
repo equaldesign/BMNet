@@ -1,0 +1,61 @@
+.hero-unit {
+	padding-left: 100px;
+	padding-right: 100px;
+	background:none;
+}
+.sitedescription {
+	height: 150px;
+	overflow: hidden;
+}
+.sitelogo {
+	width:auto !important;
+}
+#mainHero {
+	background: url("/includes/images/public/green.jpg") 50% 50%;
+}
+#siteBrowser a p {
+	margin: 0;
+	text-align: center;
+}
+#siteshowcase {
+	margin:0 5px;
+}
+#letters ul {
+	margin:0;
+	padding:0;
+	padding-left: 4px;
+}
+#letters ul li {
+	list-style: none;
+	float: left;	
+	margin:2px;
+}
+#letters ul li a {
+	padding: 5px;
+	border: 1px solid #DDD;
+	background: #EFEFEF;
+	color: #333;
+	font-weight: bold;
+	float: left;
+	display: block;
+}
+#letters ul li a:hover {
+  background: #EEFEEF;
+  
+}
+.siteItem {
+	padding:4px;
+	margin: 3px;
+	border: 1px solid #DDD;
+  background: #EFEFEF;
+	position: relative;
+	min-height: 75px;
+	padding-left: 75px;
+}
+.siteItem .siteImage {
+	position: absolute;
+	top: 9px;
+	left: 9px;
+	width:50px;
+	height: 50px;
+}

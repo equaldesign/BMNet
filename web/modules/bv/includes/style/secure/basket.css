@@ -1,0 +1,60 @@
+#basket {
+	display: table;
+	width:100%;
+}
+#basket .item {
+	display: table-row;
+	background: #E8E8E8;
+}
+#basket .item.odd {
+  background: #EAEDDE;
+}
+#subTotal {	
+	text-align: right;
+	padding-top: 10px;	
+	font-size: 20px;
+	font-weight: bold;
+}
+#basket .item .image, #basket .item .info, #basket .item .quantity {
+	display:table-cell;
+	padding: 5px;
+	vertical-align:top;
+}  
+#basket .item .info h3 a {
+	font-weight: bold;
+}
+#basketSummary {  
+  background:url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/basket.png") top right no-repeat;   
+  float: right;
+	margin-top:5px;
+  color:#FFF;
+	font-size:90%;
+  padding-bottom: 5px;
+}
+#basketSummary h2 {
+  margin: 0px 0px 3px 0px;
+  padding-right: 30px;
+	font-size:160%;
+}
+#basketSummary h2 a {
+  color: #FFF;
+}
+#basketSummary h2 a:hover {
+	text-decoration: underline;
+}
+#checkout {
+	border: 1px solid #E4E4E4;
+	background: #EBEBEB;
+	clear: both;
+	padding: 8px;
+  
+}
+#checkout .arrow {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bonus/icons-32/arrow_right_32.png") no-repeat right;
+	width: 32px;
+	top: 7px;
+	height: 32px;
+	padding-left: 4px;
+	display: inline-block;
+	position: relative;
+}

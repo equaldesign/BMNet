@@ -1,0 +1,20 @@
+body {
+  
+  font-family: 'Open Sans', sans-serif;
+}
+.blueBox {
+  border: 1px solid #D2DBF4;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 3px;  
+  -moz-box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 3px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 3px;
+  background: #F4F8FD;
+  padding: 12px;
+}
+.blueBox h1, .blueBox h2, .blueBox h3, .blueBox h4 {
+  color: #5B738E;
+  text-shadow: 0 -1px 0 #27323F:
+}
+.blueBox p { 
+  font-size: 0.9em;
+  color: #666;
+} 

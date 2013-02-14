@@ -1,0 +1,15 @@
+#screenshot{
+  position:absolute;
+  background:#333;
+  padding:5px;
+  width: 50px;
+	height: 50px;
+  display:none;
+  color:#fff;
+	-webkit-box-shadow:0 0 15px rgba(0,0,0,0.25); 
+-moz-box-shadow: 0 0 15px rgba(0,0,0,0.25); 
+box-shadow:0 0 15px rgba(0,0,0,0.25);
+}
+#screenshot.loading {
+  background: #333 url("/includes/images/loader.gif") no-repeat center center;
+}

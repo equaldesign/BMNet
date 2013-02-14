@@ -1,0 +1,10 @@
+.googleMap {
+	height: 600px;
+	width:100%;
+}
+.infoBox > img {
+	z-index:1020;
+}
+.googleMap img { 
+ max-width: none; 
+}

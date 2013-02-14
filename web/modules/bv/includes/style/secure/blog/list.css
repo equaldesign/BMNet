@@ -1,0 +1,88 @@
+.blogItem {
+	padding: 5px 0;
+	margin: 5px 0;
+	border-bottom: 1px dotted #DDD;
+}
+.blogHeader h3 {
+	margin: 0px;  
+}
+.blogItem .dateBadge {
+	display: block;
+	float: left;
+	width: 46px;
+	margin-right: 10px;
+	background: #900;
+	text-align: center;
+	font-family: 'Lato', Ubuntu, 'DejaVu Sans', Arial, sans-serif;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); 
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); 
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); 
+}
+.blogItem .dateBadge .month {
+	display: block;
+	font-size: 110%;
+	font-weight: bold;	;
+	color: #FFF;
+}
+.blogItem .dateBadge .day {
+	display: block;
+	background: #FFF;
+	margin: 3px;
+	font-size: 12px;
+}
+.blogItem .meta, .blogPost .meta {	
+	font-family: 'Lato', Ubuntu, 'DejaVu Sans', Arial, sans-serif;
+	color: #999;
+	position:relative;
+	display: block;
+}
+.meta .author {
+	margin-left: 10px;
+}
+.meta .commentCount {
+	margin-left: 10px;
+	border-left: 1px dotted #DDD;
+	padding-left: 25px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/balloon-white.png") 6px 0px no-repeat;
+	
+}
+.blogItem .snippet{
+	margin-top: 5px;
+}
+.blogPost .datestamp {
+	display: block;
+	padding-left: 20px;
+	margin: 5px 0px;
+	margin-left: 65px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/calendar-blue.png") 0px 0px no-repeat;
+}
+.blogPost h2 {
+	margin-top:0;
+}
+
+.blogControls {
+	position: absolute;
+	right:0px;
+	top: 0px;
+}
+.blogControls .editBlog {
+	display: block;
+	float: left;
+	padding-left: 20px;
+  margin: 0px 5px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/blog--pencil.png") 0px 0px no-repeat;
+}
+.blogControls .deleteBlog {
+	display: block;
+  float: left;
+	padding-left: 20px;
+  margin: 0px 5px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/blog--minus.png") 0px 0px no-repeat;
+}
+.blogControls .tweetThis {
+  display: block;
+  float: left;
+  padding-left: 20px;
+  margin: 0px 5px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/balloon-twitter-left.png") 0px 0px no-repeat;
+}

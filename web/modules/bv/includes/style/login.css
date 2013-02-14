@@ -1,0 +1,35 @@
+* {
+	margin:0;
+	padding:0;
+}
+html, body {
+	height: 100%;
+}
+body {		
+	background: #999 url("/includes/images/login/background.jpg") 50% 50% no-repeat;
+}
+.distance {
+	margin-bottom: -20px;
+	background: none;
+	width: 1px;
+	height: 50%;
+	float: left;
+}
+body div.loginDiv {		
+	position: relative;
+	text-align: left;
+	height: 130px;
+	width: 590px;
+	margin: 0 auto;
+	clear: left;
+}
+.button, div.form input.button {
+  border: 1px solid #CCC;
+	font-size: 14px;
+  border-radius: 5px;
+  font-family: 'Lato', Ubuntu, 'DejaVu Sans', Arial, sans-serif;
+  font-weight:bold;
+  background: url("/includes/images/secure/subbar.jpg") 50% 50% repeat-x;
+  cursor: pointer;
+  padding: 5px 20px;
+} 

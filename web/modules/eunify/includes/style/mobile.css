@@ -1,0 +1,93 @@
+@media (max-width: 480px) {
+  /* mobile exceptions
+   * 
+   */
+  .siteSearch {
+  	position:inherit;
+  }
+  body {
+ 	  margin-top: 0px;
+	  padding-top: 0px;
+  }
+	#logo_acme {
+		padding:0;
+		margin-left: 30px;
+	}
+	#logo_acme img {
+		width: 75%;
+	}
+	.siteSearch .form-inline {
+		margin: 5px 0px;
+	}	
+	.siteSearch .input-large {
+    width: 220px;
+  }
+	.container-fluid {
+		padding:0px;
+	}
+	#grey {
+		position: inherit;
+		height: auto;
+	}
+	#loginInfo {
+		position: inherit;
+		width:auto;
+	}
+	#topnav {
+		position: inherit;
+		left:0;
+	}
+	.navbar-inner {
+		min-height:60px;		
+	}
+	#grey.nav-collapse {
+		height:0;
+	}
+	#grey.nav-collapse.collapse {
+		height: auto;
+	}
+	#editMode {
+		position: inherit;
+		right:0;
+	}
+	.rightMenu {
+		display: none;
+	}
+	#mobileMenu {
+		position:fixed;
+		left:0;
+		top:150px;		
+	}
+	.showMenu {
+		width:16px;
+		height:16px;
+		background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/application-sidebar-expand.png) no-repeat;
+	}
+	#maincontent .dropdown-menu {
+		display: none;
+	}
+	#maincontent .navbar ul li a {
+		font-size: 9px !important;
+	}
+	#newspagesheader {
+		display: none;
+	}
+	th, td {
+		white-space:normal !important;
+	}
+	.ui-tabs-nav li, .ui-tabs-nav li a {
+		width: 100%;
+	}
+	.nav li.tab a {
+    background-color:transparent !important;
+		border: 0 !important;
+		color: #FFF !important;
+		text-shadow: none !important;
+	 }
+	 .icon-expand {
+	 	background: url(https://d25ke41d0c64z1.cloudfront.net/images/icons/toggle-expand.png) no-repeat;
+	 }
+	 .btn-navbar {
+	 	  padding: 4px;
+	 }
+}

@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Cantarell';
+  src: local('Cantarell'), local('Cantarell Regular'),
+  url(/includes/fonts/Cantarell-Regular.otf);
+}
+
+@font-face {
+  font-family: 'Cantarell';
+  font-weight: bold;
+  src: local('Cantarell'), local('Cantarell Bold'), local('Cantarell-Bold'),
+  url(/includes/fonts/Cantarell-Bold.otf);
+}
+
+@font-face {
+    font-family: 'DroidSans';
+    src: url(/includes/fonts/DroidSans.eot);
+    src: local('Droid Sans Regular'), local('DroidSans'), url(/includes/fonts/DroidSans.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'DroidSans';
+    font-weight: bold;
+    src: url(/includesfonts/DroidSans-Bold.eot);
+    src: local('Droid Sans Bold'), local('DroidSans-Bold'), url(/includes/fonts/DroidSans-Bold.ttf) format('truetype');
+}

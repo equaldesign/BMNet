@@ -1,0 +1,1 @@
+<img src="/includes/images/sites/nbg/logo.png" align="left" style="margin-right: 20px; padding-right:20px; margin-bottom: 10px; padding-bottom: 10px;">

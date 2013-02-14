@@ -1,0 +1,132 @@
+#leftmenu #shortCuts {
+  background: #DEDEDE;
+  padding: 10px;
+}
+#shortCuts ul li:first-of-type {
+	border-top: none;
+}
+#shortCuts ul li:last-of-type {
+  border-bottom: none;
+}
+#shortCuts a.sales_overview {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/chart-pie.png") no-repeat 0px 2px;
+}
+#shortCuts a.sales_thismonth {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/calendar-month.png") no-repeat 0px 2px;
+}
+#shortCuts a.sales_map {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/marker.png") no-repeat 0px 2px;
+}
+#shortCuts a.sales_warning {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/exclamation--frame.png") no-repeat 0px 2px;
+}
+#shortCuts a.sales_ledger {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/blue-document-table.png") no-repeat 0px 2px;
+}
+#shortCuts a.sales_ecommerce {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/globe.png") no-repeat 0px 2px;
+}
+#shortCuts a.sales_warning_map {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/marker--exclamation.png") no-repeat  0px 2px;
+}
+.leftAccordion h4 a, .homeAccordion h3 a {
+	padding-left: 30px !important;
+	margin: 2px !important;
+	padding-top: 7px !important;
+}
+
+.homeAccordion div {
+	padding: 5px;
+}
+.ui-accordion .ui-accordion-content {
+	overflow:hidden !important;
+}
+.leftAccordion h4 a.sales_panel_stats {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/chart.png") 5px 5px no-repeat;
+}
+.leftAccordion h4 a.sales_panel_warnings {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/exclamation-red-frame.png") 5px 5px no-repeat;
+}
+
+.leftAccordion h4 a.sales_panel_salesperson {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user.png") 5px 5px no-repeat;
+}
+
+.leftAccordion h4 a.sales_panel_branch {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/store.png") 5px 5px no-repeat;
+}
+
+.leftAccordion h4 a.sales_panel_products {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/drill.png") 5px 5px no-repeat;
+}
+.leftAccordion h4 a.product_panel_tree {
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/drill.png") 5px 5px no-repeat;
+}
+.leftAccordion h4 a.product_panel_buildingVine {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/buildingvine.png") 5px 5px no-repeat;
+}
+#shortCuts a.sales_person_anlysis {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user--arrow.png") no-repeat 0px 2px;
+}
+#shortCuts a.sales_person_improved {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user--plus.png") no-repeat 0px 2px;
+}
+#shortCuts a.sales_person_bad {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user--minus.png") no-repeat 0px 2px;
+}
+
+#shortCuts a.sales_branch_anlysis {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/store--arrow.png") no-repeat 0px 2px;
+}
+#shortCuts a.sales_branch_improved {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/store--plus.png") no-repeat 0px 2px;
+}
+#shortCuts a.sales_branch_bad {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/store--minus.png") no-repeat 0px 2px;
+}
+
+#shortCuts h3 a.admin_calendar {
+    background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/calendar-day.png") 5px 5px no-repeat;   
+}
+#shortCuts h3 a.admin_directory {
+    background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/address-book-blue.png") 5px 5px no-repeat;    
+}
+#shortCuts h3 a.admin_bugs {
+    background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/bug.png") 5px 5px no-repeat;   
+}
+#shortCuts h3 a.admin_deals {
+    background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/truck.png") 5px 5px no-repeat;    
+}
+#shortCuts h3 a.admin_feedtools {
+    background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/feed.png") 5px 5px no-repeat;    
+}
+#shortCuts h3 a.admin_admin {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user-business-boss.png") 5px 5px no-repeat;   
+}
+#shortCuts ul.jstree li a {
+  padding-left: 0px;
+  height:20px;
+  display: inline;
+  border: none;
+  font-weight:bold;
+  text-transform:uppercase;
+  font-size: 0.8em;
+  color:#000;
+}
+
+#shortCuts ul.jstree li.jstree-closed a {
+  cursor:default;
+}
+#shortCuts ul.jstree li.jstree-closed a:hover {
+  color: #000;
+}
+
+#shortCuts ul.jstree li {
+	margin:0;
+	padding:0;
+	border:0;
+}
+#shortCuts ul.jstree ul li ul li {
+	margin-left: 10px !important;
+}
+

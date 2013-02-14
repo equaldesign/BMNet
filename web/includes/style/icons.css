@@ -1,0 +1,257 @@
+.icon-postcode {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/map-pin.png") no-repeat;
+}
+.icon-bugs {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/bug.png") no-repeat;
+}
+.icon-phone {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/telephone.png") no-repeat;
+}
+.icon-mobile {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/mobile-phone.png") no-repeat;
+}
+.icon-email {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/mail-forward.png") no-repeat;
+}
+.icon-search {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/magnifier.png") no-repeat;
+}
+
+.icon-account {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/user-business.png") no-repeat;
+}
+.icon-quotelist {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/application-list.png") no-repeat;
+}
+.icon-quotenew {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/calculator--plus.png") no-repeat;
+}
+.icon-lock {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/lock.png") no-repeat;
+}
+.icon-off {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/cross-circle-frame.png") no-repeat;
+}
+.icon-dashboard {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/dashboard.png") no-repeat;
+}
+.icon-pendingquotes {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/table--exclamation.png") no-repeat;
+}
+.icon-quotelist {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/tables.png") no-repeat;
+}
+.icon-branches {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/marker.png") no-repeat;
+}
+.icon-tick {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/tick-circle-frame.png") no-repeat;
+}
+.icon-cross {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/cross-circle-frame.png") no-repeat;
+}
+.icon-delivered-true {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/truck.png") no-repeat;
+}
+.icon-delivered-false {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/car.png") no-repeat;
+}
+.icon-delete, .icon-cross {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/cross-circle-frame.png") no-repeat;
+}
+.icon-note {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/sticky-note-pin.png") no-repeat;
+}
+.icon-directions {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/direction.png") no-repeat;
+}
+.icon-info {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/question-frame.png") no-repeat;
+}
+.icon-newquote {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/table--plus.png") no-repeat;
+}
+.icon-date {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/calendar.png") no-repeat;
+}
+.icon-shopping-list {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/truck-empty.png") no-repeat;
+}
+.icon-edit {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/pencil.png") no-repeat;
+}
+
+.icon-spinner {
+  background: url("/includes/images/spinner.gif") no-repeat;
+}
+.icon-securitycode {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/credit-card-medium.png") no-repeat;
+}
+.icon-flo-sales {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/chart-pie.png") no-repeat;
+}
+.icon-flo-callback {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/mobile-phone.png") no-repeat;
+}
+.icon-flo-funnel {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/funnel.png") no-repeat;
+}
+.icon-flo-sales-new {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/star--plus.png") no-repeat;
+}
+.icon-flo-tasks {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/calendar-task.png") no-repeat;
+}
+.icon-flo-alarm {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/calendar--exclamation.png") no-repeat;
+}
+.icon-flo-reminder {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/alarm-clock.png") no-repeat;
+}
+.icon-flo-log {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/document-list.png") no-repeat;
+}
+.icon-flo-settings {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/toolbox--pencil.png") no-repeat;
+}
+.icon-web {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/globe.png") no-repeat;
+}
+.spinner {
+  background: #FFF url("/includes/images/spinner.gif") center right no-repeat;
+} 
+label.error {
+  color: #C00;
+  margin-top: 6px;
+  padding-left: 20px;
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/exclamation.png") 0 0 no-repeat;
+}
+input.error {
+  border: 1px solid #C00;
+}
+.icon-piechart {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/chart-pie.png") no-repeat;
+}
+.icon-pushpin {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/marker.png") no-repeat;
+}
+.icon-table-excel {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/document-excel-table.png") no-repeat;
+}
+.icon-branch {
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/store.png") no-repeat;
+}
+.icon-globe {
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/globe-network.png") no-repeat;
+
+}
+.icon-alert-user {
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/user--exclamation.png") no-repeat;
+}
+.icon-alert-marker {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/marker--exclamation.png") no-repeat;
+}
+.icon-product-add {
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/drill--plus.png") no-repeat;
+}
+.icon-products-import {
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/drill--arrow.png") no-repeat;
+}
+.icon-products-stock {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/truck--arrow.png") no-repeat;
+}
+.icon-product-edit {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/drill--pencil.png") no-repeat;
+}
+.icon-globe-edit {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/globe--pencil.png") no-repeat;
+}
+.icon-contact-new {
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/user--plus.png") no-repeat;
+}
+.icon-usergroups {
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/user-share.png") no-repeat;	
+}
+.icon-unlock {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/lock-unlock.png") no-repeat;  
+}
+.icon-lock {
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/lock.png") no-repeat;
+}
+.icon-report-1 {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/chart-up.png") no-repeat;  
+}
+.icon-report-2 {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/chart-up-color.png") no-repeat;  
+}
+.icon-report-3 {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/chart.png") no-repeat;  
+}
+.icon-report-4 {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/chart-pie-separate.png") no-repeat;  
+}
+.icon-import {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/script-excel.png") no-repeat;  
+}
+.icon-bv {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/bv.png") no-repeat;  
+}
+.icon-move {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/arrow-move.png") no-repeat;  
+}
+.icon-newpage {
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/document--plus.png") no-repeat;
+}
+.icon-pagelist {
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/documents-stack.png") no-repeat;
+}
+.icon-links {
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/chain.png") no-repeat;
+}
+.icon-media {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/image-share.png") no-repeat;
+}
+.icon-save {
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/disk.png") no-repeat;
+}
+.icon-publishpage {
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/disk--arrow.png") no-repeat;
+}
+.icon-cancelcheckout {
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/do-not-disturb-sign-cross.png") no-repeat;
+}
+.icon-workingcopy {
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/lock-unlock.png") no-repeat;
+}
+.icon-document-pencil {
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/document--pencil.png") no-repeat;
+}
+.icon-document-media {
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/chart-pie-separate.png") no-repeat;
+}
+.icon-tools {
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/wrench.png") no-repeat;
+}
+.icon-logout {
+background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/arrow.png") no-repeat 0px 0px !important;
+}
+[class^="icon-"], [class*=" icon-"] {
+  width: 20px;
+  height: 18px;
+  margin-top: -2px;
+}
+.icon-delete-link {
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/chain--minus.png") no-repeat;
+}
+.icon-edit-link {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/chain--pencil.png") no-repeat;
+}
+.icon-white-arrow {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/arrow-000-medium.png") no-repeat;
+}
+.icon-nav-expand {
+	background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/arrow-skip-270.png") no-repeat;
+}
+.icon-pdf {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/document-pdf.png") no-repeat;
+}

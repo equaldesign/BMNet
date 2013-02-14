@@ -1,0 +1,21 @@
+#tabs.company .overview {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/card-address.png") 4px 4px no-repeat;
+}
+#tabs.company .contacts {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/user-business-gray-boss.png") 4px 4px no-repeat;
+}
+#tabs.company .history {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/clock.png") 4px 4px no-repeat;
+}
+#tabs.company .notes {
+  padding-left: 25px;
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/notebook-sticky-note.png") 4px 4px no-repeat;
+}
+
+
+.relative h3 {
+	margin-top:0;
+}

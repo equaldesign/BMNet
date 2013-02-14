@@ -1,0 +1,56 @@
+/* jQuery.Rating Plugin CSS - http://www.fyneworks.com/jquery/star-rating/ */
+div.rating-cancel,div.star-rating{float:left;width:17px;height:15px;text-indent:-999em;cursor:pointer;display:block;background:transparent;overflow:hidden}
+div.rating-cancel {
+	display:none !important;
+}
+div.rating-cancel a {
+	display:none !important;
+}
+div.star-rating,div.star-rating a{background:url(https://www.buildingvine.com/includes/images/jQuery/star.png) no-repeat 0 0px}
+div.rating-cancel a,div.star-rating a{display:block;width:16px;height:100%;background-position:0 0px;border:0}
+div.star-rating-on a{background-position:0 -16px!important}
+div.star-rating-hover a{background-position:0 -32px}
+/* Read Only CSS */
+div.star-rating-readonly a{cursor:default !important}
+/* Partial Star CSS */
+div.star-rating{background:transparent!important;overflow:hidden!important}
+/* END jQuery.Rating Plugin CSS */
+#bvreviews {clear: both; padding-top: 10px}
+#bvreviews .submitReview {
+	padding-left: 20px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/balloon--plus.png") no-repeat;
+}
+#bvreviews h3, #bvreviews h4, #bvreviews h5 {
+	margin:0; 
+}
+#bv_extra_data h1, #bv_extra_data h2, #bv_extra_data h3 {
+	margin: 0;
+}
+#bvreviews .reviewImage {
+	float: left;
+  width: 40px;	
+}
+#bvreviews .reviewAuthor {
+  float: left;
+}
+#bvreviews .reviewAuthor h4 {
+  padding-left: 20px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/calendar.png") no-repeat;
+	float: left;
+}
+.bvreview {
+	margin: 5px 0px;
+	padding: 5px;
+	border: 1px solid #DDD;
+	background: #EFEFEF;
+	position: relative;
+}
+.bvreview .deleteComment {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	display: block;
+	height: 16px;
+	width: 16px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/balloon--minus.png") no-repeat;
+}

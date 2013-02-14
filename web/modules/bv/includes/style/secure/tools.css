@@ -1,0 +1,49 @@
+h1 {
+	font-weight: bold;
+	margin-top: 0px;
+	text-shadow: white 0px 1px 1px;
+}
+h2 {
+  font-weight: bold;
+  margin-top: 0px;
+  text-shadow: white 0px 1px 1px;
+}
+#syncStatus {
+	height: 15px;
+	padding: 10px;
+}
+#syncStatus li {
+	color: #AAA;
+	float: left;
+	font-size: 0.9em;
+	font-weight: bold;
+	height: 18px;
+	list-style: none;
+	margin-right: 20px;
+	padding-left: 20px;
+	padding-top: 2px;
+	background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/tick-circle-frame--inactive.png") no-repeat;
+}
+#syncStatus li.done {
+  background: url("https://d25ke41d0c64z1.cloudfront.net/images/icons/tick-circle-frame.png") no-repeat;
+	color: #000;
+}
+ul#tools {
+	margin:10px;
+}
+ul#tools li {
+	list-style: none;
+	padding-left: 45px;
+	position: relative;
+}
+ul#tools li img {
+left: 0;
+position: absolute;
+top: -1px;
+}
+ul#tools li h3, ul#tools li h3 a {
+font-weight: bold;
+color: #069;
+font-size: 120%;
+margin: 0;
+}

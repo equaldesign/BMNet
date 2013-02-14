@@ -1,0 +1,34 @@
+div.captcha {
+	margin-left: 170px !important;
+}
+.confirmGroup {
+width: 465px;
+float: right;
+position: relative;
+top: 0px;
+right: 0px;
+margin-top: -20px !important;
+}
+.confirmGroup .confirmCheck {
+	float: left;
+	width: 18px;
+}
+.confirmGroup .confirmtext {
+  float: left;
+	margin-top: 3px !important; 
+	width: 430px; 
+}
+.submit {
+	margin-right: 15px !important;
+}
+#formmessage {
+	padding-right: 15px;
+	text-align: right;
+	padding-bottom: 10px;
+}
+#formmessage li {
+	list-style: none;
+}
+.captcha img {
+	float: left;
+}

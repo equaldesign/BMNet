@@ -1,0 +1,20 @@
+div.sortthem {
+	list-style: none;
+	margin:0;
+}
+div.item {
+	cursor: move;
+}
+li.item a {
+	font-weight: bold;
+}
+h4.stageTotals {
+	margin-left: 10px;
+	padding-bottom: 5px;	
+}
+li.item h5 {
+	text-transform:capitalize;
+}
+li.item h6 {
+  text-transform:capitalize;
+}
