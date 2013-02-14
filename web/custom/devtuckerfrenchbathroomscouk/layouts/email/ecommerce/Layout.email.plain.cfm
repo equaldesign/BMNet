@@ -1,1 +1,0 @@
-<cfoutput>#renderView("#rc.emailView#.plain")#</cfoutput>
