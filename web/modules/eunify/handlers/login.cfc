@@ -82,16 +82,12 @@
       <cfdump var="#rc.loggedIn.BMNet#">
       <cfdump var="#UserStorage.getVar('BMNet')#">
       <cfset UserStorage.setVar("eGroup",rc.loggedIn.eGroup)>
-      <cfdump var="#rc.loggedIn.eGroup#">
-      <cfdump var="#UserStorage.getVar('eGroup')#">
+
       <cfif rc.loggedIn.buildingVine.active>
         <cfset UserStorage.setVar("buildingVine",rc.loggedIn.buildingVine)>
       <cfelse>
 	  	  <cfset UserStorage.setVar("buildingVine",ApplicationStorage.getVar("buildingVine"))>
       </cfif>
-      <cfdump var="#rc.loggedIn.buildingVine#">
-      <cfdump var="#UserStorage.getVar('buildingVine')#"><cfabort>
-
       <cfif rc.loggedIn.eGroup.username eq "">
         <cfset eGroup = false>
       <cfelse>

@@ -13,29 +13,27 @@ component{
   // Application properties
   appName = Replace(cgi.HTTP_HOST,".","","ALL");
   this.name = appName;
-  this.sessionManagement = true;
-  
-  this.setClientCookies = true;
-  
+  this.sessionManagement = true;  
+  this.setClientCookies = true;  
   this.loginstorage = "cookie";
-
   this.sessiontimeout = CreateTimeSpan(0,0,30,0); 
 
-  /*
-  if (StructKeyExists(cookie, "cfid")) {
-    
-    
-  } else {
-    this.sessiontimeout = CreateTimeSpan(0,0,0,2);
-  }
-  */
+
+  this.sessionstorage = '#appName#';
+  this.sessioncluster = true;
+  this.sessiontimeout = CreateTimeSpan(0,0,30,0);
 
   // Mappings Imports
   import coldbox.system.*;
   // ColdBox Specifics
   COLDBOX_APP_ROOT_PATH   = getDirectoryFromPath( getCurrentTemplatePath() );
   COLDBOX_APP_MAPPING   = "/devbmnet";
-  COLDBOX_CONFIG_FILE   = "";
+  customCBPath = getDirectoryFromPath(getCurrentTemplatePath())  & "custom/#appName#/config/Coldbox.cfc";
+  if (fileExists(customCBPath)) {
+    COLDBOX_CONFIG_FILE   = "devbmnet.custom.#appName#.config.Coldbox";    
+  } else {
+    COLDBOX_CONFIG_FILE   = "";
+  }
   COLDBOX_APP_KEY     = "";
 
   public boolean function onApplicationStart(){

@@ -9,7 +9,6 @@
   </div>
   <div class="widget-content nopadding">
     <table class="table table-striped table-condensed table-hover" id="<cfoutput>company_#rc.type_id#_List</cfoutput>">
-      <caption></caption>
       <thead>
         <tr>
           <th width="1%" nowrap="true">ID</th>

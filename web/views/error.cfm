@@ -19,7 +19,7 @@
       </cfoutput>
     </head>
     <body style="margin:10px;">
-    </cfif>
+</cfif>
     <cfoutput><script language="javascript" src="/includes/javascript/bug/escalte.js"></script></cfoutput>
     <link href="http://d25ke41d0c64z1.cloudfront.net/images/iconset.css" rel="stylesheet" type="text/css" />
 <div id="info" class="alert alert-error">

@@ -50,12 +50,17 @@
     request.companyID = paramValue("request.BMNet.companyID",0);
     request.geoInfo = UserStorage.getVar("geoInfo");
     rc.bvsiteID = event.getValue("siteID","buildingVine");
-    if (NOT isDefined("request.siteID")) {      
+    if (NOT isDefined("request.siteID")) {     
+      
       site = SiteService.gethost();
       if (site.recordCount neq 0) {
         request.siteID = site.ID;
         request.bvsiteID = site.bvsiteID;
+        
         rc.siteID = site.bvsiteid;
+        if (rc.bvsiteID eq "buildingVine") {
+          rc.bvsiteID = request.bvsiteid;
+        }
         request.site = site;
         if (site.primaryHost neq "" AND site.primaryHost neq cgi.http_host) {
           // locate to primary
@@ -67,6 +72,7 @@
         request.bvsiteID = "buildingVine";
         rc.siteID = "buildingVine";
       }
+ 
     }
     
     request.bvsiteID = rc.bvsiteID;
@@ -74,7 +80,7 @@
       request.buildingVine.siteID = request.bvsiteID;
       request.buildingVine.site = bvSiteService.getSite(request.bvsiteID);
       if (isUserLoggedIn()) {
-        //UserStorage.setVar("buildingVine",request.buildingVine);
+        UserStorage.setVar("buildingVine",request.buildingVine);
       }
     }
     if (CookieStorage.getVar("basketID","") eq "") {

@@ -48,7 +48,7 @@
       rc.account_number = event.getValue("id",0);
       rc.company = companyService.getcompany(rc.account_number,request.siteid);
       rc.emails = rc.emailData = EmailService.list(0,7,0,"desc","",0,rc.company.id);
-      rc.documentFolder = documentService.checkFolder(path="documentLibrary/companys/#rc.company.name#&c=true",siteID=request.buildingVine.siteID);
+      rc.documentFolder = documentService.checkFolder(path="documentLibrary/companys/#trim(rc.company.name)#&c=true",siteID=request.buildingVine.siteID);
       rc.recentDocuments = documentService.getRecent(rc.documentFolder.nodeRef);
       rc.emailCampaignResponses = responseService.responsesBy(companyID=rc.company.id);
       rc.tasks = TaskRelationships.getRelatedTasks(relatedType="customer,supplier",relatedID=rc.company.id,activityComplete=false)

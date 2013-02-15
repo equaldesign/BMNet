@@ -14,24 +14,30 @@
         <h5>Location Map</h5>
       </div>
       <div class="widget-content">
-        <div id="mapOverview" data-destination="#addressString#" data-origin="#request.bmnet.company.company_address_1#,#request.bmnet.company.company_address_4#,#request.bmnet.company.company_postcode#" style="height:400px; width:100%"></div>
+        <cftry>       
+          <div id="mapOverview" data-destination="#addressString#" data-origin="#request.bmnet.company.company_address_1#,#request.bmnet.company.company_address_4#,#request.bmnet.company.company_postcode#" style="height:400px; width:100%"></div>
+          <cfcatch type="any"></cfcatch>
+        </cftry>
       </div>
     </div>
     <div class="widget-box">
       <div class="widget-title">
         <span class="icon"><i class="icon-direction"></i></a></span>
-        <h5>Directions from #request.bmnet.company.company_postcode#</h5>
+        <h5>Directions from <cftry>#request.bmnet.company.company_postcode#<cfcatch type="any"></cfcatch></cftry></h5>
         <div class="buttons"><a href="##" class="showRoute btn btn-mini"><i class="icon-marker"></i> Show on Map</a></div>
       </div>
       <div class="widget-content">
         <div id="overview"></div>
         <ol id="instructions" class="hide">
-        </ol>
+        </ol> 
         <div class="form">
           <div class="input-prepend input-append row-fluid">
             <span class="add-on span3">Origin</span>
+            <cftry>
             <input type="text" id="u_address" class="span6" size="20" value="#request.bmnet.company.company_postcode#" />
             <input id="recalc" type="button" class="btn span3" value="update &raquo;" />
+            <cfcatch type="any"></cfcatch>
+            </cftry>
           </div>
         </div>
       </div>

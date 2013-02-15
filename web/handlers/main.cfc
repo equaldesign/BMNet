@@ -487,7 +487,7 @@
     <cftry>
     <cfquery name="bugLog" datasource="bugs">
       insert into bug
-      (ticket,request,type,title,description,status,priority,reproduce,url,username,email,system,site,created,formVars,urlVars,browser,version,hostname,referrer)
+      (ticket,request,type,title,description,status,priority,reproduce,url,username,email,system,site,created,formVars,urlVars,browser,version,hostname,referrer,hashedError)
       VALUES
       (
         <cfqueryparam cfsqltype="cf_sql_varchar" value="#rc.newTicketID#">,
@@ -509,7 +509,8 @@
         <cfqueryparam cfsqltype="cf_sql_varchar" value="#CGI.HTTP_USER_AGENT#">,
         <cfqueryparam cfsqltype="cf_sql_varchar" value="#paramValue('rc.version','1.3')#">,
         <cfqueryparam cfsqltype="cf_sql_varchar" value="#CGI.HTTP_HOST#">,
-        <cfqueryparam cfsqltype="cf_sql_varchar" value="#CGI.HTTP_REFERER#">
+        <cfqueryparam cfsqltype="cf_sql_varchar" value="#CGI.HTTP_REFERER#">,
+        <cfqueryparam cfsqltype="cf_sql_varchar" value="#hash(exceptionStruct.StackTrace)#">
     )
     </cfquery>
     <cfset rc.bugDetail = bugService.getBug(ticket=rc.newTicketID)>

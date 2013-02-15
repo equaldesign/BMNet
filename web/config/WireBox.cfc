@@ -36,7 +36,7 @@ Description :
 			},
 
 			// Package scan locations
-      scanLocations = ["bmnet.custom.#replaceNoCase(cgi.http_host,'.','','ALL')#.model.modules.mxtra","bmnet.custom.#replaceNoCase(cgi.http_host,'.','','ALL')#.model.modules.sums","bmnet.model","bmnet.modules"],
+      scanLocations = ["devbmnet.custom.#replaceNoCase(cgi.http_host,'.','','ALL')#.model.modules.mxtra","devbmnet.custom.#replaceNoCase(cgi.http_host,'.','','ALL')#.model.modules.sums","devbmnet.model","devbmnet.modules"],
 
 			// Stop Recursions
 			stopRecursions = ["model.groups","modules.eGroup.model.groups"],
@@ -55,79 +55,79 @@ Description :
     // map("eunify.securitygroups").toDSL("coldbox:setting:securityGroups@eunify");
 
 
-    map("eunify.GroupsService").to("bmnet.modules.eunify.model.GroupsService").inCacheBox(timeout=40,lastAccessTimeout=20,provider="template").asEagerInit();
+    map("eunify.GroupsService").to("devbmnet.modules.eunify.model.GroupsService").inCacheBox(timeout=40,lastAccessTimeout=20,provider="template").asEagerInit();
 
-    map("mxtra.basket").to("bmnet.modules.mxtra.model.basket");
-    map("mxtra.account").to("bmnet.modules.mxtra.model.account");
-    map("mxtra.category").to("bmnet.modules.mxtra.model.category");
-    map("mxtra.products").to("bmnet.modules.mxtra.model.products");
-    map("mxtra.quote").to("bmnet.modules.mxtra.model.quote");
-    map("mxtra.orders").to("bmnet.modules.mxtra.model.orders");
-    map("mxtra.checkout").to("bmnet.modules.mxtra.model.checkout");
-    map("eunify.ProductService").to("bmnet.modules.eunify.model.ProductService");
-    map("eunify.FeedService").to("bmnet.modules.eunify.model.FeedService");
-    map("eunify.UserService").to("bmnet.modules.eunify.model.UserService");
-    map("eunify.FavouritesService").to("bmnet.modules.eunify.model.FavouritesService");
-    map("eunify.FiguresService").to("bmnet.modules.eunify.model.FiguresService");
-    map("eunify.EmailService").to("bmnet.modules.eunify.model.EmailService");
-    map("eunify.PSAService").to("bmnet.modules.eunify.model.PSAService");
-    map("eunify.SiteService").to("bmnet.modules.eunify.model.SiteService");
-    map("eunify.BranchService").to("bmnet.modules.eunify.model.BranchService");
-    map("eunify.CommentService").to("bmnet.modules.eunify.model.CommentService");
-    map("eunify.DocumentService").to("bmnet.modules.eunify.model.DocumentService");
-    map("eunify.CalendarService").to("bmnet.modules.eunify.model.CalendarService");
-    map("eunify.InvoiceService").to("bmnet.modules.eunify.model.InvoiceService");
-    map("eunify.PromotionsService").to("bmnet.modules.eunify.model.PromotionsService");
-    map("eunify.CompanyService").to("bmnet.modules.eunify.model.CompanyService");
-    map("eunify.ImportService").to("bmnet.modules.eunify.model.ImportService");
-    map("eunify.RecommendationService").to("bmnet.modules.eunify.model.RecommendationService");
-    map("eunify.SalesService").to("bmnet.modules.eunify.model.SalesService");
-    map("eunify.EcommerceService").to("bmnet.modules.eunify.model.EcommerceService");
-    map("eunify.ContactService").to("bmnet.modules.eunify.model.ContactService");
-    map("eunify.SubscriptionService").to("bmnet.modules.eunify.model.SubscriptionService");
-    map("eunify.geoService").to("bmnet.modules.eunify.model.geoService");
+    map("mxtra.basket").to("devbmnet.modules.mxtra.model.basket");
+    map("mxtra.account").to("devbmnet.modules.mxtra.model.account");
+    map("mxtra.category").to("devbmnet.modules.mxtra.model.category");
+    map("mxtra.products").to("devbmnet.modules.mxtra.model.products");
+    map("mxtra.quote").to("devbmnet.modules.mxtra.model.quote");
+    map("mxtra.orders").to("devbmnet.modules.mxtra.model.orders");
+    map("mxtra.checkout").to("devbmnet.modules.mxtra.model.checkout");
+    map("eunify.ProductService").to("devbmnet.modules.eunify.model.ProductService");
+    map("eunify.FeedService").to("devbmnet.modules.eunify.model.FeedService");
+    map("eunify.UserService").to("devbmnet.modules.eunify.model.UserService");
+    map("eunify.FavouritesService").to("devbmnet.modules.eunify.model.FavouritesService");
+    map("eunify.FiguresService").to("devbmnet.modules.eunify.model.FiguresService");
+    map("eunify.EmailService").to("devbmnet.modules.eunify.model.EmailService");
+    map("eunify.PSAService").to("devbmnet.modules.eunify.model.PSAService");
+    map("eunify.SiteService").to("devbmnet.modules.eunify.model.SiteService");
+    map("eunify.BranchService").to("devbmnet.modules.eunify.model.BranchService");
+    map("eunify.CommentService").to("devbmnet.modules.eunify.model.CommentService");
+    map("eunify.DocumentService").to("devbmnet.modules.eunify.model.DocumentService");
+    map("eunify.CalendarService").to("devbmnet.modules.eunify.model.CalendarService");
+    map("eunify.InvoiceService").to("devbmnet.modules.eunify.model.InvoiceService");
+    map("eunify.PromotionsService").to("devbmnet.modules.eunify.model.PromotionsService");
+    map("eunify.CompanyService").to("devbmnet.modules.eunify.model.CompanyService");
+    map("eunify.ImportService").to("devbmnet.modules.eunify.model.ImportService");
+    map("eunify.RecommendationService").to("devbmnet.modules.eunify.model.RecommendationService");
+    map("eunify.SalesService").to("devbmnet.modules.eunify.model.SalesService");
+    map("eunify.EcommerceService").to("devbmnet.modules.eunify.model.EcommerceService");
+    map("eunify.ContactService").to("devbmnet.modules.eunify.model.ContactService");
+    map("eunify.SubscriptionService").to("devbmnet.modules.eunify.model.SubscriptionService");
+    map("eunify.geoService").to("devbmnet.modules.eunify.model.geoService");
 
-    map("sums.PageService").to("bmnet.modules.sums.model.PageService");
-    map("eunify.TagService").to("bmnet.modules.eunify.model.TagService");
+    map("sums.PageService").to("devbmnet.modules.sums.model.PageService");
+    map("eunify.TagService").to("devbmnet.modules.eunify.model.TagService");
 
-    map("quote.QuoteService").to("bmnet.modules.quote.model.QuoteService");
+    map("quote.QuoteService").to("devbmnet.modules.quote.model.QuoteService");
 
-    map("poll.PollService").to("bmnet.modules.poll.model.PollService");
-    map("poll.formbuilder").to("bmnet.modules.poll.model.formbuilder");
+    map("poll.PollService").to("devbmnet.modules.poll.model.PollService");
+    map("poll.formbuilder").to("devbmnet.modules.poll.model.formbuilder");
 
-    map("bv.UserService").to("bmnet.modules.bv.model.UserService");
-    map("bv.WikiService").to("bmnet.modules.bv.model.WikiService");
-    map("bv.EmailService").to("bmnet.modules.bv.model.EmailService");
-    map("bv.BlogService").to("bmnet.modules.bv.model.BlogService");
-    map("bv.FeedService").to("bmnet.modules.bv.model.FeedService");
-    map("bv.SiteService").to("bmnet.modules.bv.model.SiteService");
-    map("bv.ProductService").to("bmnet.modules.bv.model.ProductService");
-    map("bv.TagService").to("bmnet.modules.bv.model.TagService");
-    map("bv.PromotionService").to("bmnet.modules.bv.model.PromotionService");
-    map("bv.RatingService").to("bmnet.modules.bv.model.RatingService");
-    map("bv.DocumentService").to("bmnet.modules.bv.model.DocumentService");
-    map("bv.StockistService").to("bmnet.modules.bv.model.StockistService");
-    map("bv.CommentService").to("bmnet.modules.bv.model.CommentService");
-    map("bv.ReportService").to("bmnet.modules.bv.model.ReportService");
-    map("bv.VoteService").to("bmnet.modules.bv.model.VoteService");
-    map("bv.SearchService").to("bmnet.modules.bv.model.SearchService");
-    map("bv.aws.shopping").to("bmnet.modules.bv.model.aws.shopping");
-    map("bv.aws.amazonsig").to("bmnet.modules.bv.model.aws.amazonsig");
-    map("bv.AuditService").to("bmnet.modules.bv.model.AuditService");
-    map("bv.RecommendationService").to("bmnet.modules.bv.model.RecommendationService");
-    map("aws.Alexa").to("bmnet.model.aws.amazonAlexa").asSingleton().initWith(
+    map("bv.UserService").to("devbmnet.modules.bv.model.UserService");
+    map("bv.WikiService").to("devbmnet.modules.bv.model.WikiService");
+    map("bv.EmailService").to("devbmnet.modules.bv.model.EmailService");
+    map("bv.BlogService").to("devbmnet.modules.bv.model.BlogService");
+    map("bv.FeedService").to("devbmnet.modules.bv.model.FeedService");
+    map("bv.SiteService").to("devbmnet.modules.bv.model.SiteService");
+    map("bv.ProductService").to("devbmnet.modules.bv.model.ProductService");
+    map("bv.TagService").to("devbmnet.modules.bv.model.TagService");
+    map("bv.PromotionService").to("devbmnet.modules.bv.model.PromotionService");
+    map("bv.RatingService").to("devbmnet.modules.bv.model.RatingService");
+    map("bv.DocumentService").to("devbmnet.modules.bv.model.DocumentService");
+    map("bv.StockistService").to("devbmnet.modules.bv.model.StockistService");
+    map("bv.CommentService").to("devbmnet.modules.bv.model.CommentService");
+    map("bv.ReportService").to("devbmnet.modules.bv.model.ReportService");
+    map("bv.VoteService").to("devbmnet.modules.bv.model.VoteService");
+    map("bv.SearchService").to("devbmnet.modules.bv.model.SearchService");
+    map("bv.aws.shopping").to("devbmnet.modules.bv.model.aws.shopping");
+    map("bv.aws.amazonsig").to("devbmnet.modules.bv.model.aws.amazonsig");
+    map("bv.AuditService").to("devbmnet.modules.bv.model.AuditService");
+    map("bv.RecommendationService").to("devbmnet.modules.bv.model.RecommendationService");
+    map("aws.Alexa").to("devbmnet.model.aws.amazonAlexa").asSingleton().initWith(
       awsAccessKeyId = "AKIAI3TRZVUN4UWK6SMQ",
       secretAccessKey = "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"
     );
 
-    map("marketing.CampaignService").to("bmnet.modules.marketing.model.CampaignService");
-    map("marketing.ResponseService").to("bmnet.modules.marketing.model.ResponseService");
-    map("marketing.social.TwitterService").to("bmnet.modules.marketing.model.social.TwitterService");
-    map("bugs.BugService").to("bmnet.modules.bugs.model.BugService");
+    map("marketing.CampaignService").to("devbmnet.modules.marketing.model.CampaignService");
+    map("marketing.ResponseService").to("devbmnet.modules.marketing.model.ResponseService");
+    map("marketing.social.TwitterService").to("devbmnet.modules.marketing.model.social.TwitterService");
+    map("bugs.BugService").to("devbmnet.modules.bugs.model.BugService");
 
 
-    map("flo.RelationShipService").to("bmnet.modules.flo.model.RelationShipService");
-    map("flo.TaskService").to("bmnet.modules.flo.model.TaskService");
+    map("flo.RelationShipService").to("devbmnet.modules.flo.model.RelationShipService");
+    map("flo.TaskService").to("devbmnet.modules.flo.model.TaskService");
 
 
     map("eGroup.blog").to("eGroup.model.blog");
