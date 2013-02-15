@@ -300,8 +300,12 @@
       var i = "";
       var arrayTagContext = "";
       var bugLog = "";
-      var flash = "";
+      var flash = ""; 
 		</cfscript>
+    <cfif CGI.HTTP_USER_AGENT eq "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)">
+      <cflocation url="/" statuscode="302">
+      <cfabort>
+    </cfif>
     <cfsavecontent variable="flash">
       <h2>Session Information</h2>
 
