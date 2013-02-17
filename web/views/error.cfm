@@ -19,7 +19,7 @@
       </cfoutput>
     </head>
     <body style="margin:10px;">
-</cfif>
+</cfif> 
     <cfoutput><script language="javascript" src="/includes/javascript/bug/escalte.js"></script></cfoutput>
     <link href="http://d25ke41d0c64z1.cloudfront.net/images/iconset.css" rel="stylesheet" type="text/css" />
 <div id="info" class="alert alert-error">
@@ -27,7 +27,11 @@
   <h2 class="alert-heading">Whoops! You've encountered a missing or broken link.</h2>
   <p>If this happens more than once, it's probably best to stop trying for now. Otherwise, please <a href="javascript:location.reload();">try again.</a></p>
   <p>A ticket has been created in the bugs system which will be dealt with as soon as possible. A reference for this ticket is shown below<br /><br /><span class="label label-important"><i class="icon-ticket"></i> <cfoutput>#rc.newTicketID#</cfoutput></span></p>
+
   <a href="/" class="noAjax btn btn-danger"><i class="icon-home"></i> home</a>
+  <cfif isUserLoggedIn()>
+  <Cfoutput><a class="noAjax btn" target="_blank" href="http://help.ebiz.co.uk/bugs/bugs/detail?ticket=#rc.newTicketID#&key=#hash(getAuthUser())#">View ticket details</a></Cfoutput>
+  </cfif>
 </div>
 <div id="other">
 <div id="" class="alert alert-info">
