@@ -48,7 +48,7 @@
     </div>
     <div class="row-fluid">
       <div class="span12">
-        <cfoutput>#renderView("activity/list/embed")#</cfoutput>
+        <cfoutput>#renderView(view="activity/list/embed",args={showDates=false})#</cfoutput>
       </div>
       <div class="span12">
         <h4>New Task</h4>

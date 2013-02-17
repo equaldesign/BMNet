@@ -94,10 +94,10 @@
         <label for="known_as"  class="control-label">Site</label>
         <div class="controls">
         	<select name="site">
-	          <option value="cbagroup" #vm(rc.bug.getsite(),"cbagroup")#>CBA Group</option>
-	          <option value="handbgroup" #vm(rc.bug.getsite(),"handbgroup")#>h&b Group</option>
-	          <option value="cemco" #vm(rc.bug.getsite(),"cemco")#>CEMCO</option>
-            <option value="nbg" #vm(rc.bug.getsite(),"nbg")#>NBG</option>
+	          <option value="eGroup_cbagroup" #vm(rc.bug.getsite(),"eGroup_cbagroup")#>CBA Group</option>
+	          <option value="eGroup_handbgroup" #vm(rc.bug.getsite(),"eGroup_handbgroup")#>h&b Group</option>
+	          <option value="eGroup_cemco" #vm(rc.bug.getsite(),"eGroup_cemco")#>CEMCO</option>
+            <option value="eGroup_nbg" #vm(rc.bug.getsite(),"eGroup_nbg")#>NBG</option>
 	        </select>
 				</div>
       </div>

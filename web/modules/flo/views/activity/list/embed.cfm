@@ -6,8 +6,10 @@
     <tr>
       <th>Name</th>
       <th>Detail</th>
+      <cfif args.showDates>
       <th>Due</th>
       <th>Reminder</th>
+      </cfif>
       <th>Status</th>
       <th>Actor</th>
       <th></th>
@@ -23,13 +25,15 @@
     <tr class="#tableClass#">
       <td>#name#</td>
       <td>#description#</td>
-      <td>#dateFormat(duedate,"DD/MM/YYYY")# (<cfif tableClass neq "error">Due in </cfif>#DateDiff("d",now(),duedate)# days<cfif tableClass eq "error"> overdue</cfif>)</td>
+      <cfif args.showDates>
+      <td>#dateFormat(duedate,"DD/MM/YYYY")# <cfif not complete>(<cfif tableClass neq "error">Due in </cfif>#DateDiff("d",now(),duedate)# days<cfif tableClass eq "error"> overdue</cfif>)</cfif></td>
       <td>#dateFormat(reminderdate,"DD/MM/YYYY")#</td>
+      </cfif>
       <td><cfif complete><i class="icon-tick"></i><cfelse><i class="icon-cross"></i></cfif></td>
       <td><cfif contactID eq 0><span class="label label-important">no actors</label><cfelse><span class="label label-success">#first_name# #surname# (#companyName#)</span></cfif></td>
       <td>
         <cfif complete>
-          <span class="label">item complete</span>
+          
         <cfelseif emailaddress eq getAuthUser()>
           <a href="#bl('activities.markdone','id=#id#')#" class="btn btn-mini btn-info">mark done</a>
         <cfelseif isUserLoggedIn()>
