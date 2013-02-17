@@ -33,6 +33,7 @@
   addRoute(pattern="/api/products/download",handler="bv:products",action="download");
   addRoute(pattern="/api/products/feed",handler="bv:products",action="feed");
   addRoute(pattern="/api/activity",handler="eunify:api",action="activity");
+  addRoute(pattern="/auto/index",handler="bugs:auto",action="index");  
   addRoute(pattern="/api/contact",handler="eunify:api",action="contact");
   addRoute(pattern="/api/getUser",handler="eunify:api",action="getUser");
 
