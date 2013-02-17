@@ -207,9 +207,9 @@ eBiz Support
 		          </cfif>
 		        </cfif>
 		        <cfset rc.attachments = ArrayNew(1)>
-          </cfdefaultcase>
-        </cfswitch>        
-      </cfloop>
+          </cfdefaultcase> 
+        </cfswitch>         
+      </cfloop> 
       <!--- now delete the messages --->
       <cfquery name="d" datasource="#dsn.getName()#">
         delete from incoming;
