@@ -21,7 +21,7 @@
     <cfset ticket = mid(prc.commit.commit.message,ticketA.pos[1],ticketA.len[1])>
     <cfset bug = instance.bugs.getBug("",ticket)>
     <cfquery name="insertD" datasource="#instance.dsn.getName()#">
-      insert into codeCommits VALUES (bugID,commitJSON)
+      insert into codeCommits (bugID,commitJSON)
       VALUES
       (
         <cfqueryparam cfsqltype="cf_sql_integer" value="#bug.getid()#">,
