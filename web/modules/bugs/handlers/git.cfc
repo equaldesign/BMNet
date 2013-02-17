@@ -17,7 +17,7 @@
     <cfset logger.debug(thisU)>
     <cffile action="write" file="/tmp/git.tmp" output="#commitDetail.fileContent#">
     <cfset prc.commit = DeSerializejson(commitDetail.fileContent)>
-    <cfset ticketA = ReFindNoCase("[0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{16}$",prc.commit.commit.message,1,true)>
+    <cfset ticketA = ReFindNoCase("[0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{16}",prc.commit.commit.message,1,true)>
     <cfset ticket = mid(prc.commit.commit.message,ticketA.pos[1],ticketA.len[1])>
     <cfset bug = instance.bugs.getBug("",ticket)>
     <cfquery name="insertD" datasource="#instance.dsn.getName()#">
