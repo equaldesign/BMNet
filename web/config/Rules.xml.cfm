@@ -16,7 +16,7 @@ that can be found in an event.
 -->
 <rules>
     <rule>
-        <whitelist>bv.profile.reset,eunify.api.*,eunify.login.*,eunify.email.fastFile,eunify.company.doEdit,signup.*,eunify.calendar.register,unify.calendar.doRegister,eunify.comment.add,bugs.bugs.index</whitelist>
+        <whitelist>bv.profile.reset,eunify.api.*,eunify.login.*,eunify.email.fastFile,eunify.company.doEdit,signup.*,eunify.calendar.register,unify.calendar.doRegister,eunify.comment.add,bugs.bugs.index,bugs.bugs.detail</whitelist>
         <securelist>eunify.*,eGroup.*,mxtra.account.*,flo.*,bv.profile.*,bugs.bugs.*</securelist>
         <roles>staff,member,view,figures,edit,admin,ebiz,viewrebate</roles>
         <permissions></permissions>

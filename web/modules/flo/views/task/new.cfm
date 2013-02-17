@@ -8,14 +8,14 @@
       <label class="control-label">Name</label>
       <div class="controls">
         <cfoutput>
-        <input name="name" id="itemName" value="#rc.itemName#" />
+        <input type="text" name="name" id="itemName" value="#rc.itemName#" />
         </cfoutput>
       </div>
     </div>
     <div class="control-group">
       <label class="control-label">Amount</label>
       <div class="controls">
-        <input name="amount" />
+        <input type="text" name="amount" />
       </div>
     </div>
     <div class="control-group">
@@ -40,7 +40,7 @@
       <div class="controls">
         <select name="itemType">
           <cfoutput query="rc.itemTypes">
-            <option #vm(rc.type,name)# value="#id#">#name#</option>
+            <option #vm(rc.relatedType,name)# value="#id#">#name#</option>
           </cfoutput>
         </select>
       </div>

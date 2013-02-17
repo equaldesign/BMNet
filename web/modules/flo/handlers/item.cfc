@@ -11,15 +11,15 @@
   <cffunction name="new" returntype="void">
     <cfargument name="event">
     <cfset var rc = event.getCollection()>
-    <cfset rc.system = event.getValue("system","BMNet")>
+    <cfset rc.relatedSystem = event.getValue("relatedSystem","BMNet")>
     <cfset rc.relatedID = event.getValue("relatedID",0)>
     <cfset rc.relatedType = event.getValue("relatedType","contact")>
     <cfset rc.itemName = event.getValue("itemName","")>
     <cfset rc.itemType = event.getValue("itemType","callback")>
-    <cfset rc.relatedObject = relationship.getRelatedObject(rc.system,rc.relatedType,rc.relatedID)>
-    <cfset rc.itemTypes = tasks.getItemTypes()>
-    <cfset rc.contactObject = relationship.getRelatedObject(rc.system,"contact",request["#rc.system#"].contactID)>
-    <cfset event.setView("task/new")>
+    <cfset rc.relatedObject = relationship.getRelatedObject(rc.relatedSystem,rc.relatedType,rc.relatedID)>
+    <cfset rc.itemTypes = tasks.getItemTypes()> 
+    <cfset rc.contactObject = relationship.getRelatedObject("BMNet","contact",request.BMNet.contactID)>
+    <cfset event.setView("task/new")> 
   </cffunction>
 
   <cffunction name="edit" returntype="void">

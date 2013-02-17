@@ -14,14 +14,11 @@ component{
   appName = Replace(cgi.HTTP_HOST,".","","ALL");
   this.name = appName;
   this.sessionManagement = true;  
-  this.setClientCookies = true;  
-  this.loginstorage = "cookie";
-  this.sessiontimeout = CreateTimeSpan(0,0,30,0); 
+  this.setClientCookies = false;  
+  this.loginstorage = "session";
 
 
-  this.sessionstorage = '#appName#';
-  this.sessioncluster = true;
-  this.sessiontimeout = CreateTimeSpan(0,0,30,0);
+
 
   // Mappings Imports
   import coldbox.system.*;

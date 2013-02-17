@@ -57,7 +57,7 @@ Description :
 
     map("eunify.GroupsService").to("devbmnet.modules.eunify.model.GroupsService").inCacheBox(timeout=40,lastAccessTimeout=20,provider="template").asEagerInit();
 
-    map("mxtra.basket").to("devbmnet.modules.mxtra.model.basket");
+    map("mxtra.basket").to("devbmnet.modules.mxtra.model.basket"); 
     map("mxtra.account").to("devbmnet.modules.mxtra.model.account");
     map("mxtra.category").to("devbmnet.modules.mxtra.model.category");
     map("mxtra.products").to("devbmnet.modules.mxtra.model.products");
@@ -111,19 +111,27 @@ Description :
     map("bv.ReportService").to("devbmnet.modules.bv.model.ReportService");
     map("bv.VoteService").to("devbmnet.modules.bv.model.VoteService");
     map("bv.SearchService").to("devbmnet.modules.bv.model.SearchService");
-    map("bv.aws.shopping").to("devbmnet.modules.bv.model.aws.shopping");
+    map("bv.aws.shopping").to("devbmnet.modules.bv.model.aws.shopping"); 
     map("bv.aws.amazonsig").to("devbmnet.modules.bv.model.aws.amazonsig");
     map("bv.AuditService").to("devbmnet.modules.bv.model.AuditService");
     map("bv.RecommendationService").to("devbmnet.modules.bv.model.RecommendationService");
     map("aws.Alexa").to("devbmnet.model.aws.amazonAlexa").asSingleton().initWith(
       awsAccessKeyId = "AKIAI3TRZVUN4UWK6SMQ",
       secretAccessKey = "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"
-    );
-
+    ); 
+    map("UserStorage").toDSL("coldbox:myPlugin:UserStorage");
+    /*map("gitAPI").toDSL("coldbox:myPlugin:oAuth").initWith(
+      client_id = "c228a7fc718992fe86e5",
+      client_secret = "b13a08380c42e64e3fe500a55d7fed49e794fb87",
+      authEndpoint = "https://github.com/login/oauth/authorize",
+      accessTokenEndpoint = "https://github.com/login/oauth/authorize",
+      redirect_uri = "http://help/ebiz.co.uk/bugs/bugs/git"
+    );*/
     map("marketing.CampaignService").to("devbmnet.modules.marketing.model.CampaignService");
     map("marketing.ResponseService").to("devbmnet.modules.marketing.model.ResponseService");
     map("marketing.social.TwitterService").to("devbmnet.modules.marketing.model.social.TwitterService");
     map("bugs.BugService").to("devbmnet.modules.bugs.model.BugService");
+    map("bugs.automaton").to("devbmnet.modules.bugs.model.automaton");
 
 
     map("flo.RelationShipService").to("devbmnet.modules.flo.model.RelationShipService");

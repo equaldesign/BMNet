@@ -34,7 +34,7 @@
     <!--- ************************************************************* --->
     <cfargument name="name"  type="string" required="true" hint="The name of the variable.">
     <cfargument name="value" type="any"    required="true" hint="The value to set in the variable.">
-      
+        <cfset session[name] = value>
         <cfset SessionStorage.setVar(name,value)>
         <cfset logger.debug("Setting session var: #name# #GetHttpRequestData().headers['X-Forwarded-For']#")>
       
@@ -53,7 +53,12 @@
     <!--- ************************************************************* --->
     <cfargument  name="name"    type="string"  required="true"    hint="The variable name to retrieve.">
     <cfargument  name="default"   type="any"     required="false"   hint="The default value to set. If not used, a blank is returned." default="">
-    <cfreturn SessionStorage.getVar(name,ApplicationStorage.getVar(arguments.name,arguments.default))>
+    <cfset logger.debug("Getting session var: #name# #GetHttpRequestData().headers['X-Forwarded-For']#")>
+    <cfif StructKeyExists(session,name)>
+      <cfreturn session[name]>
+    <cfelse>
+      <cfreturn ApplicationStorage.getVar(arguments.name,arguments.default)>
+    </cfif>
     <!---
     <cfset var secureLogin = CookieStorage.getVar("clusterUser","")>
     <cfif isSimpleValue(secureLogin) and secureLogin neq "" AND UserCache.lookup(urlEncrypt("#secureLogin#_#siteName#"))>

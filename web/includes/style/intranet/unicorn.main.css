@@ -776,6 +776,7 @@ dashboardSettings button {
 
 .widget-content {
 	padding: 12px 15px;
+	border:0px;
     border-bottom: 1px solid #cdcdcd;
 }
 .widget-box.widget-plain .widget-content {
@@ -1612,6 +1613,9 @@ div.dataTables_wrapper .ui-widget-header {
 	box-sizing:border-box;
 -moz-box-sizing:border-box; /* Firefox */
 -webkit-box-sizing:border-box; /* Safari */
+-moz-border-radius: 0px;
+-webkit-border-radius: 0px;
+border-radius: 0px;
 }
 #productAccordion {
 	margin-top: 10px;

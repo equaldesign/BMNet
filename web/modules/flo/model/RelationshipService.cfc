@@ -34,6 +34,14 @@
           </cfcase>
         </cfswitch>
       </cfcase>
+      <cfdefaultcase>
+        <!--- just try a badboy database query --->
+        <cfquery name="x" datasource="#arguments.relatedSystem#">
+          select * from #arguments.relatedType#
+          where id = <cfqueryparam cfsqltype="cf_sql_integer" value="#arguments.relatedID#">
+        </cfquery>
+        <cfreturn x>
+      </cfdefaultcase>
     </cfswitch>
   </cffunction>
 
@@ -44,6 +52,7 @@
     <cfargument name="status" required="true" type="string" default="">
     <cfargument name="stage" required="true" type="string" default="">
     <cfargument name="activityComplete" required="true" type="string" default="">
+    <cfargument name="flowSystem" required="true" type="string" default="#request.flowSystem#">
     <cfquery name="tasks" datasource="#dsn.getName()#">
       select
         item.id,
@@ -59,19 +68,18 @@
         contact.surname,
         contact.id as contactID
       FROM
-        item,
-        itemActivity,
+        item LEFT JOIN itemActivity on itemActivity.itemID = item.id,
         itemParticipant
           LEFT JOIN #request.flowSystem#.contact as contact on contact.id = itemParticipant.contactID,
         itemRelationship,
         itemType,
         stage
         <cfif arguments.relatedType eq "customer,supplier">
-        , #request.flowSystem#.company as sourceCompany,
-          #request.flowSystem#.contact as sourceContact
+        , #arguments.flowSystem#.company as sourceCompany,
+          #arguments.flowSystem#.contact as sourceContact
         </cfif>
       WHERE
-          itemRelationship.relatedSystem = <cfqueryparam cfsqltype="cf_sql_varchar" value="#request.flowSystem#">
+          itemRelationship.relatedSystem = <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.flowSystem#">
         AND
            <cfif arguments.relatedType eq "customer,supplier">
             sourceCompany.id = <cfqueryparam cfsqltype="cf_sql_integer" value="#arguments.relatedID#">
@@ -110,8 +118,7 @@
         AND
           item.stageID = stage.id
         </cfif>
-        AND
-          itemActivity.itemID = item.id
+        
         <cfif arguments.activityComplete neq "">
         AND
           itemActivity.complete = <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.activityComplete#">

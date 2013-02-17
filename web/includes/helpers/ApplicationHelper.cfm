@@ -499,6 +499,14 @@ function cdt(dateString) {
     tOb  = ListToArray(theTime,":");
     return createDateTime(dOb[1],dOb[2],dOb[3],tOb[1],tOb[2],tOb[3]);
   }
+  function cdt6(dateString) {
+    dA = ListToArray(dateString,"T");
+    theDate = dA[1];
+    theTime = ListFirst(dA[2],"Z");
+    dOb = ListToArray(theDate,"-");
+    tOb  = ListToArray(theTime,":");
+    return createDateTime(dOb[1],dOb[2],dOb[3],tOb[1],tOb[2],tOb[3]);
+  }
   function cdt2(dateString) {
     dA = ListToArray(dateString," ");
     _month = dA[1];

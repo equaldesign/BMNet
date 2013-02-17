@@ -1,4 +1,5 @@
 <cfset getMyPlugin(plugin="jQuery").getDepends("","arrangeTasks","stages")>
+<cfset getMyPlugin(plugin="jQuery").getDepends("","","intranet/unicorn.main",false)>
 <div class="row-fluid">
 <cftry>
   <cfset spanSize = int(12/rc.stages.recordCount)>  

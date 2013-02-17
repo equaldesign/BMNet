@@ -1,12 +1,18 @@
-* {margin:0;padding:0;} 
+
 
 /* must declare 0 margins on everything, also for main layout components use padding, not 
 vertical margins (top and bottom) to add spacing, else those margins get added to total height 
 and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
 
-html, body {height: 100%;}
+ 
 html {
   background: #F0F0F0;
+}
+#nav {
+  padding-left: 20px;
+}
+#main {
+  padding-right: 20px;
 }
 #wrap {min-height: 100%;
 margin-left:auto;
@@ -16,6 +22,14 @@ margin-left:auto;
    -webkit-box-shadow:0 0 15px rgba(0,0,0,0.2); 
   -moz-box-shadow: 0 0 15px rgba(0,0,0,0.2); 
   box-shadow:0 0 15px rgba(0,0,0,0.2);  
+}
+.page {
+  padding: 20px;
+  background: #ffffff;
+   -webkit-box-shadow:0 0 15px rgba(0,0,0,0.2); 
+  -moz-box-shadow: 0 0 15px rgba(0,0,0,0.2); 
+  box-shadow:0 0 15px rgba(0,0,0,0.2);
+  position: relative;
 }
 .siteTitle {
   color:#999;
@@ -28,12 +42,10 @@ position:relative;
  
   }  /* must be same height as the footer */
 
-
-body {
-margin:0;
-padding:0;
-
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
 }
+
 h4 {
   margin:0;
 }
@@ -41,17 +53,15 @@ p {
   margin: 0.5em 0;
 }
 body, input {
-  font: 0.8em "Droid Sans", DroidSans, "trebuchet ms","Lucida Sans Unicode", sans-serif;
+  font: 0.8em "Open Sans", DroidSans, "trebuchet ms","Lucida Sans Unicode", sans-serif;
   /*font-family:DroidSans,"Trebuchet MS","Lucida Sans Unicode";*/
 }
 .grad {
-	background: #F5F5F5 url("/includes/images/grad.jpg") repeat-x;
+	background: #F5F5F5 url("/modules/bugs/includes/images/grad.jpg") repeat-x;
 }
-#main {
-	padding: 0 10px;
-}
+
 #logo {
-	background: url("/includes/images/ebiz.png") no-repeat 10px 10px;	
+	background: url("/modules/bugs/includes/images/ebiz.png") no-repeat 10px 10px;	
 	height: 45px;
 	font-weight: bold;
 }
@@ -84,7 +94,7 @@ body, input {
 }
 #loginInfo {
 	margin: 10px 0px 10px 10px;
-	background: url(/images/icons/user-business.png) no-repeat;
+	background: url(/imodules/bugs/mages/icons/user-business.png) no-repeat;
 	padding: 3px 25px;
 }
 #loginInfo div.login {
@@ -94,21 +104,7 @@ body, input {
 	font-size: 11px;
 	margin: 0px;
 }
-table {
-	width: 100%;
-	border: 1px solid #DDDDDD;
-	border-collapse:collapse;
-}
-table thead tr {
-  background: #F5F5F5 url("/includes/images/trgrad.jpg") repeat-x;
-	border-bottom: 1px solid #DDD;
-}
-table thead tr th {
-	padding: 3px;
-	text-align: left;
-	color:#AAA;
-	text-shadow: rgba(255, 255, 255, 0.7) 0px 1px 0px;
-}
+
 table td {
 	padding: 4px;
 }
@@ -164,11 +160,6 @@ a.closed {
 a.pending {
   background: url("/images/icons/alarm-clock.png") no-repeat 2px 2px;
 }
-table td a {
-  font-weight: bold;
-	text-decoration: none;
-	color:#999;
-}
 #createticket {
 	float: right;
 	width: 115px;
@@ -188,4 +179,31 @@ table td a {
 	clear: both;
 	display: block;
 	height: 0px;
+}
+.widget-header select.span1 {
+  width: 75px;
+}
+.ticketicon {
+  width: 48px;
+  height: 48px;
+  background: url("/modules/bugs/includes/images/ticket.png");
+  position: absolute;  
+  top: -10px;
+}
+.accordion-group {
+  border: 0;
+} 
+.accordion-heading .accordion-toggle {
+  padding:0;
+  padding-left: 20px;
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/chevron-small.png") 0px 3px no-repeat;
+}
+.accordion-heading .accordion-toggle.collapsed {
+  background: url("http://d25ke41d0c64z1.cloudfront.net/images/icons/chevron-small-expand.png") 0px 3px no-repeat;
+}
+.accordion-heading .accordion-toggle:hover {
+  text-decoration:none;
+}
+#codecommits td {
+  color: #000;
 }

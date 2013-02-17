@@ -1,6 +1,6 @@
 <cfcomponent name="help" cache="false" cachetimeout="50">
 
-  <cfproperty name="automaton" inject="model:automaton" scope="instance" />
+  <cfproperty name="automaton" inject="id:bugs.automaton" scope="instance" />
   <cffunction name="index">
     <cfargument name="event">
     <cfset var rc = event.getCollection()>
@@ -17,4 +17,4 @@
     <cffile action="copy" destination="s3://AKIAJ7KY7OTQMJ4QN24Q:J/30AAjnCnwAGGyCRHqlwxEaAr7nOcvpeKQ3JyjO@ebiz_mysql_#DateFormat(now(),'YYYY-MM-DD')#/dump.sql.gz" source="/fs/backups/#DateFormat(now(),'YYYY-MM-DD')#_dump.sql.gz" />
     <cffile action="delete" file="/fs/backups/#DateFormat(now(),'YYYY-MM-DD')#_dump.sql.gz">
   </cffunction>
-</cfcomponent>
+</cfcomponent> 

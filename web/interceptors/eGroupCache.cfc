@@ -1,5 +1,5 @@
 <cfcomponent name="eGroupCache" extends="coldbox.system.interceptor">
-  <cfproperty name="UserStorage" inject="coldbox:myPlugin:UserStorage">
+  <cfproperty name="UserStorage" inject="id:UserStorage">
   <cfproperty name="SiteService" inject="id:eunify.SiteService">
   <cfproperty name="bvUserService" inject="id:bv.UserService">
   <cfproperty name="bvSiteService" inject="id:bv.SiteService">
@@ -32,9 +32,7 @@
     rc.isAjax = structKeyExists(httpData.headers, 'X-Requested-With')
     && httpData.headers['X-Requested-With'] == 'XMLHttpRequest';
     
-    if (NOT isStruct(BMNet)) {
-      runEvent("main.onSessionStart"); 
-    }
+    
     rc.rtURL = arguments.event.getCurrentRoutedURL();
     request.WikiText = WikiText;
     request.groupService = groupService;

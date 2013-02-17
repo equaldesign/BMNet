@@ -31,6 +31,7 @@
 		<cfset ApplicationStorage.setVar("appRoot","#ExpandPath("../")#")>
     <cfset ApplicationStorage.setVar("dmsRoot","#ExpandPath("../../shared/dms/cemco/")#")>
 		<cfset ApplicationStorage.setVar("appUsers",appUsers)>    
+    <cfset ApplicationStorage.setVar("gitToken","15a3ce41eba238a39e9ce16af33b3a64c2d8c2df")>
     <cfset var eGroup = {
         sessionReference = "#createUUID()#",
         userName = "",

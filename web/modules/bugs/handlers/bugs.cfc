@@ -2,6 +2,8 @@
 
   <cfproperty name="bugs" inject="model:BugService" scope="instance" />
   <cfproperty name="dsn" inject="coldbox:datasource:bugs" scope="instance" />
+  <cfproperty name="floRelationShipService" inject="id:flo.RelationShipService">
+  <cfproperty name="floTaskService" inject="id:flo.TaskService">
   <cfproperty name="pingdom" inject="model:pingdomService">
   <cfscript>
     instance = structnew();
@@ -20,7 +22,6 @@
     <cfset var rc = event.getCollection()>
     <cfset rc.do = event.getValue("do","login")>
     <cfset rc.overviewData = instance.bugs.dashBoardData()>
-
     <cfset event.setView('list')>
   </cffunction>
 
@@ -103,7 +104,7 @@
       rc.json["aaData"] = [];
     </cfscript>
     <cfloop query="rc.bugData">
-      <cfsavecontent variable="actionTD"><cfoutput><cfif status neq "closed"><a href="##" rev="#id#" class="tooltip tdicon closeTicket door" title="Close Ticket"></a></cfif><a href="##" rev="#id#" class="tooltip tdicon #type#" title="Type: #type#"></a><a href="##" rev="#id#" title="Delete Bug" class="tooltip delete tdicon"></a></cfoutput></cfsavecontent>
+      <cfsavecontent variable="actionTD"><cfoutput><cfif status neq "closed"><a href="##" rev="#id#" class="ttip tdicon closeTicket door" title="Close Ticket"></a></cfif><a href="##" rev="#id#" class="ttip tdicon #type#" title="Type: #type#"></a><a href="##" rev="#id#" title="Delete Bug" class="ttip delete tdicon"></a></cfoutput></cfsavecontent>
 	    <cfif commentCount eq 0>
 			  <cfset labelStyle = "">
 			<cfelseif commentCount gt 0 AND commentCount lt 5>
@@ -118,18 +119,13 @@
 		  </cfif>
       <cfset thisRow = [
 	       "#id#",
-	       '<a href="#bl('bugs.setStatus','id=#id#',event)#" rel="#status#" title="Status: #status#" class="noAjax modaldialog tooltip tdicon #status#"></a>',
-	       '<a href="##" rev="#id#" rel="#priority#" title="Priority: #priority#" class="noAjax tooltip priority tdicon traffic_#priority#"></a>',
+	       '<a href="#bl('bugs.setStatus','id=#id#',event)#" rel="#status#" title="Status: #status#" class="noAjax modaldialog ttip tdicon #status#"></a>',
+	       '<a href="##" rev="#id#" rel="#priority#" title="Priority: #priority#" class="noAjax ttip priority tdicon traffic_#priority#"></a>',
          "#actionTD#",
          "#username#",
-         '<a href="#bl('bugs.detail','id=#id#',event)#" title="Ticket: #ticket#" class="tooltip showmessage">#coltitle#</a><span class="hidden"><pre>#description#</pre></span><br/>',
+         '<a href="#bl('bugs.detail','id=#id#',event)#" title="Ticket: #ticket#" class="ttip showmessage">#coltitle#</a><span class="hidden"><pre>#left(description,200)#</pre></span><br/>',
          "#dateFormatOrdinal(created,"D MMM")#",
          "#dateFormatOrdinal(modified,"D MMM")#",
-         "#assigneeName#",
-         "#version#",
-         "#componentType#",
-         "#dateFormatOrdinal(fixDate,"D MMM")#",
-         "#fixVersion#",
          '<span class="label #labelStyle#">#commentCount#</span>',
          "#site#"]>
       <cfset ArrayAppend(rc.json.aaData,thisRow)>
@@ -140,8 +136,18 @@
   <cffunction name="detail" returntype="void" output="false">
     <cfargument name="event" required="true">
     <cfset var rc = event.getCollection()>
-    <cfset rc.id = event.getValue("id",0)>
-    <cfset rc.bug = instance.bugs.getBug(rc.id)>
+    <cfset rc.id = event.getValue("id","")>
+    <cfset rc.ticket = event.getValue("ticket","")>
+    <cfset rc.bug = instance.bugs.getBug(rc.id,rc.ticket)>
+    <cfif NOT isUserLoggedIn()>
+      <!--- only see the issue with a hash --->
+      <cfset rc.key = event.getValue("key","")>
+      <cfif rc.key neq hash(rc.bug.getemail())>
+        <cfset setNextEvent(uri="/login")>
+      </cfif>
+    </cfif>
+    <cfset rc.items = floRelationShipService.getRelatedTasks(relatedType="bug",relatedID=rc.bug.getid(),flowSystem="bugs")>
+    <cfset rc.floTaskService = floTaskService>
     <cfset event.setView('detail')>
   </cffunction>
 

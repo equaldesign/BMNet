@@ -18,16 +18,18 @@
     <cffile action="write" file="/tmp/git.tmp" output="#commitDetail.fileContent#">
     <cfset prc.commit = DeSerializejson(commitDetail.fileContent)>
     <cfset ticketA = ReFindNoCase("[0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{16}",prc.commit.commit.message,1,true)>
-    <cfset ticket = mid(prc.commit.commit.message,ticketA.pos[1],ticketA.len[1])>
-    <cfset bug = instance.bugs.getBug("",ticket)>
-    <cfquery name="insertD" datasource="#instance.dsn.getName()#">
-      insert into codeCommits (bugID,commitJSON)
-      VALUES
-      (
-        <cfqueryparam cfsqltype="cf_sql_integer" value="#bug.getid()#">,
-        <cfqueryparam cfsqltype="cf_sql_longvarchar" value="#commitDetail.fileContent#">
-      )
-    </cfquery>
+    <cfif ticketA.len[1] eq 0>
+      <cfset ticket = mid(prc.commit.commit.message,ticketA.pos[1],ticketA.len[1])>
+      <cfset bug = instance.bugs.getBug("",ticket)>
+      <cfquery name="insertD" datasource="#instance.dsn.getName()#">
+        insert into codeCommits (bugID,commitJSON)
+        VALUES
+        (
+          <cfqueryparam cfsqltype="cf_sql_integer" value="#bug.getid()#">,
+          <cfqueryparam cfsqltype="cf_sql_longvarchar" value="#commitDetail.fileContent#">
+        )
+      </cfquery>
+    </cfif>
     <cfset event.noRender()>
   </cffunction> 
 </cfcomponent>
