@@ -247,7 +247,7 @@ eBiz Support
           select * from contact where email = <cfqueryparam cfsqltype="cf_sql_varchar" value="#email#">
         </cfquery>
         <cfset returnOb.system = "intranet">
-        <cfset returnOb.site = "handbgroup">
+        <cfset returnOb.site = "eGroup_handbgroup">
         <cfset returnOb.user = u>
         <cfreturn returnOb>
       </cfif>
@@ -259,7 +259,7 @@ eBiz Support
             select * from contact where email = <cfqueryparam cfsqltype="cf_sql_varchar" value="#email#">
           </cfquery>
           <cfset returnOb.system = "intranet">
-          <cfset returnOb.site = "cbagroup">
+          <cfset returnOb.site = "eGroup_cbagroup">
           <cfset returnOb.user = u>
           <cfreturn returnOb>
       </cfif>
@@ -271,7 +271,7 @@ eBiz Support
             select * from contact where email = <cfqueryparam cfsqltype="cf_sql_varchar" value="#email#">
           </cfquery>
           <cfset returnOb.system = "intranet">
-          <cfset returnOb.site = "cemco">
+          <cfset returnOb.site = "eGroup_cemco">
           <cfset returnOb.user = u>
           <cfreturn returnOb>
       </cfif>
@@ -283,7 +283,7 @@ eBiz Support
           select * from contact where email = <cfqueryparam cfsqltype="cf_sql_varchar" value="#email#">
         </cfquery>
         <cfset returnOb.system = "intranet">
-        <cfset returnOb.site = "nbg">
+        <cfset returnOb.site = "eGroup_nbg">
         <cfset returnOb.user = u>
         <cfreturn returnOb>
       </cfif>
@@ -296,32 +296,33 @@ eBiz Support
       <cfset QuerySetCell(returnOb.user,"surname","user")>
       <cfset QuerySetCell(returnOb.user,"company","ebiz")>
 	  <cfelse>
+      <cfset foundInstances = 0>
 	    <cfquery name="handbgroup" datasource="eGroup_handbgroup">
 	      select * from contact where email = <cfqueryparam cfsqltype="cf_sql_varchar" value="#email#">
 	    </cfquery>
 	    <cfif handbgroup.recordCount gte 1>
 	      <cfset returnOb.system = "intranet">
-	      <cfset returnOb.site = "handbgroup">
+	      <cfset returnOb.site = "eGroup_handbgroup">
 	      <cfset returnOb.user = handbgroup>
-	      <cfreturn returnOb>
+	      <cfset foundInstances++>
 	    </cfif>
 	    <cfquery name="cba" datasource="eGroup_cbagroup">
 	      select * from contact where email = <cfqueryparam cfsqltype="cf_sql_varchar" value="#email#">
 	    </cfquery>
 	    <cfif cba.recordCount gte 1>
 	        <cfset returnOb.system = "intranet">
-	        <cfset returnOb.site = "cbagroup">
+	        <cfset returnOb.site = "eGroup_cbagroup">
 	        <cfset returnOb.user = cba>
-	        <cfreturn returnOb>
+	        <cfset foundInstances++>
 	    </cfif>
 	    <cfquery name="cemco" datasource="eGroup_cemco">
 	      select * from contact where email = <cfqueryparam cfsqltype="cf_sql_varchar" value="#email#">
 	    </cfquery>
 	    <cfif cemco.recordCount gte 1>
 	        <cfset returnOb.system = "intranet">
-	        <cfset returnOb.site = "cemco">
+	        <cfset returnOb.site = "eGroup_cemco">
 	        <cfset returnOb.user = cemco>
-	        <cfreturn returnOb>
+	        <cfset foundInstances++>
 	    </cfif>
 
 	    <cfquery name="nbg" datasource="eGroup_nbg">
@@ -329,10 +330,13 @@ eBiz Support
 	    </cfquery>
 	    <cfif nbg.recordCount gte 1>
 	      <cfset returnOb.system = "intranet">
-	      <cfset returnOb.site = "nbg">
+	      <cfset returnOb.site = "eGroup_nbg">
 	      <cfset returnOb.user = nbg>
-	      <cfreturn returnOb>
+	      <cfset foundInstances++>
 	    </cfif>
+      <cfif foundInstances eq 1>
+        <cfreturn returnOb>
+      </cfif>
 	    <cfset returnOb.system = "unknown">
 	    <cfset returnOb.site = "ebiz">
 	    <cfset returnOb.user = QueryNew("id,first_name,surname,company")>
@@ -359,7 +363,7 @@ eBiz Support
 			   <!--- someone has responded to a comment via email --->
 			   <cfswitch expression="#userObject.site#">
 			     <cfcase value="handbgroup">
-				 	   <cfset postURL = "http://dev.handbgroup.com">
+				 	   <cfset postURL = "http://www.handbgroup.com">
 				 	   <!--- simply post to handb --->
 				   </cfcase>
 				   <cfcase value="cemco">
