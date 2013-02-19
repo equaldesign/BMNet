@@ -1,4 +1,4 @@
-<cfset getMyPlugin(plugin="jQuery").getDepends("form","activity/new")>
+<cfset getMyPlugin(plugin="jQuery").getDepends("form","activity/new,activity/log","",false,"flo")>
 <h3>Task list</h3>
 <!--- activity list --->
 <table class="table table-bordered table-striped table-condensed table-rounded">
@@ -9,11 +9,15 @@
       <cfif args.showDates>
       <th>Due</th>
       <th>Reminder</th>
+      <th>T.Spent</th>
       </cfif>
       <th>Status</th>
       <th>Actor</th>
+      <cfif isUserInRole("ebiz")><th></th></cfif>
+      <cfif args.showDates>
       <th></th>
       <th></th>
+      </cfif>
     </tr>
   </thead>
   <tbody>
@@ -28,20 +32,34 @@
       <cfif args.showDates>
       <td>#dateFormat(duedate,"DD/MM/YYYY")# <cfif not complete>(<cfif tableClass neq "error">Due in </cfif>#DateDiff("d",now(),duedate)# days<cfif tableClass eq "error"> overdue</cfif>)</cfif></td>
       <td>#dateFormat(reminderdate,"DD/MM/YYYY")#</td>
+      <td>#hours#</td>      
       </cfif>
       <td><cfif complete><i class="icon-tick"></i><cfelse><i class="icon-cross"></i></cfif></td>
       <td><cfif contactID eq 0><span class="label label-important">no actors</label><cfelse><span class="label label-success">#first_name# #surname# (#companyName#)</span></cfif></td>
+      <cfif isUserInRole("ebiz")>
+        <td>
+        <cfset activeWorklog = rc.worklogService.getActiveWorklog(id)>
+        <cfif activeWorkLog.recordCount eq 0>
+          <!--- enable starting of log --->
+          <a href="##" class="startTracking" data-activityID="#id#"><i class="icon-clock"></i></a>
+        <cfelse>
+          <a href="##" title="Started on #DateFormat(activeWorkLog.startTS,'short')# @ #TimeFormat(activeWorkLog.startTS,'medium')#" class="ttip stopTracking" data-activityID="#id#" data-trackingID="#activeWorkLog.id#"><img src="/includes/images/spinner.gif" border="0"></a>
+        </cfif>
+        </td>
+      </cfif>
+      <cfif args.showDates>
+
       <td>
         <cfif complete>
           
-        <cfelseif emailaddress eq getAuthUser()>
+        <cfelseif emailaddress eq getAuthUser() AND isUserInRole("staff")>
           <a href="#bl('activities.markdone','id=#id#')#" class="btn btn-mini btn-info">mark done</a>
-        <cfelseif isUserLoggedIn()>
+        <cfelseif isUserInRole("staff")>
           <a href="#bl('activities.assign','id=#rc.item.activities.id#&contactID=#request.bmnet.contactID#')#" class="btn btn-mini btn-warning">take ownership</a>
         </cfif>
       </td>
       <td>
-        <cfif isUserLoggedIn()>
+        <cfif isUserInRole("staff")>
         <div class="btn-group">
           <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="##">
             Assign to
@@ -58,6 +76,7 @@
         </div>
         </cfif>
       </td>
+      </cfif>
     </tr>
   </cfoutput>
   </tbody>

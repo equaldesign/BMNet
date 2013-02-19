@@ -1,6 +1,7 @@
 <cfcomponent>
   <cfproperty name="tasks" inject="id:flo.TaskService">
   <cfproperty name="relationship" inject="id:flo.RelationshipService">
+  <cfproperty name="WorklogService" inject="id:flo.WorklogService">
   <cffunction name="myActivities" returntype="void">
     <cfargument name="event">
     <cfset var rc = event.getCollection()>
@@ -52,5 +53,20 @@
     <cfset rc.priority = event.getValue("priority",0)>
     <cfset tasks.changePriority(rc.activityID,rc.priority)>
     <cfset event.noRender()>
+  </cffunction>
+
+  <cffunction name="startTracking" returntype="void">
+    <cfargument name="event">
+    <cfset var rc = event.getCollection()>
+    <cfset rc.activityID = event.getValue("activityID",0)>
+    <cfset rc.trackingID = WorklogService.startTracking(rc.activityID)>
+    <cfset event.renderData(data=int(rc.trackingID),type="JSON")>
+  </cffunction>
+  <cffunction name="stopTracking" returntype="void">
+    <cfargument name="event">
+    <cfset var rc = event.getCollection()>
+    <cfset rc.trackingID = event.getValue("trackingID",0)>
+    <cfset WorklogService.stopTracking(rc.trackingID)>
+    <cfset event.renderData(data=int(rc.trackingID),type="JSON")>
   </cffunction>
 </cfcomponent>

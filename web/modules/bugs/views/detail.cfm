@@ -1,5 +1,5 @@
-<cfset getMyPlugin(plugin="jQuery").getDepends("","","comment",false,"eunify")>
-<cfset getMyPlugin(plugin="jQuery").getDepends("","","extra",true)>
+<cfset getMyPlugin(plugin="jQuery").getDepends("upload","","comment",false,"eunify")>
+<cfset getMyPlugin(plugin="jQuery").getDepends("","extra","fuui",true)>
 <cfoutput>
 <div class="page">
   <i class="ticketicon"></i>
@@ -9,8 +9,8 @@
     <a href="#bl('bugs.delete','id=#rc.bug.getid()#')#" class="btn btn-mini"><i class="icon-cross-circle-frame"></i>delete bug</a>
     <a href="#bl('bugs.edit','id=#rc.bug.getid()#')#" class="btn btn-mini"><i class="icon-pencil"></i>edit bug</a>
   </div>
-  </cfif>
-  <h1>#rc.bug.gettitle()#</h1>
+  </cfif> 
+  <h1>#rc.bug.gettitle()#</h1> 
 </div>
 <cfif NOT isUserLoggedIn()>
   <div class="alert">
@@ -24,7 +24,7 @@
   <p>This issue is now resolved.</p>
   <p>It was marked fixed on #DateFormatOrdinal(rc.bug.getmodified(),"DDDD D MMMM YYYY")# at #TimeFormat(rc.bug.getmodified(),"HH:MM")#</p>
 </div>
-</cfif>
+</cfif> 
 <div class="accordion row-fluid">
   <div class="span6">
     <div class="accordion-group">
@@ -39,7 +39,7 @@
             <tr>
               <td><i class="icon-ticket"></i></td>
               <td>Ref</td>
-              <td>#rc.bug.getticket()#</td>
+              <td>#rc.bug.getticket()# <a target="_blank" href="http://help.ebiz.co.uk/bugs/bugs/detail?ticket=#rc.bug.getticket()#&key=#hash(rc.bug.getemail())#"><i class="icon-globe-share"></i></a></td>
             </tr>
             <tr>
               <td><i class="icon-calendar"></i></td>
@@ -68,10 +68,12 @@
                </td>
             </tr>
             </cfif>
-            <tr>
+            <tr> 
               <td><i class="icon-user"></i></td>
               <td>Reported by</td>
-              <td><a href="mailto:#rc.bug.getemail()#">#rc.bug.getusername()#</a></td>
+              <td><a href="mailto:#rc.bug.getemail()#">#rc.bug.getusername()#</a> 
+                
+              </td>
             </tr>
             <tr>
               <td>
@@ -102,15 +104,19 @@
   <div class="span6">
     <!--- is there a workflow item? --->
     <cfif rc.items.recordCount neq 0>
+      <cfif isUserInRole("ebiz")>
+        <a class="pull-right" href="/flo/item/detail?id=#rc.items.id#">view workflow item</a>
+      </cfif>
       <!--- get the workflow item and list the tasks --->
       <cfset rc.item = rc.floTaskService.getTask(rc.items.id)>
       <cfoutput>#renderView(view="activity/list/embed",module="flo",args={showDates=false})#</cfoutput>
       <cfif isUserInRole("ebiz")>
+        
       <div class="accordion-group">
         <div class="accordion-heading">
           <a class="accordion-toggle" data-toggle="collapse" href="##collapseOne">
             <h4>New Task</h4>
-          </a>
+          </a> 
         </div>
         <div id="collapseOne" class="accordion-body collapse">
           <div class="accordion-inner">
@@ -170,16 +176,39 @@
       </div>
     </div>
     <div class="accordion-group">
-      <div class="accordion-heading">
+      <div class="accordion-heading"> 
         <a class="accordion-toggle" data-toggle="collapse" href="##attachments">
-          <h4>Attachments</h4>
+          <h4>Attachments</h4> 
         </a>
-      </div>
+      </div> 
       <div id="attachments" class="accordion-body collapse in">
+        <cfif isUserLoggedIn()>
+        <div id="aholder" data-bugID="#rc.bug.getticket()#" class="pull-right"><div id="addattachment"></div></div>
+        <div id="uploadQueue"></div>
+        </cfif>
         <cfif rc.bug.attachments.recordCount neq 0>
-          <ul class="thumbnails">
+          <ul class="thumbnails"> 
             <cfloop query="rc.bug.attachments">
-            <li class="thumbnail"><a href="#bl('bugs.download','id=#id#')#">#listLast(filename,"/")#</a></li>
+              <li class="span3">
+                <div class="thumbnail">
+                  <a class="lightbox" href="https://www.buildingvine.com/api/i?fn=#URLEncodedFormat(fileName)#&size=850&crop=true">
+                  <cfswitch expression="#ListLast(fileName,'.')#">
+                    <cfcase value="jpg,jpeg,png,gif">
+                      <img src="https://www.buildingvine.com/api/i?fn=#URLEncodedFormat(fileName)#&size=250&crop=true" />
+                    </cfcase> 
+                    <!--- jpg,jpeg,png,gif,pdf,doc,docx,xls,xlsx --->
+                    <cfcase value="pdf,doc,docx,xls,xlsx">
+                      <img src="http://automation.ebiz.co.uk/thumb.cfm?fn=#URLEncodedFormat(listLast(fileName,'/'))#" />
+                    </cfcase>
+                    <cfdefaultcase>
+                      <img src="/modules/bv/includes/images/secure/documents/fileExtentions/#UCASE(ListLast(fileName,'.'))#.png" />
+                    </cfdefaultcase>
+                  </cfswitch>   
+                  </a>
+                  <h6>#left(listLast(filename,"/"),20)#</h6>
+                  <a href="#bl('bugs.download','id=#id#')#" class="btn btn-mini"><i class="icon-disks"></i>download</a>
+                </div>
+              </li>
             </cfloop>        
           </ul>
         </cfif>
@@ -190,37 +219,60 @@
     <div class="accordion-group">
       <div class="accordion-heading">
         <a class="accordion-toggle" data-toggle="collapse" href="##comments">
+          
           <h4>Comments</h4>
         </a>
       </div>
       <div id="comments" class="accordion-body collapse in">
-        <cfloop query="rc.bug.comments">
-          <cfif event.getCurrentModule() neq ""><cfset commentAuthor = getModel("contact").getContactByEmail(email)></cfif>
-          <div class="commentBox clearfix">
-            <div class="commentTitle clearfix">
-              <div class="commentSubject">#title#</div>
-              <div class="commentAuthorImage">
-      
-                <cfoutput><img src="https://secure.gravatar.com/avatar/#lcase(Hash(lcase('#email#')))#?size=25&amp;d=https://www.buildingvine.com/includes/images/secure/blankAvatar.jpg" alt=""  /></cfoutput>
+        <ul class="nav nav-tabs" id="CommentTabs">
+          <li class="active"><a data-toggle="tab" href="##bugcomments">Bug Comments</a></li>
+          <cfif rc.items.recordCount neq 0>
+          <li><a data-toggle="tab" href="##workflowcomments">Workflow Comments</a></li>          
+          </cfif>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="bugcomments">
+            <cfloop query="rc.bug.comments">
+              <cfif event.getCurrentModule() neq ""><cfset commentAuthor = getModel("contact").getContactByEmail(email)></cfif>
+              <div class="commentBox clearfix">
+                <div class="commentTitle clearfix">
+                  <div class="commentSubject">#title#</div>
+                  <div class="commentAuthorImage">
+          
+                    <cfoutput><img src="https://secure.gravatar.com/avatar/#lcase(Hash(lcase('#email#')))#?size=45&amp;d=https://www.buildingvine.com/includes/images/secure/blankAvatar.jpg" alt=""  /></cfoutput>
+                    </div>
+                  <div class="commentMeta">
+                    <span class="commentDate">#DateFormatOrdinal(datestamp,"DDDD DD MMMM YYYY")# at #TimeFormat(datestamp,"HH:MM")#</span>
+                    <span class="commentAuthor"><cfif event.getCurrentModule() neq ""><a href="#bl('contact.index','id=#commentAuthor.id#')#">#username#</a><cfelse>#username#</cfif></span>
+                  </div>
                 </div>
-              <div class="commentMeta">
-                <span class="commentDate">#DateFormatOrdinal(datestamp,"DDDD DD MMMM YYYY")# at #TimeFormat(datestamp,"HH:MM")#</span>
-                <span class="commentAuthor"><cfif event.getCurrentModule() neq ""><a href="#bl('contact.index','id=#commentAuthor.id#')#">#username#</a><cfelse>#username#</cfif></span>
+                <div class="commentContent">#ParagraphFormat2(stripOriginalMessage(comment))#</div>
               </div>
-            </div>
-            <div class="commentContent">#ParagraphFormat2(stripOriginalMessage(comment))#</div>
+            </cfloop>
+            <cfif isUserLoggedIn()>
+    
+            <form style="margin-top: 40px" action="#bl('bugs.createcomment','bugID=#rc.bug.getid()#')#" class="form form-horizotnal">
+              <fieldset>
+                <legend>Add comment</legend>
+    
+              <div class="controls-row">
+                <textarea rows="10" class="span12" name="comment" richtext="true" toolbar="Basic"></textarea>
+              </div>
+              <div class="form-actions">
+                <input name="submit" type="submit" class="btn btn-success" value="add comment" />
+              </div>
+              </fieldset>          
+            </form>
+            </cfif>
           </div>
-        </cfloop>
-        <cfif isUserLoggedIn()>
-        <form action="#bl('bugs.createcomment','bugID=#rc.bug.getid()#')#" class="form form-horizotnal">
-          <div class="control-group">
-            <textarea rows="10" class="input-xlarge" name="comment" richtext="true" toolbar="Basic"></textarea>
+          <cfif rc.items.recordCount neq 0>
+          <div class="tab-pane" id="workflowcomments">
+            <cfset rc.relationshipURL = "/flo/item/detail?id=#rc.item.task.id#">
+            <cfset rc.comments = getModel("eunify.CommentService").getComments(rc.items.id,"floItem")>
+            <cfoutput>#renderView(view="comment/list",module="eunify")#</cfoutput>
           </div>
-          <div class="form-actions">
-            <input name="submit" type="submit" class="btn btn-success" value="add comment" />
-          </div>
-        </form>
-        </cfif>
+          </cfif>
+        </div>
       </div>
     </div>
   </div>

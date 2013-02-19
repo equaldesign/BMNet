@@ -1,3 +1,5 @@
+
+
 <cfset getMyPlugin(plugin="jQuery").getDepends("","arrangeTasks","stages")>
 <cfset getMyPlugin(plugin="jQuery").getDepends("","","intranet/unicorn.main",false)>
 <div class="row-fluid">
@@ -23,17 +25,17 @@
     <div class="widget-box">
       <div class="widget-title">
         <span class="icon"><i class="icon-target"></i></span>
-        <h5>#name#</h5>
+        <h5>#left(name,50)#</h5>
         <cfif rc.type eq "Sale">
           <span class="label label-#IIf(rc.taskList.recordCount eq 0,'""','"info"')# pull-right stageTotals">#rc.taskList.recordCount#</span>
           <span class="label label-success stageTotals">&pound;#decimalFormat(t.stageTotal)#</span>
         <cfelse>
           <span class="label label-#IIf(rc.taskList.recordCount eq 0,'""','"info"')# pull-right stageTotals">#rc.taskList.recordCount#</span>
-        </cfif>
-      </div>
+        </cfif> 
+      </div> 
       <div class="widget-content">
         <div class="sortthem" style="min-height: 100px" id="stage_#id#">
-        <cfloop query="rc.taskList">
+        <cfloop query="rc.taskList"> 
           <div id="item_#id#" class="item widget-box">
             <div class="widget-title">
               <span class="icon"><i class="icon-clipboard-list"></i></span>

@@ -207,3 +207,12 @@ a.pending {
 #codecommits td {
   color: #000;
 }
+.widget-content {
+  /* over-ride unicorn styles for flo */
+  min-height: 0 !important;
+  
+}
+.bar {
+    height: 18px;
+    background: green;
+}

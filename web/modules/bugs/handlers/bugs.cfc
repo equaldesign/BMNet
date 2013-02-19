@@ -3,6 +3,7 @@
   <cfproperty name="bugs" inject="model:BugService" scope="instance" />
   <cfproperty name="dsn" inject="coldbox:datasource:bugs" scope="instance" />
   <cfproperty name="floRelationShipService" inject="id:flo.RelationShipService">
+  <cfproperty name="WorklogService" inject="id:flo.WorklogService">
   <cfproperty name="floTaskService" inject="id:flo.TaskService">
   <cfproperty name="pingdom" inject="model:pingdomService">
   <cfscript>
@@ -148,6 +149,7 @@
     </cfif>
     <cfset rc.items = floRelationShipService.getRelatedTasks(relatedType="bug",relatedID=rc.bug.getid(),flowSystem="bugs")>
     <cfset rc.floTaskService = floTaskService>
+    <cfset rc.worklogService = WorklogService>
     <cfset event.setView('detail')>
   </cffunction>
 
@@ -180,7 +182,7 @@
           rc.bug = populateModel(instance.bugs);
         }
         rc.bug.save();
-        setNextEvent(uri="/bugs/detail/id/#rc.bug.getid()#");
+        setNextEvent(uri="/bugs/bugs/detail/id/#rc.bug.getid()#");
     </cfscript>
   </cffunction>
 
@@ -251,6 +253,22 @@
     <cfset rc.ticket = event.getValue("ticket","")>
     <cfset instance.bugs.escalate(rc.ticket)>
     <cfset event.setView("escalated")>
+  </cffunction>
+
+  <cffunction name="attach" returntype="void">
+    <cfargument name="event">
+    <cfset var rc = event.getCollection()>
+    <cfset rc.ticket = event.getValue("ticket","")>
+    <cfset rc.fileName = event.getValue("Filename","")>
+    <cfset rc.fileData = arguments.event.getValue("Filedata","")>
+    <cffile action="copy" source="#rc.fileData#" destination="/fs/sites/ebiz/help.ebiz.co.uk/attach/#rc.filename#">
+    <cfquery name="b" datasource="#instance.dsn.getName()#">
+      insert into attachment (ticket,filename)
+      VALUES
+      (<cfqueryparam cfsqltype="cf_sql_varchar" value="#rc.ticket#">,
+      <cfqueryparam cfsqltype="cf_sql_varchar" value="/fs/sites/ebiz/help.ebiz.co.uk/attach/#rc.filename#">)
+    </cfquery>
+    <cfset event.renderData(data="",format="HTML")>
   </cffunction>
 
 </cfcomponent>

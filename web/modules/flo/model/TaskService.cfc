@@ -266,7 +266,15 @@
         itemActivity.email as remindViaEmail,
         itemActivity.complete,
         itemType.name,
-        itemType.workflowDefinition
+        itemType.workflowDefinition,
+        (
+          SELECT 
+            SUM(TIME_TO_SEC(TIMEDIFF(endTS, startTS))/3600) 
+        FROM 
+          itemActivityWorklog 
+        WHERE 
+          activityID = itemActivity.id
+        ) as hours
       FROM        
         itemActivity
         LEFT JOIN item on itemActivity.itemID = item.id
@@ -374,13 +382,21 @@
     <cfargument name="itemID" required="true">
     <cfquery name="a" datasource="#dsn.getName()#">
       SELECT
-        *
+        itemActivity.*,        
+        (
+          SELECT 
+            SUM(TIME_TO_SEC(TIMEDIFF(endTS, startTS))/3600) 
+        FROM 
+          itemActivityWorklog 
+        WHERE 
+          activityID = itemActivity.id
+        ) as hours
       FROM
         itemActivity
       WHERE
       itemID = <cfqueryparam cfsqltype="cf_sql_integer" value="#arguments.itemID#">
     </cfquery>
-    <cfset var returnQuery = QueryNew("id,itemID,contactID,first_name,surname,companyName,emailaddress,name,description,dueDate,reminderDate,email,complete")>
+    <cfset var returnQuery = QueryNew("id,itemID,contactID,first_name,surname,companyName,emailaddress,name,description,dueDate,reminderDate,email,complete,hours")>
     <cfloop query="a">
       <cfset contact = relationship.getRelatedObject("BMNet","contact",contactID)>
       <cfset QueryAddRow(returnQuery)>
@@ -397,6 +413,7 @@
       <cfset QuerySetCell(returnQuery,"id",id)>
       <cfset QuerySetCell(returnQuery,"itemID",itemID)>
       <cfset QuerySetCell(returnQuery,"complete",complete)>
+      <cfset QuerySetCell(returnQuery,"hours",hours)>
     </cfloop>
     <cfreturn returnQuery>
   </cffunction>
@@ -405,7 +422,15 @@
     <cfargument name="itemID" required="true">
     <cfquery name="a" datasource="#dsn.getName()#">
       SELECT
-        *
+        itemActivity.*,        
+        (
+          SELECT 
+            SUM(TIME_TO_SEC(TIMEDIFF(endTS, startTS))/3600) 
+        FROM 
+          itemActivityWorklog 
+        WHERE 
+          activityID = itemActivity.id
+        ) as hours
       FROM
         itemActivity
       WHERE
@@ -957,4 +982,33 @@ function iCalUS(stEvent) {
     return Trim(vCal);
 }
 </cfscript>
+
+  <cffunction name="isAuthorised" returntype="boolean">
+    <cfargument name="itemID">
+    <cfargument name="emailAddress">
+    <cfquery name="findRelatedUser" datasource="#dsn.getName()#">
+      select 
+        id,
+        relatedSystem
+      from
+        itemRelationship 
+      where
+        itemID = <cfqueryparam cfsqltype="cf_sql_integer" value="#arguments.itemID#">
+      AND
+        relatedType = <cfqueryparam cfsqltype="cf_sql_varchar" value="contact">
+    </cfquery>
+    <cfloop query="findRelatedUser">
+      <cftry>
+      <cfquery name="l" datasource="#relatedSystem#">
+        select 
+          id from contact where email = <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.emailAddress#">
+      </cfquery>
+      <cfif l.recordCount neq 0>
+        <cfreturn true>
+      </cfif>
+      <cfcatch type="any"></cfcatch>
+      </cftry>
+    </cfloop>
+    <cfreturn false>
+  </cffunction>
 </cfcomponent>

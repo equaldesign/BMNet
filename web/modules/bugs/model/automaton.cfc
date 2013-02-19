@@ -147,7 +147,7 @@ DETAILS: #textbody#
                 <cfif fromEmail neq bug.email>
                     <cfset t = "#bug.username# <#bug.email#>">
                 <cfelse>
-                  <cfset t = "Tom Miller <tom.miller@ebizuk.net>">
+                  <cfset t = "#fromName# <#fromEmail#>">
                 </cfif>
                 <cfset ticketStatus = bug.status>
                 <cfif FindNoCase("*CLOSED*",subject) neq 0>
@@ -156,18 +156,18 @@ DETAILS: #textbody#
                   <cfset ticketStatus = "open">
                 </cfif>
 
-                  <cfmail failto="tom.miller@ebiz.co.uk" to="#t#" subject="Ticket: #bug.ticket#" from="eBiz Support <#toEmail#>" bcc="tom.miller@ebiz.co.uk,james.colin@ebiz.co.uk">
+                  <cfmail failto="tom.miller@ebiz.co.uk" to="#t#" subject="Ticket: #bug.ticket#" from="eBiz Support <support@ebiz.co.uk>" bcc="tom.miller@ebiz.co.uk,james.colin@ebiz.co.uk">
 #commands.body#
 
 --------------------------------------------------
 
 #bug.username#,
 
-#userObject.user.first_name# #userObject.user.surname# has responded to your ticket. You can respond by replying to this email, and your repsonse will be logged alongside your ticket.
+<cfif userObject.user_first_name eq "unknown">#fromName#<cfelse>#userObject.user.first_name# #userObject.user.surname#</cfif> has responded to your ticket. You can respond by replying to this email, and your repsonse will be logged alongside your ticket.
 
 You can also view the status of this ticket using the following URL:
 
-http://help.ebiz.co.uk/bugs/bugs/detail?ticket=#ticket#&key=#hash(t)#
+http://help.ebiz.co.uk/bugs/bugs/detail?ticket=#ticket#&key=#hash(bug.email)#
 
 Please note this URL is encyrpted and only someone with the url above can access it.
 
@@ -209,11 +209,11 @@ eBiz Support
 		        <cfset rc.attachments = ArrayNew(1)>
           </cfdefaultcase> 
         </cfswitch>         
+        <cfquery name="d" datasource="#dsn.getName()#">
+          delete from incoming where id = <cfqueryparam cfsqltype="cf_sql_integer" value="#id#">;
+        </cfquery>
       </cfloop> 
-      <!--- now delete the messages --->
-      <cfquery name="d" datasource="#dsn.getName()#">
-        delete from incoming;
-      </cfquery>
+      <!--- now delete the messages --->      
       <cfreturn messages>
   </cffunction>
 

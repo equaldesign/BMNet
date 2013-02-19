@@ -82,6 +82,7 @@
 <cfset prc.size = getValue("size","medium")><!--- the size of the image, default to medium --->
 <cfset prc.crop = getValue("crop",false)>
 <cfset prc.cropAspect = getValue("aspect","4:3")>
+<cfset prc.fullFileName = getValue("fn","")>
 <cfset prc.cropx = getValue("cropx","center")>
 <cfset prc.cropy = getValue("cropy","center")>
 <cfset prc.blur = getValue("blur",0)>
@@ -170,6 +171,16 @@
   <cfset prc.imURL = "http://10.50.14.61/alfresco/service/buildingvine/api/productSearch.json?categoryNodeRef=#prc.categoryNodeRef#&size=#prc.size#&eanCode=#prc.id#&supplierProductCode=#prc.supplierProductCode#&manufacturerCode=#prc.manufacturerProductCode#&merchantCode=#prc.merchantCode#&mimetype=#URLEncodedFormat(prc.mimeType)#&productName=#prc.productName#">
 <cfelse><!--- we have a nodeRef, just grab the thumbail --->
   <cfset prc.imURL = "http://10.50.14.61/alfresco/service/api/node/workspace/SpacesStore/#prc.nodeRef#/content/thumbnails/#prc.size#?ph=true&c=force">
+</cfif>
+<cfif prc.fullFileName neq "">
+  <cfset objImage = fileRead(prc.fullFileName)>
+  <cfset objImage = resizebvimage(objImage,prc.width,prc.height,prc.quality,prc.crop,prc.cropAspect,prc.cropx,prc.cropy)>    
+  <cfif prc.blur neq 0>
+    <cfset ImageBlur(objImage,prc.blur)>
+  </cfif>          
+  
+  <cfcontent type="image/jpeg" file="#objImage#">
+  <cfabort>            
 </cfif>
 <cfset prc.imagekey = hash(toString(serializeJSON(prc)))>
 <!--- now do the search or grab the thumbnail --->          

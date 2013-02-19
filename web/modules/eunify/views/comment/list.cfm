@@ -1,7 +1,12 @@
 <cfset getMyPlugin(plugin="jQuery").getDepends("","comment/doComment","comment",false,"eunify")>
 <cfoutput>
+<cfif isDefined("rc.commentLink")>
+  <cfset cSpan = "span6">
+<cfelse>
+  <cfset cSpan = "span12">
+</cfif>
 <div class="row-fluid">
-  <div id="comments" class="span6">
+  <div id="comments" class="#cSpan#">
     <cfloop query="rc.comments">
       <div class="commentBox clearfix">
         <div class="commentTitle clearfix">
@@ -26,7 +31,9 @@
         <div class="commentContent">#ParagraphFormat2(content)#</div>
       </div>
     </cfloop>
+
   </div>
+  <cfif isDefined("rc.commentLink")>
   <div class="span6" id="createComment">
 
     <form class="form-horizontal" id="form_comment" action="#rc.commentLink#" method="post">
@@ -52,6 +59,7 @@
       <input name="relationshipURL" value="#paramValue('rc.relationshipURL','')#" type="hidden">
     </form>
   </div>
+  </cfif>
 </div>
 
 

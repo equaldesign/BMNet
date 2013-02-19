@@ -1,6 +1,7 @@
 <cfcomponent>
   <cfproperty name="tasks" inject="id:flo.TaskService">
   <cfproperty name="relationship" inject="id:flo.RelationshipService">
+  <cfproperty name="WorklogService" inject="id:flo.WorklogService">
   <cfproperty name="CommentService" inject="id:eunify.CommentService">
   <cffunction name="changeStage" returntype="void">
     <cfargument name="event">
@@ -64,7 +65,17 @@
     <cfset var rc = event.getCollection()>
     <cfset rc.item = tasks.getTask(rc.id)>
     <cfset rc.comments = CommentService.getComments(rc.id,"floItem")>
-    <cfset rc.commentLink = "/eunify/comment/add/tID/#rc.id#/t/floItem">
+    <cfif isUserInRole("staff")>
+      <cfset rc.commentLink = "/eunify/comment/add/tID/#rc.id#/t/floItem">
+    </cfif>
+    <cfset rc.worklogService = WorklogService>
+    <cfif NOT isUserLoggedIn()>
+      <cfset rc.email = UrlDecrypt(event.getValue("key"))>
+      <!--- try to find the email in the related or participants --->
+      <cfif not tasks.isAuthorised(rc.id,rc.email)>
+        <cfset setNextEvent(uri="/login")>
+      </cfif>
+    </cfif>
     <cfset event.setView("task/detail")>
   </cffunction>
 

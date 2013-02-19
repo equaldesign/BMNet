@@ -549,8 +549,10 @@
         modified,
         fixDate,
         fixVersion,
-        site,
-        description
+        site,        
+        description,
+        (select count(id) from flow.itemRelationship where relatedType = 'bug' AND relatedID = bug.id
+        ) as activities
       from bug, user
       WHERE
       <cfif NOT isUserInRole("ebiz")>
@@ -580,6 +582,7 @@
         </cfif>
         AND
         user.emailAddress = bug.assignee
+        having activities = 0
       #sortStatement#
 
         limit #arguments.startRow#,#arguments.maxRow#
@@ -592,7 +595,10 @@
 	  <cfargument name="hideclosed" default="true" type="boolean" required="true">
     <cfargument name="showMine" required="true" type="string" default="false">
     <cfquery name="s" datasource="bugs">
-      select count(id) as records
+      select 
+        id as records,
+        (select count(id) from flow.itemRelationship where flow.itemRelationship.relatedType = 'bug' AND flow.itemRelationship.relatedID = bug.id
+        ) as activities
       from
       bug
       WHERE
@@ -621,9 +627,10 @@
         OR
         username like <cfqueryparam cfsqltype="cf_sql_varchar" value="%#arguments.searchQuery#%">
         )
-        </cfif>
+        </cfif> 
+        having activities = 0
     </cfquery>
-    <cfreturn s.records>
+    <cfreturn s.recordCount>
   </cffunction>
   <cffunction name="summary" output="false" access="public"  returntype="query">
     <cfset var bugs = instance.UserStorage.getVar('eGroup')>
@@ -698,14 +705,14 @@ eBiz Support.
   <cffunction name="addComment" returntype="void">
     <cfargument name="bugID">
     <cfargument name="comment">
-    <cfset var bugs = instance.UserStorage.getVar("eGroup")>
+
     <cfset var c = "">
     <cfquery name="c" datasource="#instance.dsn.getName()#">
       insert into comment (email,username,comment,bugID)
       VALUES
       (
-        <cfqueryparam cfsqltype="cf_sql_varchar" value="#bugs.username#">,
-        <cfqueryparam cfsqltype="cf_sql_varchar" value="#bugs.name#">,
+        <cfqueryparam cfsqltype="cf_sql_varchar" value="#request.eGroup.username#">,
+        <cfqueryparam cfsqltype="cf_sql_varchar" value="#request.eGroup.name#">,
         <cfqueryparam cfsqltype="cf_sql_varchar" value="#comment#">,
         <cfqueryparam cfsqltype="cf_sql_varchar" value="#bugID#">
       )

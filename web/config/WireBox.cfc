@@ -136,6 +136,7 @@ Description :
 
     map("flo.RelationShipService").to("devbmnet.modules.flo.model.RelationShipService");
     map("flo.TaskService").to("devbmnet.modules.flo.model.TaskService");
+    map("flo.WorklogService").to("devbmnet.modules.flo.model.ActivityRecordingService");
 
 
     map("eGroup.blog").to("eGroup.model.blog");
