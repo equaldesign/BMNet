@@ -84,6 +84,7 @@
 <cfset prc.cropAspect = getValue("aspect","4:3")>
 <cfset prc.cropx = getValue("cropx","center")>
 <cfset prc.cropy = getValue("cropy","center")>
+<cfset prc.fullFileName = getValue("fn","")>
 <cfset prc.blur = getValue("blur",0)>
 <cfset prc.bvsite = getValue("siteID","")><!--- the site for the image, to avoid grabbing anything incorrectly --->
 <cfset prc.force = getValue("f",true)><!--- force new image? --->
@@ -137,7 +138,16 @@
     <cfset prc.imageSize = "medium">
   </cfif>
 </cfif>
-
+<cfif prc.fullFileName neq "">
+  <cfset objImage = FileReadBinary(prc.fullFileName)>
+  <cfset objImage = resizebvimage(objImage,prc.width,prc.height,prc.quality,prc.crop,prc.cropAspect,prc.cropx,prc.cropy)>    
+  <cfif prc.blur neq 0>
+    <cfset ImageBlur(objImage,prc.blur)>
+  </cfif>          
+  
+  <cfcontent type="image/jpeg" file="#objImage#">
+  <cfabort>            
+</cfif>
 <cfset prc.debugu = getValue("debugu",false)><!--- are we debuggin'? --->
 <cfset prc.eanCode = getValue("eancode","")><!--- the passed in EAN code --->
 <cfif prc.id eq "" and prc.eanCode neq ""><!--- we used to use ID as the EAN, this is for backwards compatability --->
